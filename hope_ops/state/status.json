@@ -1,7 +1,7 @@
 {
-  "at": "2026-11-17T14:27:31+00:00",
+  "at": "2026-11-17T14:37:55+00:00",
   "capture": {
-    "at": "2026-11-17T14:27:02+00:00",
+    "at": "2026-11-17T14:37:11+00:00",
     "claim_original_at_quote_at": false,
     "cumulative": 45,
     "db_original_writes": 0,
@@ -11,9 +11,9 @@
     "quote_absent": 0,
     "saved_this_run": 0
   },
-  "disk_free_bytes": 90751148032,
+  "disk_free_bytes": 90675077120,
   "eva": {
-    "db_bytes": 6026215424,
+    "db_bytes": 6046531584,
     "mount_source": "/opt/ORACLE_EVA/replica_v170/state",
     "name": "/oracle_eva_v170_legacy-historic-oracle-1"
   },
@@ -21,7 +21,7 @@
     "NEURAL_ACTIVE_PROCESS_UNVERIFIED"
   ],
   "last_paper_registration": "2026-11-17T00:33:59+00:00",
-  "last_settlement_run": "2026-11-17T13:36:07+00:00",
+  "last_settlement_run": "2026-11-17T14:36:08+00:00",
   "mode": "PAPER_ONLY",
   "monitor": "HOST_SIDE_ONLY",
   "non_r10_settlements_present": true,
@@ -91,7 +91,7 @@
     "settle": "active"
   },
   "ui": {
-    "checked_at": "2026-11-17T14:27:31+00:00",
+    "checked_at": "2026-11-17T14:37:55+00:00",
     "health_http": 200,
     "neural_active_verified": false,
     "neural_api_http": 200,
