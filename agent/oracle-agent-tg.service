@@ -1,0 +1,15 @@
+[Unit]
+Description=Oracle Agent Telegram Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/agent
+ExecStart=/usr/bin/python3 /opt/agent/tg_bot.py
+Restart=on-failure
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
