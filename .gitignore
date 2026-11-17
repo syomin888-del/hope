@@ -12,3 +12,6 @@ cache/
 tmp/
 *.tgz
 *.zip
+dataport_cache/
+.value_engine.lock
+dataport.py.bak

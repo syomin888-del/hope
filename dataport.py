@@ -141,3 +141,39 @@ def _espn_url(sport, league, date):
     path = ESPN_SPORT[sport].format(league=FOOTBALL_LEAGUES.get(league, league))
     return ("https://site.api.espn.com/apis/site/v2/sports/" + path +
             "/scoreboard?dates=" + date.replace("-", "") + "&limit=150")
+
+
+def get_upcoming_odds(sport, league, date):
+    """Return complete real ESPN h2h markets; omit missing odds."""
+    _check_args(sport, league, date)
+    result = []
+    for e in _fetch(_espn_url(sport, league, date), "espn").get("events", []):
+        start = _clock(e.get("date"))
+        if not start or start <= _now():
+            continue
+        books = []
+        for c in e.get("competitions", []):
+            if c.get("status", {}).get("type", {}).get("state") != "pre":
+                continue
+            names = {t.get("homeAway"): t.get("team", {}).get("displayName") for t in c.get("competitors", [])}
+            for q in c.get("odds", []):
+                try:
+                    outcomes = []
+                    for side in ["home", "away"] + (["draw"] if sport == "football" else []):
+                        field = "drawOdds" if side == "draw" else side + "TeamOdds"
+                        raw = q.get(field, {}).get("moneyLine")
+                        if raw is None:
+                            raw = q["moneyline"][side]["close"]["odds"]
+                        line = 100.0 if str(raw).upper() == "EVEN" else float(raw)
+                        name = "Draw" if side == "draw" else names[side]
+                        if not line or not name:
+                            raise ValueError("Missing quote")
+                        price = 1 + (line / 100 if line > 0 else 100 / abs(line))
+                        outcomes.append({"name": name, "price": price})
+                    provider = q.get("provider", {})
+                    books.append({"key": str(provider.get("id") or provider.get("name") or "espn"), "markets": [{"key": "h2h", "outcomes": outcomes}]})
+                except (KeyError, TypeError, ValueError):
+                    continue
+        if books:
+            result.append({"id": str(e["id"]), "event": e["name"], "start_time": start.isoformat(), "sport": sport, "league": league, "bookmakers": books})
+    return result
