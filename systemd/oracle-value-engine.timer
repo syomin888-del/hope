@@ -2,7 +2,7 @@
 Description=Scan paper value bets every 30 minutes
 
 [Timer]
-OnCalendar=*-*-* *:00,30:45
+OnCalendar=*-*-* *:00,30:45 UTC
 Persistent=true
 AccuracySec=1s
 Unit=oracle-value-engine.service

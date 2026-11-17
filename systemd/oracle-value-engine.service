@@ -1,7 +1,8 @@
 [Unit]
 Description=HOPE EVA paper value betting scanner
 Wants=network-online.target
-After=network-online.target oracle-cockpit-fetch.service
+Requires=oracle-hope-ops-capture.service
+After=network-online.target oracle-hope-ops-capture.service
 
 [Service]
 Type=oneshot

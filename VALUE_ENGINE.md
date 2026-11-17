@@ -19,7 +19,7 @@ Credentials: NASTYA_BOT_TOKEN/NASTYA_CHAT_ID or /opt/agent/tgtoken and tgchat.
 Do not put credentials into git.
 
 Timer: oracle-value-engine.timer, every 30 minutes at :00:45/:30:45 UTC,
-ordered after the existing capture service. Install units from systemd/.
+requires a successful oracle-hope-ops-capture.service cycle and runs after it. Install units from systemd/.
 Logs: journalctl -u oracle-value-engine.service.
 
 The existing dataport lacked get_upcoming_odds; this change adds ESPN

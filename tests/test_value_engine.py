@@ -97,3 +97,11 @@ def test_started_event_skipped():
     e = event()
     e["start_time"] = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(seconds=1)).isoformat()
     assert list(v.candidates(e)) == []
+
+
+def test_timer_orders_after_required_capture():
+    service = (v.BASE / "systemd/oracle-value-engine.service").read_text()
+    timer = (v.BASE / "systemd/oracle-value-engine.timer").read_text()
+    assert "Requires=oracle-hope-ops-capture.service" in service
+    assert "After=network-online.target oracle-hope-ops-capture.service" in service
+    assert "OnCalendar=*-*-* *:00,30:45 UTC" in timer
