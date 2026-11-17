@@ -149,24 +149,41 @@ class ReadOnlyData:
     def settlements(self):
         c=self.connect()
         try:
-            r=self.rows(c,'''SELECT checked_at,checked,settled,outcomes_unavailable
-                             FROM v55_settlement_runs ORDER BY id DESC LIMIT 12''')
-            ps=self.rows(c,'''SELECT status,COUNT(*) as total FROM v55_paper
-                              WHERE status!='EVA_LEGACY_ARCHIVED' GROUP BY status''')
-            perf=self.rows(c,'''SELECT COUNT(*) AS n, COALESCE(SUM(profit),0) AS profit,
+            r=self.rows(c,"""SELECT checked_at,checked,settled,outcomes_unavailable
+                             FROM v55_settlement_runs ORDER BY id DESC LIMIT 12""")
+            ps=self.rows(c,"""SELECT status,COUNT(*) as total FROM v55_paper
+                              WHERE status!='EVA_LEGACY_ARCHIVED' GROUP BY status""")
+            SIM="HOPE_V3_AS_RECORDED_ODDS_NOT_BOOKMAKER_VERIFIED%"
+            def agg(where):
+                return self.rows(c,f"""SELECT COUNT(*) AS n, COALESCE(SUM(profit),0) AS profit,
                                COALESCE(SUM(stake),0) AS stake
-                               FROM v55_paper WHERE status IN ('WIN','LOSS','PUSH')''')[0]
-            pp=self.rows(c,'''SELECT COUNT(*) AS n, COALESCE(SUM(p.profit),0) AS profit,
+                               FROM v55_paper WHERE status IN ('WIN','LOSS','PUSH') AND {where}""")[0]
+            def pagg(where):
+                return self.rows(c,f"""SELECT COUNT(*) AS n, COALESCE(SUM(p.profit),0) AS profit,
                               COALESCE(SUM(p.stake),0) AS stake
                               FROM v56_portfolio x JOIN v55_paper p ON x.forecast_id=p.forecast_id
-                              WHERE p.status IN ('WIN','LOSS','PUSH')''')[0]
+                              WHERE p.status IN ('WIN','LOSS','PUSH') AND {where}""")[0]
+            perf=agg('1=1')
+            perf_v=agg("(source IS NULL OR source NOT LIKE '"+SIM+"')")
+            perf_s=agg("source LIKE '"+SIM+"'")
+            pp=pagg('1=1')
+            pp_v=pagg("(p.source IS NULL OR p.source NOT LIKE '"+SIM+"')")
+            pp_s=pagg("p.source LIKE '"+SIM+"'")
+            def sep(a):
+                n=a['n']; st=a['stake']; net=a['profit']
+                return {'rows':n,'stake_usd':st,'net_usd':net,'roi_pct':(net/st*100.0) if st else None}
+            pnl_separated={'paper':{'verified':sep(perf_v),'simulated':sep(perf_s),'blended':sep(perf)},
+                           'portfolio':{'verified':sep(pp_v),'simulated':sep(pp_s),'blended':sep(pp)}}
             final=[]
             if c.execute("SELECT 1 FROM sqlite_master WHERE name='v58_results' AND type='table'").fetchone():
-                final=self.rows(c,'''SELECT league,date_utc,home,away,home_score,away_score,source,observed_at
-                                      FROM v58_results ORDER BY observed_at DESC LIMIT 12''')
+                final=self.rows(c,"""SELECT league,date_utc,home,away,home_score,away_score,source,observed_at
+                                      FROM v58_results ORDER BY observed_at DESC LIMIT 12""")
         finally:c.close()
         return {'runs':r,'paper_statuses':ps, 'paper_settled':perf,'portfolio_settled':pp,'final_scores':final,
-                'note':'ROI только по подтверждённым WIN/LOSS/PUSH; PENDING и исторический архив исключены.'}
+                'paper_settled_verified':perf_v,'paper_settled_simulated':perf_s,
+                'portfolio_settled_verified':pp_v,'portfolio_settled_simulated':pp_s,
+                'pnl_separated':pnl_separated,
+                'note':'ROI только по подтверждённым WIN/LOSS/PUSH; PENDING и исторический архив исключены. SIMULATED_UNVERIFIED_ODDS (V3/V4 as-recorded, не подтверждённые букмекером) показаны отдельно и не являются букмекерски-верифицированными.'}
 
 class Handler(BaseHTTPRequestHandler):
     server_version='HopeUI/0.1'
