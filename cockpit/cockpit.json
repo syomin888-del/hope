@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T16:36:30.608288",
+  "generated_at": "2026-11-17T16:44:38.604988",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -20,8 +20,8 @@
       "timestamp": "2026-11-17T10:29:02.359997"
     },
     {
-      "file": "/opt/agent/queue/01a_smart_retry.md",
-      "name": "01a_smart_retry.md",
+      "file": "/opt/agent/queue/01a_smart_retry.md.done",
+      "name": "01a_smart_retry.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T16:32:52.223477"
     },
@@ -86,12 +86,6 @@
       "timestamp": "2026-11-17T10:54:20.201948"
     },
     {
-      "file": "/opt/agent/queue/10_1794917788.md.md.failed",
-      "name": "10_1794917788.md.md.failed",
-      "status": "pending",
-      "timestamp": "2026-11-17T12:16:28.311832"
-    },
-    {
       "file": "/opt/agent/queue/10_autopilot.md.done",
       "name": "10_autopilot.md.done",
       "status": "pending",
@@ -102,12 +96,6 @@
       "name": "11_cockpit.md.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T11:21:19.774579"
-    },
-    {
-      "file": "/opt/agent/queue/13_tg_miniapp.md.md.failed",
-      "name": "13_tg_miniapp.md.md.failed",
-      "status": "pending",
-      "timestamp": "2026-11-17T11:25:16.776633"
     },
     {
       "file": "/opt/agent/queue/17_tg_digest.md.md",
@@ -138,24 +126,6 @@
       "name": "21_tg_heartbeat.md",
       "status": "pending",
       "timestamp": "2026-11-17T16:16:15.340123"
-    },
-    {
-      "file": "/opt/agent/queue/23_smart_retry.md",
-      "name": "23_smart_retry.md",
-      "status": "pending",
-      "timestamp": "2026-11-17T16:27:28.515974"
-    },
-    {
-      "file": "/opt/agent/queue/24_settle222_full.md",
-      "name": "24_settle222_full.md",
-      "status": "pending",
-      "timestamp": "2026-11-17T16:27:35.592192"
-    },
-    {
-      "file": "/opt/agent/queue/31_smart_retry.md",
-      "name": "31_smart_retry.md",
-      "status": "pending",
-      "timestamp": "2026-11-17T16:29:54.371588"
     },
     {
       "file": "/opt/agent/queue/auto_auto_20261117_150356.md.md",
@@ -216,12 +186,6 @@
       "name": "auto_sv_20261117T162953Z_Execute_settle_222_odds_evidence_reclassification_pipeline_e.md",
       "status": "pending",
       "timestamp": "2026-11-17T16:29:53.240551"
-    },
-    {
-      "file": "/opt/agent/queue/auto_sv_seed_second_results_provider.md",
-      "name": "auto_sv_seed_second_results_provider.md",
-      "status": "pending",
-      "timestamp": "2026-11-17T15:04:35.433236"
     }
   ],
   "running": {
