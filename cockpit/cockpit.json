@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T16:33:27.608936",
+  "generated_at": "2026-11-17T16:36:30.608288",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -104,8 +104,8 @@
       "timestamp": "2026-11-17T11:21:19.774579"
     },
     {
-      "file": "/opt/agent/queue/13_tg_miniapp.md.md",
-      "name": "13_tg_miniapp.md.md",
+      "file": "/opt/agent/queue/13_tg_miniapp.md.md.failed",
+      "name": "13_tg_miniapp.md.md.failed",
       "status": "pending",
       "timestamp": "2026-11-17T11:25:16.776633"
     },
@@ -210,6 +210,12 @@
       "name": "auto_sv_20261117T155950Z_SETTLE_222_ODDS_EVIDENCE_verified.md",
       "status": "pending",
       "timestamp": "2026-11-17T15:59:50.196995"
+    },
+    {
+      "file": "/opt/agent/queue/auto_sv_20261117T162953Z_Execute_settle_222_odds_evidence_reclassification_pipeline_e.md",
+      "name": "auto_sv_20261117T162953Z_Execute_settle_222_odds_evidence_reclassification_pipeline_e.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T16:29:53.240551"
     },
     {
       "file": "/opt/agent/queue/auto_sv_seed_second_results_provider.md",
