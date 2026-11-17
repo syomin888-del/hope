@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-17T12:00:28+00:00",
+  "at": "2026-11-17T15:00:24+00:00",
   "categories": {
     "AWAITING_EVENT": 205,
     "NEW_OR_OTHER_STATUS": 743,
@@ -51,7 +51,7 @@
   "portfolio_unique_ids": 77,
   "portfolio_unlinked": 0,
   "r10_newly_settled": 0,
-  "r10_report": "/opt/ORACLE_EVA/replica_v170/state/eva-reports/eva_r10_census_20261117T120027Z_a2e24560.json",
+  "r10_report": "/opt/ORACLE_EVA/replica_v170/state/eva-reports/eva_r10_census_20261117T150023Z_e33ce7e4.json",
   "real_orders": 0,
   "scheduler": "EVERY_3_HOURS",
   "unresolved_remain_in_auto_retry": true

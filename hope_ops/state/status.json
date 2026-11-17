@@ -1,7 +1,7 @@
 {
-  "at": "2026-11-17T14:58:04+00:00",
+  "at": "2026-11-17T15:03:05+00:00",
   "capture": {
-    "at": "2026-11-17T14:57:06+00:00",
+    "at": "2026-11-17T15:02:52+00:00",
     "claim_original_at_quote_at": false,
     "cumulative": 45,
     "db_original_writes": 0,
@@ -11,7 +11,7 @@
     "quote_absent": 0,
     "saved_this_run": 0
   },
-  "disk_free_bytes": 90674683904,
+  "disk_free_bytes": 90674208768,
   "eva": {
     "db_bytes": 6046531584,
     "mount_source": "/opt/ORACLE_EVA/replica_v170/state",
@@ -35,22 +35,22 @@
   "production_oracle_mutations": 0,
   "real_orders": 0,
   "settlement": {
-    "at": "2026-11-17T12:00:27+00:00",
+    "at": "2026-11-17T15:00:23+00:00",
     "db_original_code_changed": false,
     "disk": {
-      "free_bytes": 91166744576,
+      "free_bytes": 90674614272,
       "required_bytes": 16106127360
     },
-    "duration_seconds": 22.24,
+    "duration_seconds": 20.0,
     "ended": "NO_CHANGES",
     "errors": [],
     "eva": {
-      "db_bytes": 5986648064,
+      "db_bytes": 6046531584,
       "mount_source": "/opt/ORACLE_EVA/replica_v170/state",
       "name": "/oracle_eva_v170_legacy-historic-oracle-1"
     },
     "exit_code": 0,
-    "log": "/opt/ORACLE_EVA/hope_ops/logs/settle_20261117T120005Z.log",
+    "log": "/opt/ORACLE_EVA/hope_ops/logs/settle_20261117T150003Z.log",
     "real_orders": 0,
     "result": "PASS",
     "summary": {
@@ -58,7 +58,7 @@
       "mode": "apply",
       "newly_settled": 0,
       "real_orders": 0,
-      "report": "/data/eva-reports/eva_r10_census_20261117T120027Z_a2e24560.json",
+      "report": "/data/eva-reports/eva_r10_census_20261117T150023Z_e33ce7e4.json",
       "unresolved_in_initial_census": 222
     }
   },
@@ -91,7 +91,7 @@
     "settle": "active"
   },
   "ui": {
-    "checked_at": "2026-11-17T14:58:04+00:00",
+    "checked_at": "2026-11-17T15:03:05+00:00",
     "health_http": 200,
     "neural_active_verified": false,
     "neural_api_http": 200,
