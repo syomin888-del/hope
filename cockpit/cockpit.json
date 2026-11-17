@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T16:22:17.809558",
+  "generated_at": "2026-11-17T16:33:27.608936",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -20,16 +20,40 @@
       "timestamp": "2026-11-17T10:29:02.359997"
     },
     {
+      "file": "/opt/agent/queue/01a_smart_retry.md",
+      "name": "01a_smart_retry.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T16:32:52.223477"
+    },
+    {
       "file": "/opt/agent/queue/02_settle_analysis.md.done",
       "name": "02_settle_analysis.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T10:43:32.678366"
     },
     {
+      "file": "/opt/agent/queue/02a_dataport.md",
+      "name": "02a_dataport.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T16:29:42.224195"
+    },
+    {
       "file": "/opt/agent/queue/03_stats_split.md.done",
       "name": "03_stats_split.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T10:43:42.228680"
+    },
+    {
+      "file": "/opt/agent/queue/03a_value_engine.md",
+      "name": "03a_value_engine.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T16:30:04.901929"
+    },
+    {
+      "file": "/opt/agent/queue/03b_value_engine_old.md",
+      "name": "03b_value_engine_old.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T16:27:41.932389"
     },
     {
       "file": "/opt/agent/queue/04_harden_backup.md.done",
@@ -74,8 +98,8 @@
       "timestamp": "2026-11-17T11:14:08.364994"
     },
     {
-      "file": "/opt/agent/queue/11_cockpit.md.md",
-      "name": "11_cockpit.md.md",
+      "file": "/opt/agent/queue/11_cockpit.md.md.done",
+      "name": "11_cockpit.md.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T11:21:19.774579"
     },
@@ -114,6 +138,24 @@
       "name": "21_tg_heartbeat.md",
       "status": "pending",
       "timestamp": "2026-11-17T16:16:15.340123"
+    },
+    {
+      "file": "/opt/agent/queue/23_smart_retry.md",
+      "name": "23_smart_retry.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T16:27:28.515974"
+    },
+    {
+      "file": "/opt/agent/queue/24_settle222_full.md",
+      "name": "24_settle222_full.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T16:27:35.592192"
+    },
+    {
+      "file": "/opt/agent/queue/31_smart_retry.md",
+      "name": "31_smart_retry.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T16:29:54.371588"
     },
     {
       "file": "/opt/agent/queue/auto_auto_20261117_150356.md.md",
