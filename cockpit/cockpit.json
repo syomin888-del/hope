@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T17:32:09.614567",
+  "generated_at": "2026-11-17T17:34:11.613155",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -44,8 +44,8 @@
       "timestamp": "2026-11-17T10:43:42.228680"
     },
     {
-      "file": "/opt/agent/queue/03a_value_engine.md",
-      "name": "03a_value_engine.md",
+      "file": "/opt/agent/queue/03a_value_engine.md.done",
+      "name": "03a_value_engine.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T16:30:04.901929"
     },

@@ -1,0 +1,11 @@
+[Unit]
+Description=Scan paper value bets every 30 minutes
+
+[Timer]
+OnCalendar=*-*-* *:00,30:45
+Persistent=true
+AccuracySec=1s
+Unit=oracle-value-engine.service
+
+[Install]
+WantedBy=timers.target
