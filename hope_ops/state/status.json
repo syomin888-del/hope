@@ -1,7 +1,7 @@
 {
-  "at": "2026-11-17T11:39:32+00:00",
+  "at": "2026-11-17T11:44:32+00:00",
   "capture": {
-    "at": "2026-11-17T11:38:52+00:00",
+    "at": "2026-11-17T11:44:21+00:00",
     "claim_original_at_quote_at": false,
     "cumulative": 45,
     "db_original_writes": 0,
@@ -11,7 +11,7 @@
     "quote_absent": 0,
     "saved_this_run": 0
   },
-  "disk_free_bytes": 91167342592,
+  "disk_free_bytes": 91166994432,
   "eva": {
     "db_bytes": 5986648064,
     "mount_source": "/opt/ORACLE_EVA/replica_v170/state",
@@ -91,7 +91,7 @@
     "settle": "active"
   },
   "ui": {
-    "checked_at": "2026-11-17T11:39:32+00:00",
+    "checked_at": "2026-11-17T11:44:32+00:00",
     "health_http": 200,
     "neural_active_verified": false,
     "neural_api_http": 200,
