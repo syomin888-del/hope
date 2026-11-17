@@ -1,0 +1,2555 @@
+{
+  "release": "EVA-PROVENANCE-0.3.1",
+  "read_only_from": "production plus staged historical snapshot",
+  "generated_utc": "2026-10-29T13:58:24.090956+00:00",
+  "production_modified": false,
+  "eva_running_started": false,
+  "source_snapshot_sha256_verified": false,
+  "source_files_sha256_verified": true,
+  "db_sha256_at_stage": "RELIED_ON_PREVIOUS_V01_STAGE_CHECK_NOT_RECOMPUTED",
+  "lightweight_integrity_caveat": "No whole-file DB SHA/PRAGMA quick_check this run to avoid VPS disk I/O saturation",
+  "late_result_snapshot": "/var/lib/docker/volumes/oracle_core_v10_oracle-data/_data/oracle-before-v85-20261026T135930Z.sqlite3",
+  "historical_cutoff_utc": "2026-10-24T13:41:13+00:00",
+  "staged_db": {
+    "quick_check": "SKIPPED_BOUNDED_IO_MODE",
+    "table_count": 155,
+    "table_names": [
+      "brain_schedule",
+      "candle_archives",
+      "candles",
+      "ci_events",
+      "ci_exposures",
+      "ci_paths",
+      "eq_filings",
+      "eq_ingest_status",
+      "eq_issuers",
+      "eq_prices",
+      "fb_bridge_1x2",
+      "fb_bridge_links",
+      "fb_bridge_runs",
+      "fb_full_cooldown",
+      "fb_full_current",
+      "fb_full_events",
+      "fb_full_history",
+      "fb_full_live_context",
+      "fb_full_packets",
+      "fb_full_runs",
+      "fb_full_sports",
+      "history_downloads",
+      "hypothesis_experiments",
+      "hypothesis_registry",
+      "kb_books",
+      "kb_principles",
+      "knowledge_cursor",
+      "knowledge_facts",
+      "knowledge_runs",
+      "market_consensus",
+      "mw_early_alerts",
+      "mw_quotes",
+      "mw_runs",
+      "mw_state",
+      "mw_symbols",
+      "mw_watch_events",
+      "oc_news",
+      "oc_runs",
+      "oc_source_health",
+      "oc_state",
+      "oc_technical",
+      "od_exploratory",
+      "od_model_audit",
+      "od_paper_signals",
+      "od_runs",
+      "od_state",
+      "od_watch",
+      "odds_hub_cooldown",
+      "odds_hub_events",
+      "odds_hub_quotes",
+      "odds_hub_runs",
+      "og_edges",
+      "og_events",
+      "og_followups",
+      "og_runs",
+      "oi_cluster_items",
+      "oi_clusters",
+      "oi_cycles",
+      "oi_mentions",
+      "oi_provenance",
+      "oi_source_state",
+      "oi_state",
+      "outbox",
+      "paper_forecasts",
+      "pf_backtests",
+      "pf_runs",
+      "pf_trades",
+      "ps_event_triage",
+      "ps_hypotheses",
+      "ps_runs",
+      "ps_screened",
+      "radar_cooldowns",
+      "radar_events",
+      "radar_observations",
+      "radar_pools",
+      "radar_runs",
+      "radar_tokens",
+      "raw_snapshots",
+      "research_jobs",
+      "research_models",
+      "sb_dossiers",
+      "sb_event_coverage",
+      "sb_independent_forecasts",
+      "sb_research_evidence",
+      "sb_runs",
+      "sb_watchlist",
+      "sf_eval",
+      "sf_forecasts",
+      "sf_matches",
+      "sf_runs",
+      "sf_sources",
+      "signals",
+      "source_runs",
+      "source_schedule",
+      "sr_cards",
+      "sr_lineups",
+      "sr_matches",
+      "sr_runs",
+      "sr_sources",
+      "storage_runs",
+      "storage_skips",
+      "telemetry_heartbeats",
+      "ub_cycles",
+      "ub_dossiers",
+      "ub_names",
+      "ub_paper",
+      "ub_state",
+      "v4_book_odds",
+      "v4_bookie_sources",
+      "v4_claim_tests",
+      "v4_discoveries",
+      "v4_discovery_checks",
+      "v4_evaluations",
+      "v4_experiments",
+      "v4_fulltext_chapters",
+      "v4_fulltext_claim_candidates",
+      "v4_fulltext_sources",
+      "v4_games",
+      "v4_jobs",
+      "v4_orchestrator_log",
+      "v4_paper_bets",
+      "v4_promotions",
+      "v4_public_cot",
+      "v4_public_crypto",
+      "v4_public_lei_entities",
+      "v4_public_lei_relations",
+      "v4_public_macro",
+      "v4_public_market_refs",
+      "v4_public_research",
+      "v4_public_source_state",
+      "v4_sport_preds",
+      "v4_study_fragments",
+      "v55_archive_prices",
+      "v55_paper",
+      "v55_settlement_runs",
+      "v56_portfolio",
+      "v58_coverage",
+      "v58_forecasts",
+      "v58_results",
+      "v58_source_runs",
+      "v58_validation",
+      "v58_work_runs",
+      "v5_catalog",
+      "v5_checkpoints",
+      "v5_dossiers",
+      "v5_event_links",
+      "v5_forecasts",
+      "v5_link_audit",
+      "v5_price_captures",
+      "v5_research_queue",
+      "v5_research_sources",
+      "v5_runs",
+      "v7_audit_runs",
+      "v7_connection_checks",
+      "v7_crypto_runs"
+    ],
+    "page_count": 414278,
+    "page_size": 4096,
+    "journal_mode_observed": "delete",
+    "selected_tables": {
+      "sf_matches": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "id",
+          "sport",
+          "league",
+          "season",
+          "match_date",
+          "home",
+          "away",
+          "home_score",
+          "away_score",
+          "source",
+          "source_url",
+          "last_seen"
+        ],
+        "time_columns_present": []
+      },
+      "sf_forecasts": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "match_id",
+          "asof_day",
+          "created_at",
+          "sport",
+          "league",
+          "match_date",
+          "home",
+          "away",
+          "market",
+          "selection",
+          "probability",
+          "quality",
+          "training_games",
+          "model_version",
+          "status",
+          "hit",
+          "settled_at"
+        ],
+        "time_columns_present": [
+          "created_at",
+          "asof_day"
+        ]
+      },
+      "sb_independent_forecasts": {
+        "count": 15,
+        "columns": [
+          "selection_key",
+          "model",
+          "asof_utc",
+          "p_home",
+          "p_draw",
+          "p_away",
+          "input_hash",
+          "features_json",
+          "status"
+        ],
+        "time_columns_present": []
+      },
+      "v4_games": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "event_id",
+          "provider",
+          "sport",
+          "league",
+          "kickoff_utc",
+          "home",
+          "away",
+          "home_score",
+          "away_score",
+          "final",
+          "observed_at",
+          "source_url"
+        ],
+        "time_columns_present": [
+          "observed_at",
+          "kickoff_utc"
+        ]
+      },
+      "v4_sport_preds": {
+        "count": 33,
+        "columns": [
+          "event_id",
+          "market",
+          "selection",
+          "issued_at",
+          "prob",
+          "model",
+          "status",
+          "hit",
+          "settled_at"
+        ],
+        "time_columns_present": []
+      },
+      "v5_forecasts": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "id",
+          "origin",
+          "original_event_id",
+          "created_at",
+          "sport",
+          "league",
+          "home",
+          "away",
+          "match_date",
+          "kickoff_utc",
+          "market",
+          "selection",
+          "probability",
+          "model",
+          "root_id",
+          "match_rule",
+          "price",
+          "quote_key",
+          "quote_snapshot",
+          "price_status",
+          "evaluated_at",
+          "details_json"
+        ],
+        "time_columns_present": [
+          "created_at",
+          "kickoff_utc"
+        ]
+      },
+      "v55_paper": {
+        "count": 743,
+        "columns": [
+          "forecast_id",
+          "root_id",
+          "original_event_id",
+          "origin",
+          "market",
+          "selection",
+          "probability",
+          "odds",
+          "stake",
+          "quote_key",
+          "quote_at",
+          "kickoff_utc",
+          "registered_at",
+          "expected_ev_pct",
+          "status",
+          "result_home",
+          "result_away",
+          "result_seen",
+          "settled_at",
+          "profit",
+          "source",
+          "reason"
+        ],
+        "time_columns_present": [
+          "registered_at",
+          "quote_at",
+          "kickoff_utc"
+        ]
+      },
+      "v55_archive_prices": {
+        "count": 147,
+        "columns": [
+          "forecast_id",
+          "root_id",
+          "quote_key",
+          "price",
+          "observed_at",
+          "origin",
+          "recorded_at"
+        ],
+        "time_columns_present": [
+          "observed_at",
+          "recorded_at"
+        ]
+      },
+      "v56_portfolio": {
+        "count": 50,
+        "columns": [
+          "root_id",
+          "forecast_id",
+          "canonical_key",
+          "selected_at",
+          "source_registered_at",
+          "independent_models",
+          "consensus_ev_pct",
+          "reason"
+        ],
+        "time_columns_present": []
+      },
+      "v58_forecasts": {
+        "count": 830,
+        "columns": [
+          "forecast_id",
+          "root_id",
+          "sport",
+          "league",
+          "kickoff_utc",
+          "model",
+          "selection",
+          "probability",
+          "created_at",
+          "training_games",
+          "oos_n",
+          "validation_brier",
+          "calibration_temperature",
+          "source_set",
+          "validated"
+        ],
+        "time_columns_present": [
+          "created_at",
+          "kickoff_utc"
+        ]
+      },
+      "v58_results": {
+        "count": 64,
+        "columns": [
+          "source_event_id",
+          "sport",
+          "league",
+          "date_utc",
+          "home",
+          "away",
+          "home_score",
+          "away_score",
+          "source",
+          "source_url",
+          "observed_at",
+          "final_provenance"
+        ],
+        "time_columns_present": [
+          "observed_at"
+        ]
+      },
+      "v7_crypto_runs": {
+        "count": 1,
+        "columns": [
+          "ran_at",
+          "kind",
+          "report_json"
+        ],
+        "time_columns_present": []
+      },
+      "candle_archives": {
+        "count": 9,
+        "columns": [
+          "provider",
+          "symbol",
+          "timeframe",
+          "year_month",
+          "file_path",
+          "row_count",
+          "rows_sha256",
+          "file_sha256",
+          "archived_at"
+        ],
+        "time_columns_present": []
+      },
+      "candles": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "provider",
+          "symbol",
+          "timeframe",
+          "open_ms",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "fetched_at"
+        ],
+        "time_columns_present": []
+      },
+      "eq_prices": {
+        "count": 0,
+        "columns": [
+          "symbol",
+          "session_date",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "fetched_at",
+          "provider",
+          "adjustment"
+        ],
+        "time_columns_present": []
+      },
+      "fb_full_history": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "id",
+          "quote_key",
+          "event_id",
+          "decimal_price",
+          "active",
+          "changed_at",
+          "raw_sha"
+        ],
+        "time_columns_present": []
+      },
+      "fb_full_sports": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "id",
+          "raw_json",
+          "last_seen"
+        ],
+        "time_columns_present": []
+      },
+      "history_downloads": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "symbol",
+          "year",
+          "month",
+          "status",
+          "rows",
+          "updated_at",
+          "error"
+        ],
+        "time_columns_present": []
+      },
+      "mw_quotes": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "symbol",
+          "observed_at",
+          "price",
+          "quote_volume_24h",
+          "change_24h_pct",
+          "trades_24h"
+        ],
+        "time_columns_present": [
+          "observed_at"
+        ]
+      },
+      "odds_hub_cooldown": {
+        "count": 0,
+        "columns": [
+          "provider",
+          "until_utc",
+          "reason",
+          "set_at"
+        ],
+        "time_columns_present": []
+      },
+      "odds_hub_events": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "provider",
+          "source_event_id",
+          "sport",
+          "league",
+          "kickoff_utc",
+          "home",
+          "away",
+          "in_play",
+          "last_seen"
+        ],
+        "time_columns_present": [
+          "kickoff_utc"
+        ]
+      },
+      "odds_hub_quotes": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "quote_id",
+          "provider",
+          "source_event_id",
+          "bookmaker",
+          "market",
+          "period",
+          "selection",
+          "point",
+          "price",
+          "observed_at",
+          "price_updated_at",
+          "polled_at",
+          "in_play",
+          "source_url"
+        ],
+        "time_columns_present": [
+          "observed_at"
+        ]
+      },
+      "odds_hub_runs": {
+        "count": 631,
+        "columns": [
+          "id",
+          "checked_at",
+          "provider",
+          "sport",
+          "state",
+          "events_seen",
+          "quotes_saved",
+          "matches_linked",
+          "detail"
+        ],
+        "time_columns_present": []
+      },
+      "sr_matches": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "match_id",
+          "competition_id",
+          "season_id",
+          "competition",
+          "season",
+          "match_day",
+          "home",
+          "away",
+          "home_score",
+          "away_score",
+          "source_url"
+        ],
+        "time_columns_present": []
+      },
+      "v4_book_odds": {
+        "count": 480,
+        "columns": [
+          "event_id",
+          "bookmaker",
+          "selection",
+          "price",
+          "captured_at",
+          "book_last_update",
+          "source",
+          "origin_id"
+        ],
+        "time_columns_present": []
+      },
+      "v4_public_crypto": {
+        "count": 34,
+        "columns": [
+          "provider",
+          "symbol",
+          "observed_at",
+          "last_price",
+          "quote_volume",
+          "change_24h_pct",
+          "source_url"
+        ],
+        "time_columns_present": [
+          "observed_at"
+        ]
+      },
+      "v5_price_captures": {
+        "count": "AT_LEAST_1001",
+        "columns": [
+          "forecast_id",
+          "quote_key",
+          "source_snapshot",
+          "decimal_price",
+          "selection",
+          "verified_market",
+          "stored_at"
+        ],
+        "time_columns_present": []
+      }
+    }
+  },
+  "late_db_quick_check": "SKIPPED_BOUNDED_IO_MODE",
+  "cohort": {
+    "late_233": {
+      "rows": 233,
+      "win_loss_push": {
+        "LOSS": 137,
+        "WIN": 96
+      },
+      "net_usd": 96.5,
+      "settled_stake_usd": 2330.0,
+      "roi_pct": 4.1416,
+      "origins": {
+        "v4_sport_preds": 16,
+        "sf_forecasts": 195,
+        "sb_independent_forecasts": 22
+      },
+      "unique_roots": 39,
+      "registered_utc_range": [
+        "2026-10-24T09:34:30+00:00",
+        "2026-10-25T17:02:00+00:00"
+      ]
+    },
+    "historical_743": {
+      "rows": 743,
+      "states": {
+        "PENDING": 743
+      }
+    },
+    "overlap": {
+      "rows": 206,
+      "win_loss_push": {
+        "LOSS": 126,
+        "WIN": 80
+      },
+      "net_usd": 15.0,
+      "settled_stake_usd": 2060.0,
+      "roi_pct": 0.7282,
+      "origins": {
+        "v4_sport_preds": 14,
+        "sf_forecasts": 172,
+        "sb_independent_forecasts": 20
+      },
+      "unique_roots": 39,
+      "registered_utc_range": [
+        "2026-10-24T09:34:30+00:00",
+        "2026-10-24T13:12:46+00:00"
+      ]
+    },
+    "not_in_historical_cutoff": {
+      "rows": 27,
+      "win_loss_push": {
+        "LOSS": 11,
+        "WIN": 16
+      },
+      "net_usd": 81.5,
+      "settled_stake_usd": 270.0,
+      "roi_pct": 30.1852,
+      "origins": {
+        "sf_forecasts": 23,
+        "v4_sport_preds": 2,
+        "sb_independent_forecasts": 2
+      },
+      "unique_roots": 8,
+      "registered_utc_range": [
+        "2026-10-24T15:28:11+00:00",
+        "2026-10-25T17:02:00+00:00"
+      ]
+    },
+    "matched_immutable_field_mismatches": [],
+    "matched_immutable_field_mismatch_count": 0,
+    "unmatched_27_details": [
+      {
+        "forecast_id": "d770ad85fbb763de936f31adf660bea1",
+        "root_id": "68893070",
+        "registered_at": "2026-10-24T15:28:11+00:00",
+        "origin": "sf_forecasts",
+        "market": "1X2",
+        "selection": "П2",
+        "status": "LOSS",
+        "net_usd": -10.0
+      },
+      {
+        "forecast_id": "24779ba66f0913b82dad0ed86a3c0e37",
+        "root_id": "68893070",
+        "registered_at": "2026-10-24T15:28:11+00:00",
+        "origin": "sf_forecasts",
+        "market": "1X2",
+        "selection": "П2",
+        "status": "LOSS",
+        "net_usd": -10.0
+      },
+      {
+        "forecast_id": "0806d523f29fc7bb102bdfeabe423343",
+        "root_id": "68893070",
+        "registered_at": "2026-10-24T15:50:57+00:00",
+        "origin": "sf_forecasts",
+        "market": "ДВОЙНОЙ ШАНС",
+        "selection": "X2",
+        "status": "LOSS",
+        "net_usd": -10.0
+      },
+      {
+        "forecast_id": "c298546a4ddef29db57965653daa47bb",
+        "root_id": "68893070",
+        "registered_at": "2026-10-24T15:50:57+00:00",
+        "origin": "sf_forecasts",
+        "market": "ДВОЙНОЙ ШАНС",
+        "selection": "X2",
+        "status": "LOSS",
+        "net_usd": -10.0
+      },
+      {
+        "forecast_id": "860ea152f9f188ae953bcfb478badab5",
+        "root_id": "68893070",
+        "registered_at": "2026-10-24T16:01:48+00:00",
+        "origin": "v4_sport_preds",
+        "market": "1X2",
+        "selection": "X",
+        "status": "LOSS",
+        "net_usd": -10.0
+      },
+      {
+        "forecast_id": "4e7cdf0560c27db70176c182e2259643",
+        "root_id": "68893074",
+        "registered_at": "2026-10-25T04:48:07+00:00",
+        "origin": "sb_independent_forecasts",
+        "market": "1X2",
+        "selection": "X",
+        "status": "LOSS",
+        "net_usd": -10.0
+      },
+      {
+        "forecast_id": "db37ca806e964a3e7d46af3cf1592f3b",
+        "root_id": "68893074",
+        "registered_at": "2026-10-25T05:20:56+00:00",
+        "origin": "sb_independent_forecasts",
+        "market": "1X2",
+        "selection": "1",
+        "status": "WIN",
+        "net_usd": 20.0
+      },
+      {
+        "forecast_id": "ae8e474892b3a9fc88e926b63cae693e",
+        "root_id": "68893022",
+        "registered_at": "2026-10-25T08:28:30+00:00",
+        "origin": "sf_forecasts",
+        "market": "ТОТАЛ 2.5",
+        "selection": "Больше 2.5",
+        "status": "WIN",
+        "net_usd": 7.0
+      },
+      {
+        "forecast_id": "813eec64dfc9e94a4d1027d13bf018e1",
+        "root_id": "68893022",
+        "registered_at": "2026-10-25T08:28:30+00:00",
+        "origin": "sf_forecasts",
+        "market": "ТОТАЛ 2.5",
+        "selection": "Больше 2.5",
+        "status": "WIN",
+        "net_usd": 7.0
+      },
+      {
+        "forecast_id": "9c4115f7acf3a9227fb3ef7e35d30312",
+        "root_id": "68893022",
+        "registered_at": "2026-10-25T08:28:30+00:00",
+        "origin": "sf_forecasts",
+        "market": "ТОТАЛ 2.5",
+        "selection": "Больше 2.5",
+        "status": "WIN",
+        "net_usd": 7.0
+      },
+      {
+        "forecast_id": "89b2d99f25de69b6b7836bc9ee09e4f2",
+        "root_id": "68892915",
+        "registered_at": "2026-10-25T08:39:28+00:00",
+        "origin": "sf_forecasts",
+        "market": "ОБЕ ЗАБЬЮТ",
+        "selection": "Нет",
+        "status": "WIN",
+        "net_usd": 9.0
+      },
+      {
+        "forecast_id": "0b72641768f7b99699acbcaaf0745697",
+        "root_id": "68892971",
+        "registered_at": "2026-10-25T09:24:50+00:00",
+        "origin": "sf_forecasts",
+        "market": "ТОТАЛ 2.5",
+        "selection": "Меньше 2.5",
+        "status": "LOSS",
+        "net_usd": -10.0
+      },
+      {
+        "forecast_id": "4d054788a05b3a66e0f86b90fb0218a0",
+        "root_id": "68892971",
+        "registered_at": "2026-10-25T09:24:50+00:00",
+        "origin": "sf_forecasts",
+        "market": "ТОТАЛ 2.5",
+        "selection": "Меньше 2.5",
+        "status": "LOSS",
+        "net_usd": -10.0
+      },
+      {
+        "forecast_id": "2070c82f1e1397bb49adba8c52819de2",
+        "root_id": "68892971",
+        "registered_at": "2026-10-25T09:24:50+00:00",
+        "origin": "sf_forecasts",
+        "market": "ТОТАЛ 2.5",
+        "selection": "Меньше 2.5",
+        "status": "LOSS",
+        "net_usd": -10.0
+      },
+      {
+        "forecast_id": "0184f62585e6719c5f50492a5887a8e0",
+        "root_id": "68893074",
+        "registered_at": "2026-10-25T11:29:28+00:00",
+        "origin": "v4_sport_preds",
+        "market": "1X2",
+        "selection": "1",
+        "status": "WIN",
+        "net_usd": 23.0
+      },
+      {
+        "forecast_id": "e4d486e306069982cebaa473cb1a031b",
+        "root_id": "68892971",
+        "registered_at": "2026-10-25T11:29:28+00:00",
+        "origin": "sf_forecasts",
+        "market": "ОБЕ ЗАБЬЮТ",
+        "selection": "Нет",
+        "status": "WIN",
+        "net_usd": 7.0
+      },
+      {
+        "forecast_id": "ac8ccd60bbcdeeab07ccae0d5c0399b4",
+        "root_id": "68892971",
+        "registered_at": "2026-10-25T11:29:28+00:00",
+        "origin": "sf_forecasts",
+        "market": "ОБЕ ЗАБЬЮТ",
+        "selection": "Нет",
+        "status": "WIN",
+        "net_usd": 7.0
+      },
+      {
+        "forecast_id": "f96ae9b45a846816b210f8f877de56cb",
+        "root_id": "68892971",
+        "registered_at": "2026-10-25T11:29:28+00:00",
+        "origin": "sf_forecasts",
+        "market": "ОБЕ ЗАБЬЮТ",
+        "selection": "Нет",
+        "status": "WIN",
+        "net_usd": 7.0
+      },
+      {
+        "forecast_id": "a7ad8d857038698c0961549bdd485aac",
+        "root_id": "68892903",
+        "registered_at": "2026-10-25T13:01:35+00:00",
+        "origin": "sf_forecasts",
+        "market": "ТОТАЛ 2.5",
+        "selection": "Больше 2.5",
+        "status": "LOSS",
+        "net_usd": -10.0
+      },
+      {
+        "forecast_id": "270b15196e03719373f3df1c39396ab8",
+        "root_id": "68893034",
+        "registered_at": "2026-10-25T13:01:35+00:00",
+        "origin": "sf_forecasts",
+        "market": "1X2",
+        "selection": "П2",
+        "status": "WIN",
+        "net_usd": 16.5
+      },
+      {
+        "forecast_id": "6f062d1a199fba74401e34554c300a7c",
+        "root_id": "68893034",
+        "registered_at": "2026-10-25T13:01:35+00:00",
+        "origin": "sf_forecasts",
+        "market": "ТОТАЛ 2.5",
+        "selection": "Меньше 2.5",
+        "status": "WIN",
+        "net_usd": 12.5
+      },
+      {
+        "forecast_id": "31766f3349b38f7b950bb66acc159b76",
+        "root_id": "68893034",
+        "registered_at": "2026-10-25T13:01:35+00:00",
+        "origin": "sf_forecasts",
+        "market": "1X2",
+        "selection": "П2",
+        "status": "WIN",
+        "net_usd": 16.5
+      },
+      {
+        "forecast_id": "e76f015ea87ec96333e00dce4fd5216e",
+        "root_id": "68893034",
+        "registered_at": "2026-10-25T13:01:35+00:00",
+        "origin": "sf_forecasts",
+        "market": "ТОТАЛ 2.5",
+        "selection": "Меньше 2.5",
+        "status": "WIN",
+        "net_usd": 12.5
+      },
+      {
+        "forecast_id": "b6e3e6787f5dd7a5c3cde9cfb0288a61",
+        "root_id": "68893034",
+        "registered_at": "2026-10-25T13:01:35+00:00",
+        "origin": "sf_forecasts",
+        "market": "1X2",
+        "selection": "П2",
+        "status": "WIN",
+        "net_usd": 16.5
+      },
+      {
+        "forecast_id": "d14d9c5011b4b87c4b9f58425ac7fbdc",
+        "root_id": "68893034",
+        "registered_at": "2026-10-25T13:01:35+00:00",
+        "origin": "sf_forecasts",
+        "market": "ТОТАЛ 2.5",
+        "selection": "Меньше 2.5",
+        "status": "WIN",
+        "net_usd": 12.5
+      },
+      {
+        "forecast_id": "f45f6099d65901cd4d7fe917ca922826",
+        "root_id": "68919545",
+        "registered_at": "2026-10-25T17:02:00+00:00",
+        "origin": "sf_forecasts",
+        "market": "ТОТАЛ 2.5",
+        "selection": "Меньше 2.5",
+        "status": "LOSS",
+        "net_usd": -10.0
+      },
+      {
+        "forecast_id": "efe3b1d0922779ad10fc2aca1343974a",
+        "root_id": "68919545",
+        "registered_at": "2026-10-25T17:02:00+00:00",
+        "origin": "sf_forecasts",
+        "market": "ОБЕ ЗАБЬЮТ",
+        "selection": "Нет",
+        "status": "WIN",
+        "net_usd": 10.5
+      }
+    ],
+    "exact_233_benchmark_reproduced": true,
+    "note": "Later results are an isolated benchmark only; NEVER inserted into historical EVA training or input DB."
+  },
+  "historical_sources": {
+    "by_release": {
+      "v55": [
+        {
+          "path": "historical_release_inputs/v55/install.py",
+          "name": "install.py",
+          "sha256": "b3502381d39ca9de21fe593dcc665d177815b5c534c1c735e6daaffe16376a89",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "contextlib",
+            "datetime",
+            "hashlib",
+            "json",
+            "os",
+            "pathlib",
+            "py_compile",
+            "shutil",
+            "sqlite3",
+            "subprocess",
+            "sys",
+            "tempfile"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/tests/test_v52.py",
+          "name": "test_v52.py",
+          "sha256": "b12a38221dd503f0ce1f42d4fc683196ef8f054e6c9a48f9dc52940113f78081",
+          "syntax": "OK",
+          "imports": [
+            "json",
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/tests/test_v51.py",
+          "name": "test_v51.py",
+          "sha256": "74a770656a503976eb6867dc2d6233952c20963e501f3e1953e80beda9f110d1",
+          "syntax": "OK",
+          "imports": [
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/tests/test_v55.py",
+          "name": "test_v55.py",
+          "sha256": "38d069294ee89339c429de5a396dc8b58fcc3e7d1db5bad4c41a6b335a815c85",
+          "syntax": "OK",
+          "imports": [
+            "oracle_v5",
+            "oracle_v5_settlement",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/tests/test_v53.py",
+          "name": "test_v53.py",
+          "sha256": "081269fdb22f92e3f4d88f7760bfea10e1a9098bbac49387bfa2f049263a18e4",
+          "syntax": "OK",
+          "imports": [
+            "json",
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/tests/test_v55_throughput.py",
+          "name": "test_v55_throughput.py",
+          "sha256": "ba34a596a842a9e68c83b70663129a1337d33281292ecf2fdae97d3e10190126",
+          "syntax": "OK",
+          "imports": [
+            "datetime",
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/tests/test_v54.py",
+          "name": "test_v54.py",
+          "sha256": "ddb75ea61f40e2f8032db5dca849b9b13a1a63956e72140269ed0a9c916f4ec4",
+          "syntax": "OK",
+          "imports": [
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest",
+            "urllib"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/tests/test_installer_v55.py",
+          "name": "test_installer_v55.py",
+          "sha256": "66d5363a953a1df93b5b90e2937b6bb563bb11413abfe2b074e7ecb8a464007d",
+          "syntax": "OK",
+          "imports": [
+            "importlib",
+            "json",
+            "pathlib",
+            "shutil",
+            "sqlite3",
+            "tempfile",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/tests/test_v5.py",
+          "name": "test_v5.py",
+          "sha256": "03711c8429384b5e514e94d6eb9f19a9543934514a0273be9e6b05435d9e8835",
+          "syntax": "OK",
+          "imports": [
+            "json",
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/files/oracle_v4.py",
+          "name": "oracle_v4.py",
+          "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "json",
+            "oracle_causal",
+            "oracle_equities",
+            "oracle_fonbet_bridge",
+            "oracle_fonbet_full",
+            "oracle_library",
+            "oracle_odds_hub",
+            "oracle_open_sources",
+            "oracle_sports_brain",
+            "oracle_v4_bookies",
+            "oracle_v4_books",
+            "oracle_v4_discovery",
+            "oracle_v4_fulltext",
+            "oracle_v4_learning",
+            "oracle_v4_sports",
+            "oracle_v5",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "time"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/files/oracle_v5_settlement.py",
+          "name": "oracle_v5_settlement.py",
+          "sha256": "0144f0d6f40d7117ac54fd5f6cb59ec4f4b6034ea664500a49e66a6e5f670280",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "json",
+            "math",
+            "oracle_v5",
+            "os",
+            "sqlite3"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/files/oracle_v5.py",
+          "name": "oracle_v5.py",
+          "sha256": "1bebdf415ca9410cfddebefbe905675704dc349a6d21ecbbf85daf8f200ec860",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "difflib",
+            "hashlib",
+            "json",
+            "math",
+            "oracle_fonbet_bridge",
+            "os",
+            "re",
+            "sqlite3",
+            "time",
+            "typing",
+            "unicodedata",
+            "urllib",
+            "xml",
+            "zoneinfo"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/files/oracle_console.py",
+          "name": "oracle_console.py",
+          "sha256": "c9bf4a71014f2c55a19af2ea14aa6721a37d06035432b10a944ee670ec665183",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "dashboard",
+            "datetime",
+            "http",
+            "json",
+            "oracle_operations",
+            "oracle_presignal",
+            "oracle_profit",
+            "oracle_rosterlab",
+            "oracle_scorecard",
+            "oracle_sports_brain",
+            "oracle_universe",
+            "oracle_v4",
+            "oracle_v5",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "urllib"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/tests/fixtures/oracle_fonbet_bridge.py",
+          "name": "oracle_fonbet_bridge.py",
+          "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "json",
+            "re",
+            "sqlite3",
+            "unicodedata"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v4.py",
+          "name": "oracle_v4.py",
+          "sha256": "4843b3ca36433d3ae20f85e7e1babc6e8f73dd88e7ba2763ebb8436f52dfdcfb",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "json",
+            "oracle_causal",
+            "oracle_equities",
+            "oracle_fonbet_bridge",
+            "oracle_fonbet_full",
+            "oracle_library",
+            "oracle_odds_hub",
+            "oracle_open_sources",
+            "oracle_sports_brain",
+            "oracle_v4_bookies",
+            "oracle_v4_books",
+            "oracle_v4_discovery",
+            "oracle_v4_fulltext",
+            "oracle_v4_learning",
+            "oracle_v4_sports",
+            "oracle_v5",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "time"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v5.py",
+          "name": "oracle_v5.py",
+          "sha256": "1fa7be1e13a804cebd98682531385a1e00e104451f7b2ad90c6a49c2efb43ab1",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "difflib",
+            "hashlib",
+            "json",
+            "math",
+            "oracle_fonbet_bridge",
+            "os",
+            "re",
+            "sqlite3",
+            "time",
+            "typing",
+            "unicodedata",
+            "urllib",
+            "xml",
+            "zoneinfo"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_console.py",
+          "name": "oracle_console.py",
+          "sha256": "78b5097b792df21fecc0c4638f089537de60d20d6c09bc15913519d0481375cd",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "dashboard",
+            "datetime",
+            "http",
+            "json",
+            "oracle_operations",
+            "oracle_presignal",
+            "oracle_profit",
+            "oracle_rosterlab",
+            "oracle_scorecard",
+            "oracle_sports_brain",
+            "oracle_universe",
+            "oracle_v4",
+            "oracle_v5",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "urllib"
+          ]
+        }
+      ],
+      "v56": [
+        {
+          "path": "historical_release_inputs/v56/install.py",
+          "name": "install.py",
+          "sha256": "9be9514c38d7894f431579ce32471f758be4efb0ef576c95266cb08efcf7f4d2",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "os",
+            "pathlib",
+            "py_compile",
+            "shutil",
+            "sqlite3",
+            "subprocess",
+            "sys",
+            "tempfile"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v56/tests/test_v56.py",
+          "name": "test_v56.py",
+          "sha256": "dc6748b29b94d6122a5c6592b0807dc8199f838a50752ae6dbb86d3953b193f8",
+          "syntax": "OK",
+          "imports": [
+            "oracle_v5",
+            "oracle_v56_portfolio",
+            "oracle_v5_settlement",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v56/files/oracle_v5_settlement.py",
+          "name": "oracle_v5_settlement.py",
+          "sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "json",
+            "math",
+            "oracle_v5",
+            "os",
+            "sqlite3"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v56/files/oracle_v5.py",
+          "name": "oracle_v5.py",
+          "sha256": "29c9b2b9dbc69682ef6e8c6d28cdcf0d7b186636fd20b36c94ad6be5a2dda910",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "difflib",
+            "hashlib",
+            "json",
+            "math",
+            "oracle_fonbet_bridge",
+            "os",
+            "re",
+            "sqlite3",
+            "time",
+            "typing",
+            "unicodedata",
+            "urllib",
+            "xml",
+            "zoneinfo"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v56/files/oracle_console.py",
+          "name": "oracle_console.py",
+          "sha256": "084f09b4d8e6999450f5e1a5259fb74b7ec820965af3a42bf7d16ec7f2abce73",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "dashboard",
+            "datetime",
+            "http",
+            "json",
+            "oracle_operations",
+            "oracle_presignal",
+            "oracle_profit",
+            "oracle_rosterlab",
+            "oracle_scorecard",
+            "oracle_sports_brain",
+            "oracle_universe",
+            "oracle_v4",
+            "oracle_v5",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "urllib"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v56/files/oracle_v56_portfolio.py",
+          "name": "oracle_v56_portfolio.py",
+          "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "json",
+            "math",
+            "oracle_v5",
+            "statistics"
+          ]
+        }
+      ],
+      "v70": [
+        {
+          "path": "historical_release_inputs/v70/install.py",
+          "name": "install.py",
+          "sha256": "2f28a07f54977ac490814e4bf1b0dee9d3e21580d40fe92ec92aa5bffff379ba",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "contextlib",
+            "datetime",
+            "hashlib",
+            "json",
+            "os",
+            "pathlib",
+            "py_compile",
+            "shutil",
+            "sqlite3",
+            "subprocess",
+            "sys",
+            "tempfile"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/test_v52.py",
+          "name": "test_v52.py",
+          "sha256": "b12a38221dd503f0ce1f42d4fc683196ef8f054e6c9a48f9dc52940113f78081",
+          "syntax": "OK",
+          "imports": [
+            "json",
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/test_v57.py",
+          "name": "test_v57.py",
+          "sha256": "daa4299b17131817e6388ee52473d3bbf4fe96ae39e18ad84731368b2f4bb98c",
+          "syntax": "OK",
+          "imports": [
+            "importlib",
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "test_v5",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/test_installer_v7.py",
+          "name": "test_installer_v7.py",
+          "sha256": "8e71b8cee81d5cf9027fdb08953111e5ed7727f6dbf8ea872ddf9e3b70242d80",
+          "syntax": "OK",
+          "imports": [
+            "hashlib",
+            "importlib",
+            "json",
+            "os",
+            "pathlib",
+            "shutil",
+            "sqlite3",
+            "tempfile",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/test_v51.py",
+          "name": "test_v51.py",
+          "sha256": "74a770656a503976eb6867dc2d6233952c20963e501f3e1953e80beda9f110d1",
+          "syntax": "OK",
+          "imports": [
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/test_v58.py",
+          "name": "test_v58.py",
+          "sha256": "14c9cae6462651cd7b0dc78080492189739b546861fc404293556cf87b93b936",
+          "syntax": "OK",
+          "imports": [
+            "datetime",
+            "json",
+            "oracle_v5",
+            "oracle_v56_portfolio",
+            "oracle_v58_brain",
+            "oracle_v5_settlement",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/test_v7.py",
+          "name": "test_v7.py",
+          "sha256": "6023b47d302e8981e5bdfce627a37ec41fccfad2e13c7e34d7331baf8f76aab3",
+          "syntax": "OK",
+          "imports": [
+            "datetime",
+            "importlib",
+            "json",
+            "oracle_v7_core",
+            "oracle_v7_crypto",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "tempfile",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/test_v56.py",
+          "name": "test_v56.py",
+          "sha256": "dc6748b29b94d6122a5c6592b0807dc8199f838a50752ae6dbb86d3953b193f8",
+          "syntax": "OK",
+          "imports": [
+            "oracle_v5",
+            "oracle_v56_portfolio",
+            "oracle_v5_settlement",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/test_v55.py",
+          "name": "test_v55.py",
+          "sha256": "905fb006f2d02da5d3c377bb67eab546e7a87b9735dd18fc2c6c59d3ddf7187d",
+          "syntax": "OK",
+          "imports": [
+            "oracle_v5",
+            "oracle_v5_settlement",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/test_v53.py",
+          "name": "test_v53.py",
+          "sha256": "081269fdb22f92e3f4d88f7760bfea10e1a9098bbac49387bfa2f049263a18e4",
+          "syntax": "OK",
+          "imports": [
+            "json",
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/test_v55_throughput.py",
+          "name": "test_v55_throughput.py",
+          "sha256": "ba34a596a842a9e68c83b70663129a1337d33281292ecf2fdae97d3e10190126",
+          "syntax": "OK",
+          "imports": [
+            "datetime",
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/test_v54.py",
+          "name": "test_v54.py",
+          "sha256": "fd9beb12261992953363fbde3a6daa8a1a9f162c1d44c92287fba7c103f903e7",
+          "syntax": "OK",
+          "imports": [
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest",
+            "urllib"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/test_v5.py",
+          "name": "test_v5.py",
+          "sha256": "03711c8429384b5e514e94d6eb9f19a9543934514a0273be9e6b05435d9e8835",
+          "syntax": "OK",
+          "imports": [
+            "json",
+            "oracle_v5",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "unittest"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/files/oracle_v5_settlement.py",
+          "name": "oracle_v5_settlement.py",
+          "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "json",
+            "math",
+            "oracle_v5",
+            "os",
+            "sqlite3"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/files/oracle_v5.py",
+          "name": "oracle_v5.py",
+          "sha256": "b243e223efdbe48b931dfa26bec729261885dbd0ca87a8ea07c24e5418d6ae1c",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "difflib",
+            "hashlib",
+            "json",
+            "math",
+            "oracle_fonbet_bridge",
+            "os",
+            "re",
+            "sqlite3",
+            "time",
+            "typing",
+            "unicodedata",
+            "urllib",
+            "xml",
+            "zoneinfo"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/files/oracle_v7_core.py",
+          "name": "oracle_v7_core.py",
+          "sha256": "6755879820abd4be7aa85a916670a585343af5a0242851fe2c0b62d16384477b",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "datetime",
+            "json",
+            "oracle_v7_crypto",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "urllib"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/files/oracle_v7_crypto.py",
+          "name": "oracle_v7_crypto.py",
+          "sha256": "2ca2477b7a41eaeb64fbc0427e8fab98b2ef5acee7c0807dc2015bdef3c4b21b",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "json",
+            "math",
+            "sqlite3",
+            "statistics"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/files/oracle_scorecard.py",
+          "name": "oracle_scorecard.py",
+          "sha256": "fe5c208469788a7d671b83e9ff39b94a727775ed9f91df2b5be5aa56b2a46f0d",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "json",
+            "math",
+            "oracle_v7_core",
+            "pathlib",
+            "sqlite3",
+            "statistics"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/files/oracle_v7.py",
+          "name": "oracle_v7.py",
+          "sha256": "372cf7d0a5520192d0b72d2dd64cf59062dca53e432c08048cc72bfa0bc4bf88",
+          "syntax": "OK",
+          "imports": [
+            "argparse",
+            "json",
+            "oracle_v7_core",
+            "oracle_v7_crypto",
+            "os",
+            "sqlite3"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/files/oracle_console.py",
+          "name": "oracle_console.py",
+          "sha256": "9d1b2a20f8e96700dd9ffde96fda04cb57f01d06bca3fe7c353fa8606c3835a3",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "dashboard",
+            "datetime",
+            "http",
+            "json",
+            "oracle_operations",
+            "oracle_presignal",
+            "oracle_profit",
+            "oracle_rosterlab",
+            "oracle_scorecard",
+            "oracle_sports_brain",
+            "oracle_universe",
+            "oracle_v4",
+            "oracle_v5",
+            "oracle_v7_core",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "urllib"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/files/oracle_v58_brain.py",
+          "name": "oracle_v58_brain.py",
+          "sha256": "bb67a9f58ea8f451b75af05fab192362ef61ad13d32a732e807facb8f981d0d0",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "oracle_v5",
+            "os",
+            "sqlite3",
+            "statistics",
+            "time",
+            "urllib"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/files/oracle_v56_portfolio.py",
+          "name": "oracle_v56_portfolio.py",
+          "sha256": "0b27b7e272db7f2506ae011d1b733f0188dfdffea28e50d6506e5d4b3524567c",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "json",
+            "math",
+            "oracle_v5",
+            "statistics"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/fixtures/oracle_fonbet_bridge.py",
+          "name": "oracle_fonbet_bridge.py",
+          "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "json",
+            "re",
+            "sqlite3",
+            "unicodedata"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/support/oracle_v4.py",
+          "name": "oracle_v4.py",
+          "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "json",
+            "oracle_causal",
+            "oracle_equities",
+            "oracle_fonbet_bridge",
+            "oracle_fonbet_full",
+            "oracle_library",
+            "oracle_odds_hub",
+            "oracle_open_sources",
+            "oracle_sports_brain",
+            "oracle_v4_bookies",
+            "oracle_v4_books",
+            "oracle_v4_discovery",
+            "oracle_v4_fulltext",
+            "oracle_v4_learning",
+            "oracle_v4_sports",
+            "oracle_v5",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "time"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/support/oracle_v5_settlement.py",
+          "name": "oracle_v5_settlement.py",
+          "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "json",
+            "math",
+            "oracle_v5",
+            "os",
+            "sqlite3"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/support/oracle_v56_portfolio.py",
+          "name": "oracle_v56_portfolio.py",
+          "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "json",
+            "math",
+            "oracle_v5",
+            "statistics"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5_settlement.py",
+          "name": "oracle_v5_settlement.py",
+          "sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "json",
+            "math",
+            "oracle_v5",
+            "os",
+            "sqlite3"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5.py",
+          "name": "oracle_v5.py",
+          "sha256": "9da7360a760df46ffdf68d71a71661af71c86eede905fb97af1c3536572ba942",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "difflib",
+            "hashlib",
+            "json",
+            "math",
+            "oracle_fonbet_bridge",
+            "os",
+            "re",
+            "sqlite3",
+            "time",
+            "typing",
+            "unicodedata",
+            "urllib",
+            "xml",
+            "zoneinfo"
+          ]
+        },
+        {
+          "path": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v56_portfolio.py",
+          "name": "oracle_v56_portfolio.py",
+          "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e",
+          "syntax": "OK",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "json",
+            "math",
+            "oracle_v5",
+            "statistics"
+          ]
+        }
+      ]
+    },
+    "module_candidates": {
+      "sports_free.py": [],
+      "oracle_sports_brain.py": [],
+      "oracle_v4_sports.py": [],
+      "oracle_v4.py": [
+        {
+          "file": "historical_release_inputs/v55/files/oracle_v4.py",
+          "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54"
+        },
+        {
+          "file": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v4.py",
+          "sha256": "4843b3ca36433d3ae20f85e7e1babc6e8f73dd88e7ba2763ebb8436f52dfdcfb"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/support/oracle_v4.py",
+          "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54"
+        }
+      ],
+      "oracle_v5.py": [
+        {
+          "file": "historical_release_inputs/v55/files/oracle_v5.py",
+          "sha256": "1bebdf415ca9410cfddebefbe905675704dc349a6d21ecbbf85daf8f200ec860"
+        },
+        {
+          "file": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v5.py",
+          "sha256": "1fa7be1e13a804cebd98682531385a1e00e104451f7b2ad90c6a49c2efb43ab1"
+        },
+        {
+          "file": "historical_release_inputs/v56/files/oracle_v5.py",
+          "sha256": "29c9b2b9dbc69682ef6e8c6d28cdcf0d7b186636fd20b36c94ad6be5a2dda910"
+        },
+        {
+          "file": "historical_release_inputs/v70/files/oracle_v5.py",
+          "sha256": "b243e223efdbe48b931dfa26bec729261885dbd0ca87a8ea07c24e5418d6ae1c"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5.py",
+          "sha256": "9da7360a760df46ffdf68d71a71661af71c86eede905fb97af1c3536572ba942"
+        }
+      ],
+      "oracle_v5_settlement.py": [
+        {
+          "file": "historical_release_inputs/v55/files/oracle_v5_settlement.py",
+          "sha256": "0144f0d6f40d7117ac54fd5f6cb59ec4f4b6034ea664500a49e66a6e5f670280"
+        },
+        {
+          "file": "historical_release_inputs/v56/files/oracle_v5_settlement.py",
+          "sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788"
+        },
+        {
+          "file": "historical_release_inputs/v70/files/oracle_v5_settlement.py",
+          "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/support/oracle_v5_settlement.py",
+          "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5_settlement.py",
+          "sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788"
+        }
+      ],
+      "oracle_v56_portfolio.py": [
+        {
+          "file": "historical_release_inputs/v56/files/oracle_v56_portfolio.py",
+          "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e"
+        },
+        {
+          "file": "historical_release_inputs/v70/files/oracle_v56_portfolio.py",
+          "sha256": "0b27b7e272db7f2506ae011d1b733f0188dfdffea28e50d6506e5d4b3524567c"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/support/oracle_v56_portfolio.py",
+          "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v56_portfolio.py",
+          "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e"
+        }
+      ],
+      "oracle_v58_brain.py": [
+        {
+          "file": "historical_release_inputs/v70/files/oracle_v58_brain.py",
+          "sha256": "bb67a9f58ea8f451b75af05fab192362ef61ad13d32a732e807facb8f981d0d0"
+        }
+      ],
+      "oracle_v7.py": [
+        {
+          "file": "historical_release_inputs/v70/files/oracle_v7.py",
+          "sha256": "372cf7d0a5520192d0b72d2dd64cf59062dca53e432c08048cc72bfa0bc4bf88"
+        }
+      ],
+      "oracle_v7_core.py": [
+        {
+          "file": "historical_release_inputs/v70/files/oracle_v7_core.py",
+          "sha256": "6755879820abd4be7aa85a916670a585343af5a0242851fe2c0b62d16384477b"
+        }
+      ],
+      "oracle_v7_crypto.py": [
+        {
+          "file": "historical_release_inputs/v70/files/oracle_v7_crypto.py",
+          "sha256": "2ca2477b7a41eaeb64fbc0427e8fab98b2ef5acee7c0807dc2015bdef3c4b21b"
+        }
+      ],
+      "oracle_fonbet_bridge.py": [
+        {
+          "file": "historical_release_inputs/v55/tests/fixtures/oracle_fonbet_bridge.py",
+          "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/fixtures/oracle_fonbet_bridge.py",
+          "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa"
+        }
+      ],
+      "oracle_fonbet_full.py": [],
+      "oracle_odds_hub.py": []
+    },
+    "missing_everywhere": [
+      "sports_free.py",
+      "oracle_sports_brain.py",
+      "oracle_v4_sports.py",
+      "oracle_fonbet_full.py",
+      "oracle_odds_hub.py"
+    ],
+    "ambiguous_variants": {
+      "oracle_v4.py": [
+        {
+          "file": "historical_release_inputs/v55/files/oracle_v4.py",
+          "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54"
+        },
+        {
+          "file": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v4.py",
+          "sha256": "4843b3ca36433d3ae20f85e7e1babc6e8f73dd88e7ba2763ebb8436f52dfdcfb"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/support/oracle_v4.py",
+          "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54"
+        }
+      ],
+      "oracle_v5.py": [
+        {
+          "file": "historical_release_inputs/v55/files/oracle_v5.py",
+          "sha256": "1bebdf415ca9410cfddebefbe905675704dc349a6d21ecbbf85daf8f200ec860"
+        },
+        {
+          "file": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v5.py",
+          "sha256": "1fa7be1e13a804cebd98682531385a1e00e104451f7b2ad90c6a49c2efb43ab1"
+        },
+        {
+          "file": "historical_release_inputs/v56/files/oracle_v5.py",
+          "sha256": "29c9b2b9dbc69682ef6e8c6d28cdcf0d7b186636fd20b36c94ad6be5a2dda910"
+        },
+        {
+          "file": "historical_release_inputs/v70/files/oracle_v5.py",
+          "sha256": "b243e223efdbe48b931dfa26bec729261885dbd0ca87a8ea07c24e5418d6ae1c"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5.py",
+          "sha256": "9da7360a760df46ffdf68d71a71661af71c86eede905fb97af1c3536572ba942"
+        }
+      ],
+      "oracle_v5_settlement.py": [
+        {
+          "file": "historical_release_inputs/v55/files/oracle_v5_settlement.py",
+          "sha256": "0144f0d6f40d7117ac54fd5f6cb59ec4f4b6034ea664500a49e66a6e5f670280"
+        },
+        {
+          "file": "historical_release_inputs/v56/files/oracle_v5_settlement.py",
+          "sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788"
+        },
+        {
+          "file": "historical_release_inputs/v70/files/oracle_v5_settlement.py",
+          "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/support/oracle_v5_settlement.py",
+          "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5_settlement.py",
+          "sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788"
+        }
+      ],
+      "oracle_v56_portfolio.py": [
+        {
+          "file": "historical_release_inputs/v56/files/oracle_v56_portfolio.py",
+          "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e"
+        },
+        {
+          "file": "historical_release_inputs/v70/files/oracle_v56_portfolio.py",
+          "sha256": "0b27b7e272db7f2506ae011d1b733f0188dfdffea28e50d6506e5d4b3524567c"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/support/oracle_v56_portfolio.py",
+          "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e"
+        },
+        {
+          "file": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v56_portfolio.py",
+          "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e"
+        }
+      ]
+    },
+    "assurance": "Only historical release inputs; no later files from current /opt/ORACLE_CORE_v11 used."
+  },
+  "archive_volume": {
+    "source": "/var/lib/docker/volumes/oracle_core_v10_oracle-archives/_data",
+    "exists": true,
+    "files": [
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2017-12.parquet",
+        "bytes": 20211,
+        "mtime_utc": "2026-10-24T16:25:36.889091+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2018-01.parquet",
+        "bytes": 20075,
+        "mtime_utc": "2026-10-25T04:27:29.046443+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2026-08.parquet",
+        "bytes": 19844,
+        "mtime_utc": "2026-10-22T10:20:37.265153+00:00",
+        "mtime_after_cutoff": false
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2018-05.parquet",
+        "bytes": 19679,
+        "mtime_utc": "2026-10-27T04:32:17.552370+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2018-03.parquet",
+        "bytes": 19669,
+        "mtime_utc": "2026-10-26T04:30:33.307860+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2018-08.parquet",
+        "bytes": 19498,
+        "mtime_utc": "2026-10-28T16:34:40.568615+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2018-07.parquet",
+        "bytes": 19479,
+        "mtime_utc": "2026-10-28T04:33:44.011038+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2017-11.parquet",
+        "bytes": 19128,
+        "mtime_utc": "2026-10-24T04:23:55.064750+00:00",
+        "mtime_after_cutoff": false
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2017-10.parquet",
+        "bytes": 18965,
+        "mtime_utc": "2026-10-23T16:22:53.974863+00:00",
+        "mtime_after_cutoff": false
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2018-06.parquet",
+        "bytes": 18722,
+        "mtime_utc": "2026-10-27T16:33:09.385882+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2018-09.parquet",
+        "bytes": 18720,
+        "mtime_utc": "2026-10-29T04:35:54.465072+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2018-04.parquet",
+        "bytes": 18714,
+        "mtime_utc": "2026-10-26T16:31:52.716457+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2017-09.parquet",
+        "bytes": 18610,
+        "mtime_utc": "2026-10-23T04:21:40.915105+00:00",
+        "mtime_after_cutoff": false
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2018-03.parquet",
+        "bytes": 17939,
+        "mtime_utc": "2026-10-26T10:31:29.877677+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2017-12.parquet",
+        "bytes": 17921,
+        "mtime_utc": "2026-10-24T22:26:31.653589+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2018-01.parquet",
+        "bytes": 17880,
+        "mtime_utc": "2026-10-25T10:28:11.929880+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2018-05.parquet",
+        "bytes": 17805,
+        "mtime_utc": "2026-10-27T10:32:33.650295+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2018-08.parquet",
+        "bytes": 17740,
+        "mtime_utc": "2026-10-28T22:35:20.478629+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2018-09.parquet",
+        "bytes": 17699,
+        "mtime_utc": "2026-10-29T10:38:35.841993+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2018-07.parquet",
+        "bytes": 17453,
+        "mtime_utc": "2026-10-28T10:34:39.818685+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2018-04.parquet",
+        "bytes": 17407,
+        "mtime_utc": "2026-10-26T22:32:10.759256+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2018-02.parquet",
+        "bytes": 17398,
+        "mtime_utc": "2026-10-25T16:29:34.142011+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2017-10.parquet",
+        "bytes": 17286,
+        "mtime_utc": "2026-10-23T22:23:19.235813+00:00",
+        "mtime_after_cutoff": false
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2017-11.parquet",
+        "bytes": 17213,
+        "mtime_utc": "2026-10-24T10:24:44.951175+00:00",
+        "mtime_after_cutoff": false
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2018-06.parquet",
+        "bytes": 17105,
+        "mtime_utc": "2026-10-27T22:33:37.522696+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2017-09.parquet",
+        "bytes": 17084,
+        "mtime_utc": "2026-10-23T10:22:30.534285+00:00",
+        "mtime_after_cutoff": false
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2018-02.parquet",
+        "bytes": 15804,
+        "mtime_utc": "2026-10-25T22:29:45.605600+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "candles/binance_archive/BTCUSDT/2017-08.parquet",
+        "bytes": 10334,
+        "mtime_utc": "2026-10-22T16:21:25.826414+00:00",
+        "mtime_after_cutoff": false
+      },
+      {
+        "relative_path": "candles/binance_archive/ETHUSDT/2017-08.parquet",
+        "bytes": 9566,
+        "mtime_utc": "2026-10-22T22:21:34.628565+00:00",
+        "mtime_after_cutoff": false
+      }
+    ],
+    "limit": 1000,
+    "truncated": false,
+    "bytes": 514948,
+    "post_cutoff_mtime_count": 20
+  },
+  "data_volume": {
+    "source": "/var/lib/docker/volumes/oracle_core_v10_oracle-data/_data",
+    "exists": true,
+    "files": [
+      {
+        "relative_path": "oracle.sqlite3",
+        "bytes": 8804700160,
+        "mtime_utc": "2026-10-29T13:58:24.090924+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261029T000502876992Z.sqlite3",
+        "bytes": 8081313792,
+        "mtime_utc": "2026-10-29T00:05:26.823349+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261028T220501709482Z.sqlite3",
+        "bytes": 7986339840,
+        "mtime_utc": "2026-10-28T22:05:28.354443+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261028T000513096630Z.sqlite3",
+        "bytes": 6567878656,
+        "mtime_utc": "2026-10-28T00:05:27.608715+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261027T220504304527Z.sqlite3",
+        "bytes": 6481006592,
+        "mtime_utc": "2026-10-27T22:05:18.362320+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v85-20261026T135930Z.sqlite3",
+        "bytes": 4733325312,
+        "mtime_utc": "2026-10-26T13:59:39.987400+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261026T063227685511Z.sqlite3",
+        "bytes": 4372123648,
+        "mtime_utc": "2026-10-26T06:32:35.647684+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261025T063117820141Z.sqlite3",
+        "bytes": 2917617664,
+        "mtime_utc": "2026-10-25T06:31:22.873782+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261024T171107821444Z.sqlite3",
+        "bytes": 2126856192,
+        "mtime_utc": "2026-10-24T17:11:11.201581+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v77-20261024T163813Z.sqlite3",
+        "bytes": 2072539136,
+        "mtime_utc": "2026-10-24T16:38:16.541356+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-first-v73-settlement-20261024T153323Z.sqlite3",
+        "bytes": 1933717504,
+        "mtime_utc": "2026-10-24T15:33:26.358549+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v73-20261024T152216Z.sqlite3",
+        "bytes": 1917321216,
+        "mtime_utc": "2026-10-24T15:22:19.223855+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle.sqlite3-wal",
+        "bytes": 505153232,
+        "mtime_utc": "2026-10-29T13:58:24.776950+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle.sqlite3-shm",
+        "bytes": 983040,
+        "mtime_utc": "2026-10-29T13:58:24.428937+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle_v81_shadow.sqlite3",
+        "bytes": 151552,
+        "mtime_utc": "2026-10-29T00:05:33.330593+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261025T063117820141Z.sqlite3-shm",
+        "bytes": 32768,
+        "mtime_utc": "2026-10-27T14:35:05.947703+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v73-20261024T152216Z.sqlite3-shm",
+        "bytes": 32768,
+        "mtime_utc": "2026-10-27T14:35:05.913702+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v77-20261024T163813Z.sqlite3-shm",
+        "bytes": 32768,
+        "mtime_utc": "2026-10-27T14:35:05.925702+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v85-20261026T135930Z.sqlite3-shm",
+        "bytes": 32768,
+        "mtime_utc": "2026-10-27T14:35:05.976704+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-first-v73-settlement-20261024T153323Z.sqlite3-shm",
+        "bytes": 32768,
+        "mtime_utc": "2026-10-27T14:35:05.894701+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle_v81_shadow.sqlite3-shm",
+        "bytes": 32768,
+        "mtime_utc": "2026-10-29T13:45:01.820605+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261024T171107821444Z.sqlite3-shm",
+        "bytes": 32768,
+        "mtime_utc": "2026-10-27T14:35:05.936702+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261026T063227685511Z.sqlite3-shm",
+        "bytes": 32768,
+        "mtime_utc": "2026-10-27T14:35:05.965703+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261025T063117820141Z.sqlite3-wal",
+        "bytes": 0,
+        "mtime_utc": "2026-10-27T14:35:05.947703+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261024T171107821444Z.sqlite3-wal",
+        "bytes": 0,
+        "mtime_utc": "2026-10-27T14:35:05.936702+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle.sqlite3.fonbet-import.lock",
+        "bytes": 0,
+        "mtime_utc": "2026-10-23T21:29:40.810686+00:00",
+        "mtime_after_cutoff": false
+      },
+      {
+        "relative_path": "oracle-before-v73-20261024T152216Z.sqlite3-wal",
+        "bytes": 0,
+        "mtime_utc": "2026-10-27T14:35:05.913702+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v77-20261024T163813Z.sqlite3-wal",
+        "bytes": 0,
+        "mtime_utc": "2026-10-27T14:35:05.925702+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v85-20261026T135930Z.sqlite3-wal",
+        "bytes": 0,
+        "mtime_utc": "2026-10-27T14:35:05.976704+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-first-v73-settlement-20261024T153323Z.sqlite3-wal",
+        "bytes": 0,
+        "mtime_utc": "2026-10-27T14:35:05.894701+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle-before-v79-20261026T063227685511Z.sqlite3-wal",
+        "bytes": 0,
+        "mtime_utc": "2026-10-27T14:35:05.965703+00:00",
+        "mtime_after_cutoff": true
+      },
+      {
+        "relative_path": "oracle_v81_shadow.sqlite3-wal",
+        "bytes": 0,
+        "mtime_utc": "2026-10-29T13:05:35.631521+00:00",
+        "mtime_after_cutoff": true
+      }
+    ],
+    "limit": 300,
+    "truncated": false,
+    "bytes": 58501289680,
+    "post_cutoff_mtime_count": 31
+  },
+  "disk_free_bytes": 44640210944,
+  "blocks": [
+    "No original historical code executed or patched",
+    "Full database SHA-256 and PRAGMA quick_check not performed in bounded-IO mode",
+    "Large table row counts are capped at 1000 records; AT_LEAST_1001 is a lower bound",
+    "No evidence that archive mtime implies prediction-time availability",
+    "No copied production archive volume; 54GiB data volume contains backups, copying prohibited",
+    "No docker/systemd/service changes or live provider/API calls",
+    "Historical 743 predictions will not be modified by late 233 outcomes",
+    "Runtime equivalence not yet certified and EVA not running"
+  ],
+  "next": "Build isolated original-code import graph and validate original dependencies using selected SHA variants; then safe artifact-level archive selection."
+}

@@ -1,0 +1,291 @@
+{
+  "version": "ORACLE_EVA_V0_9_1_HISTORICAL_STACK_CANDIDATE",
+  "created_utc": "2026-10-30T09:58:58.247887+00:00",
+  "status": "CANDIDATE_ARCHIVE_HASH_VERIFIED_OFFLINE",
+  "source_stage_manifest_mode": "HISTORIC_SOURCE_STAGING_ONLY",
+  "staged_python_audit": {
+    "source_python_verified": 52,
+    "fixtures_excluded": 32,
+    "content_identical_aliases": 0,
+    "application_modules": 20
+  },
+  "v55_py_files": 5,
+  "v56_py_files": 5,
+  "v70_py_files": 10,
+  "provider_sha256_verified": 5,
+  "alternative_sha256_verified": 7,
+  "archive_origins": [
+    {
+      "module": "sports_free.py",
+      "sha256": "2f798427c55ad0efdc9366aef0c046c683bb66212569489b21435b6c6d211d64",
+      "archive": "/root/ORACLE_V_5_0.zip",
+      "member": "files/sports_free.py",
+      "role": "PROPOSED_PROVIDER_NOT_ATTESTED_RUNTIME"
+    },
+    {
+      "module": "oracle_sports_brain.py",
+      "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+      "archive": "/root/ORACLE_V_5_0.zip",
+      "member": "files/oracle_sports_brain.py",
+      "role": "PROPOSED_PROVIDER_NOT_ATTESTED_RUNTIME"
+    },
+    {
+      "module": "oracle_v4_sports.py",
+      "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+      "archive": "/root/ORACLE_V4_COMBINED.zip",
+      "member": "files/oracle_v4_sports.py",
+      "role": "PROPOSED_PROVIDER_NOT_ATTESTED_RUNTIME"
+    },
+    {
+      "module": "oracle_fonbet_full.py",
+      "sha256": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1",
+      "archive": "/root/ORACLE_FONBET_LOCKFIX_V4.zip",
+      "member": "files/oracle_fonbet_full.py",
+      "role": "PROPOSED_PROVIDER_NOT_ATTESTED_RUNTIME"
+    },
+    {
+      "module": "oracle_odds_hub.py",
+      "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+      "archive": "/root/ORACLE_FONBET_DIRECT_V4.zip",
+      "member": "files/oracle_odds_hub.py",
+      "role": "PROPOSED_PROVIDER_NOT_ATTESTED_RUNTIME"
+    }
+  ],
+  "v55_app_static": {
+    "files": [
+      {
+        "file": "install.py",
+        "sha256": "b3502381d39ca9de21fe593dcc665d177815b5c534c1c735e6daaffe16376a89",
+        "bytes": 8491
+      },
+      {
+        "file": "oracle_v4.py",
+        "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54",
+        "bytes": 9593
+      },
+      {
+        "file": "oracle_v5_settlement.py",
+        "sha256": "0144f0d6f40d7117ac54fd5f6cb59ec4f4b6034ea664500a49e66a6e5f670280",
+        "bytes": 13641
+      },
+      {
+        "file": "oracle_v5.py",
+        "sha256": "1bebdf415ca9410cfddebefbe905675704dc349a6d21ecbbf85daf8f200ec860",
+        "bytes": 78710
+      },
+      {
+        "file": "oracle_console.py",
+        "sha256": "c9bf4a71014f2c55a19af2ea14aa6721a37d06035432b10a944ee670ec665183",
+        "bytes": 30881
+      },
+      {
+        "file": "sports_free.py",
+        "sha256": "2f798427c55ad0efdc9366aef0c046c683bb66212569489b21435b6c6d211d64",
+        "bytes": 25447
+      },
+      {
+        "file": "oracle_sports_brain.py",
+        "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+        "bytes": 27692
+      },
+      {
+        "file": "oracle_v4_sports.py",
+        "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+        "bytes": 19338
+      },
+      {
+        "file": "oracle_fonbet_full.py",
+        "sha256": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1",
+        "bytes": 24312
+      },
+      {
+        "file": "oracle_odds_hub.py",
+        "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+        "bytes": 23037
+      }
+    ],
+    "imports": {
+      "install.py": {
+        "local": [],
+        "external_or_unresolved": []
+      },
+      "oracle_v4.py": {
+        "local": [
+          "oracle_fonbet_full",
+          "oracle_odds_hub",
+          "oracle_sports_brain",
+          "oracle_v4_sports",
+          "oracle_v5"
+        ],
+        "external_or_unresolved": [
+          "oracle_causal",
+          "oracle_equities",
+          "oracle_fonbet_bridge",
+          "oracle_library",
+          "oracle_open_sources",
+          "oracle_v4_bookies",
+          "oracle_v4_books",
+          "oracle_v4_discovery",
+          "oracle_v4_fulltext",
+          "oracle_v4_learning"
+        ]
+      },
+      "oracle_v5_settlement.py": {
+        "local": [
+          "oracle_v5"
+        ],
+        "external_or_unresolved": []
+      },
+      "oracle_v5.py": {
+        "local": [],
+        "external_or_unresolved": [
+          "oracle_fonbet_bridge"
+        ]
+      },
+      "oracle_console.py": {
+        "local": [
+          "oracle_sports_brain",
+          "oracle_v4",
+          "oracle_v5"
+        ],
+        "external_or_unresolved": [
+          "dashboard",
+          "oracle_operations",
+          "oracle_presignal",
+          "oracle_profit",
+          "oracle_rosterlab",
+          "oracle_scorecard",
+          "oracle_universe"
+        ]
+      },
+      "sports_free.py": {
+        "local": [
+          "oracle_v4"
+        ],
+        "external_or_unresolved": []
+      },
+      "oracle_sports_brain.py": {
+        "local": [],
+        "external_or_unresolved": []
+      },
+      "oracle_v4_sports.py": {
+        "local": [],
+        "external_or_unresolved": []
+      },
+      "oracle_fonbet_full.py": {
+        "local": [],
+        "external_or_unresolved": []
+      },
+      "oracle_odds_hub.py": {
+        "local": [],
+        "external_or_unresolved": []
+      }
+    },
+    "external_or_unresolved": [
+      "dashboard",
+      "oracle_causal",
+      "oracle_equities",
+      "oracle_fonbet_bridge",
+      "oracle_library",
+      "oracle_open_sources",
+      "oracle_operations",
+      "oracle_presignal",
+      "oracle_profit",
+      "oracle_rosterlab",
+      "oracle_scorecard",
+      "oracle_universe",
+      "oracle_v4_bookies",
+      "oracle_v4_books",
+      "oracle_v4_discovery",
+      "oracle_v4_fulltext",
+      "oracle_v4_learning"
+    ],
+    "production_reference_strings": [
+      {
+        "module": "install.py",
+        "literal": "/opt/ORACLE_CORE_v11"
+      },
+      {
+        "module": "install.py",
+        "literal": "/var/lib/docker/volumes/oracle_core_v10"
+      },
+      {
+        "module": "install.py",
+        "literal": "oracle_core_v10"
+      }
+    ]
+  },
+  "historical_runtime_exact_identity_proven": false,
+  "data_feed_runtime_compatibility_proven": false,
+  "policy_attached_to_generator": false,
+  "ready_to_start": false,
+  "real_wagers": 0,
+  "production_modified": false,
+  "historical_baselines_verified_from_v07": {
+    "frozen_233": {
+      "bets": 233,
+      "wins": 96,
+      "losses": 137,
+      "net_usd": 96.5,
+      "unique_matches": 39
+    },
+    "original_223_baseline": {
+      "bets": 150,
+      "wins": 79,
+      "losses": 71,
+      "net_usd": 223.0,
+      "unique_matches": 34
+    },
+    "current_user_policy_243_40": {
+      "bets": 117,
+      "wins": 64,
+      "losses": 53,
+      "net_usd": 243.4,
+      "unique_matches": 30
+    },
+    "excluded_double_chance": {
+      "bets": 33,
+      "wins": 15,
+      "losses": 18,
+      "net_usd": -20.4,
+      "unique_matches": 15
+    },
+    "first_206_odds_kept": {
+      "bets": 127,
+      "wins": 63,
+      "losses": 64,
+      "net_usd": 101.5,
+      "unique_matches": 33
+    },
+    "last_27_odds_kept": {
+      "bets": 23,
+      "wins": 16,
+      "losses": 7,
+      "net_usd": 121.5,
+      "unique_matches": 8
+    },
+    "unique_match_market_selection_odds_created_combinations": 75,
+    "duplicate_experiment_rows_by_that_key": 75
+  },
+  "policy_intent": {
+    "paper_only": true,
+    "odds_min": 1.7,
+    "odds_max": 3.5,
+    "exclude_double_chance": true,
+    "exclude_home_away": false,
+    "never_reactivate_historic_pending": true
+  },
+  "startup_blockers": [
+    "Reconstruct original V5.5 invocation and runtime environment without production paths",
+    "Verify historical schema and missing runtime dependencies without writing to historical input DB",
+    "Wire prospective-only policy into old generator and test on isolated new SQLite",
+    "Identify original 24-25 October runtime hashes (archive identity != running process identity)",
+    "Choose independent feeds/schedules, isolated new data and verify no outbound real trading"
+  ],
+  "notes": [
+    "ZIP archives match exact SHA shown in VPS inventory, but not necessarily the 24 October runtime.",
+    "V5.5 historical sources are copied SHA-verified from EVA staging only.",
+    "V5.6 and V7.0 remain namespaced apart to avoid accidental later-version overlays.",
+    "No known-match outcome is used to choose provider variants."
+  ]
+}

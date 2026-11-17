@@ -1,0 +1,574 @@
+{
+  "version": "EVA_V1_2_NATIVE_PROSPECTIVE_FIXTURE",
+  "created_utc": "2026-10-30T10:48:17.532525+00:00",
+  "historical_sources_verified": 9,
+  "original_sources_total": 10,
+  "provenance": "SHA_VERIFIED_SOURCE_HYPOTHESIS_NOT_24_OCT_RUNTIME_ATTESTATION",
+  "benchmark_original_223_usd": 223.0,
+  "benchmark_without_dc_usd": 243.4,
+  "odds_range_inclusive": [
+    1.7,
+    3.5
+  ],
+  "exclude_double_chance": true,
+  "home_away_filter": false,
+  "production_modified": false,
+  "historical_sqlite_opened": false,
+  "historical_pending_reactivated": false,
+  "generator_started": false,
+  "forecast_produced": false,
+  "real_bets": 0,
+  "notes": [
+    "Six isolated in-memory native-prepare fixture cases, no network, production mounts or history.",
+    "Original prepare() must actually insert prospective synthetic paper bets for valid cases.",
+    "SQL TEMP trigger applies to same native-prepare connection; it is NOT installed into persistent EVA.",
+    "No source data feed, live events, model training, settlement, real bets or crypto run.",
+    "Any native zero-insertion of valid synthetic cases is BLOCKED, never PASS."
+  ],
+  "python_container_image": "python:3.12-alpine",
+  "smoke": {
+    "state": "PASS",
+    "runtime_test_passed": true,
+    "exit_code": 0,
+    "detail": {
+      "database": "ONLY_SQLITE_MEMORY",
+      "external_orders": false,
+      "historical_db_opened": false,
+      "kind": "ORACLE_EVA_V120_CONTAINER_NATIVE_FIXTURE",
+      "module_imports": {
+        "oracle_fonbet_full": "IMPORTED",
+        "oracle_odds_hub": "IMPORTED",
+        "oracle_sports_brain": "IMPORTED",
+        "oracle_v4_sports": "IMPORTED",
+        "oracle_v5": "IMPORTED",
+        "oracle_v5_settlement": "IMPORTED",
+        "sports_free": "IMPORTED"
+      },
+      "native_cases": {
+        "reject_3_51": {
+          "exception": "IntegrityError: EVA_ODDS_OUT_OF_RANGE",
+          "expected_record": false,
+          "generated_forecast_id_matches": true,
+          "generated_rows": [],
+          "native_invoked": true,
+          "native_sql_trace": [
+            "SELECT 1 FROM sqlite_master WHERE name='fb_full_history' AND type='table'",
+            "SELECT id,root_id,original_event_id,origin,market,selection, probability,price,quote_key,quote_snapshot,kickoff_utc,created_at FROM v5_forecasts WHERE root_id IS NOT NULL AND price_status='PRICE_ATTACHED_TIME_VALID' AND kickoff_utc>'2026-10-30T10:48:21+00:00' AND probability IS N",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_reject_3_51','eva12_reject_3_51','eva12_event_reject_3_51','s",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_reject_3_51','eva12_reject_3_51','eva12_event_reject_3_51','s",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_reject_3_51','eva12_reject_3_51','eva12_event_reject_3_51','s",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_reject_3_51','eva12_reject_3_51','eva12_event_reject_3_51','s"
+          ],
+          "native_state": "EXCEPTION",
+          "pass": true,
+          "records_after": 0,
+          "seed_columns": {
+            "catalog": [
+              "active_quotes",
+              "away",
+              "home",
+              "kickoff_utc",
+              "league",
+              "market_codes",
+              "nested_events",
+              "packet_at",
+              "packet_version",
+              "place",
+              "quote_status",
+              "root_exists",
+              "root_id",
+              "sport",
+              "updated_at"
+            ],
+            "forecast": [
+              "away",
+              "created_at",
+              "details_json",
+              "evaluated_at",
+              "home",
+              "id",
+              "kickoff_utc",
+              "league",
+              "market",
+              "match_date",
+              "match_rule",
+              "model",
+              "origin",
+              "original_event_id",
+              "price",
+              "price_status",
+              "probability",
+              "quote_key",
+              "quote_snapshot",
+              "root_id",
+              "selection",
+              "sport"
+            ]
+          },
+          "state": "PASS"
+        },
+        "reject_double_chance": {
+          "exception": "IntegrityError: EVA_DOUBLE_CHANCE_FORBIDDEN",
+          "expected_record": false,
+          "generated_forecast_id_matches": true,
+          "generated_rows": [],
+          "native_invoked": true,
+          "native_sql_trace": [
+            "SELECT 1 FROM sqlite_master WHERE name='fb_full_history' AND type='table'",
+            "SELECT id,root_id,original_event_id,origin,market,selection, probability,price,quote_key,quote_snapshot,kickoff_utc,created_at FROM v5_forecasts WHERE root_id IS NOT NULL AND price_status='PRICE_ATTACHED_TIME_VALID' AND kickoff_utc>'2026-10-30T10:48:21+00:00' AND probability IS N",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_reject_double_chance','eva12_reject_double_chance','eva12_eve",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_reject_double_chance','eva12_reject_double_chance','eva12_eve",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_reject_double_chance','eva12_reject_double_chance','eva12_eve",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_reject_double_chance','eva12_reject_double_chance','eva12_eve",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_reject_double_chance','eva12_reject_double_chance','eva12_eve",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_reject_double_chance','eva12_reject_double_chance','eva12_eve"
+          ],
+          "native_state": "EXCEPTION",
+          "pass": true,
+          "records_after": 0,
+          "seed_columns": {
+            "catalog": [
+              "active_quotes",
+              "away",
+              "home",
+              "kickoff_utc",
+              "league",
+              "market_codes",
+              "nested_events",
+              "packet_at",
+              "packet_version",
+              "place",
+              "quote_status",
+              "root_exists",
+              "root_id",
+              "sport",
+              "updated_at"
+            ],
+            "forecast": [
+              "away",
+              "created_at",
+              "details_json",
+              "evaluated_at",
+              "home",
+              "id",
+              "kickoff_utc",
+              "league",
+              "market",
+              "match_date",
+              "match_rule",
+              "model",
+              "origin",
+              "original_event_id",
+              "price",
+              "price_status",
+              "probability",
+              "quote_key",
+              "quote_snapshot",
+              "root_id",
+              "selection",
+              "sport"
+            ]
+          },
+          "state": "PASS"
+        },
+        "reject_retro_kickoff": {
+          "expected_record": false,
+          "generated_forecast_id_matches": true,
+          "generated_rows": [],
+          "native_invoked": true,
+          "native_return": "{'state': 'OK', 'new_forward_paper_experiments': 0, 'eligible_candidates': 0, 'fixed_stake_usd': 10.0, 'min_odds': 1.7, 'minimum_raw_ev_pct': 0.0, 'no_real_orders': True, 'retroactive_bets_forbidden': True}",
+          "native_sql_trace": [
+            "SELECT 1 FROM sqlite_master WHERE name='fb_full_history' AND type='table'",
+            "SELECT id,root_id,original_event_id,origin,market,selection, probability,price,quote_key,quote_snapshot,kickoff_utc,created_at FROM v5_forecasts WHERE root_id IS NOT NULL AND price_status='PRICE_ATTACHED_TIME_VALID' AND kickoff_utc>'2026-10-30T10:48:21+00:00' AND probability IS N"
+          ],
+          "native_state": "RETURNED",
+          "pass": true,
+          "records_after": 0,
+          "seed_columns": {
+            "catalog": [
+              "active_quotes",
+              "away",
+              "home",
+              "kickoff_utc",
+              "league",
+              "market_codes",
+              "nested_events",
+              "packet_at",
+              "packet_version",
+              "place",
+              "quote_status",
+              "root_exists",
+              "root_id",
+              "sport",
+              "updated_at"
+            ],
+            "forecast": [
+              "away",
+              "created_at",
+              "details_json",
+              "evaluated_at",
+              "home",
+              "id",
+              "kickoff_utc",
+              "league",
+              "market",
+              "match_date",
+              "match_rule",
+              "model",
+              "origin",
+              "original_event_id",
+              "price",
+              "price_status",
+              "probability",
+              "quote_key",
+              "quote_snapshot",
+              "root_id",
+              "selection",
+              "sport"
+            ]
+          },
+          "state": "PASS"
+        },
+        "valid_3_50": {
+          "expected_record": true,
+          "generated_forecast_id_matches": true,
+          "generated_rows": [
+            {
+              "market": "1X2",
+              "odds": 3.5,
+              "selection": "П1",
+              "state": "PENDING"
+            }
+          ],
+          "native_invoked": true,
+          "native_return": "{'state': 'OK', 'new_forward_paper_experiments': 1, 'eligible_candidates': 1, 'fixed_stake_usd': 10.0, 'min_odds': 1.7, 'minimum_raw_ev_pct': 0.0, 'no_real_orders': True, 'retroactive_bets_forbidden': True}",
+          "native_sql_trace": [
+            "SELECT 1 FROM sqlite_master WHERE name='fb_full_history' AND type='table'",
+            "SELECT id,root_id,original_event_id,origin,market,selection, probability,price,quote_key,quote_snapshot,kickoff_utc,created_at FROM v5_forecasts WHERE root_id IS NOT NULL AND price_status='PRICE_ATTACHED_TIME_VALID' AND kickoff_utc>'2026-10-30T10:48:21+00:00' AND probability IS N",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_3_50','eva12_valid_3_50','eva12_event_valid_3_50','sf_f",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_3_50','eva12_valid_3_50','eva12_event_valid_3_50','sf_f",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_3_50','eva12_valid_3_50','eva12_event_valid_3_50','sf_f",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_3_50','eva12_valid_3_50','eva12_event_valid_3_50','sf_f",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_3_50','eva12_valid_3_50','eva12_event_valid_3_50','sf_f",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_3_50','eva12_valid_3_50','eva12_event_valid_3_50','sf_f",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_3_50','eva12_valid_3_50','eva12_event_valid_3_50','sf_f",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_3_50','eva12_valid_3_50','eva12_event_valid_3_50','sf_f"
+          ],
+          "native_state": "RETURNED",
+          "pass": true,
+          "records_after": 1,
+          "seed_columns": {
+            "catalog": [
+              "active_quotes",
+              "away",
+              "home",
+              "kickoff_utc",
+              "league",
+              "market_codes",
+              "nested_events",
+              "packet_at",
+              "packet_version",
+              "place",
+              "quote_status",
+              "root_exists",
+              "root_id",
+              "sport",
+              "updated_at"
+            ],
+            "forecast": [
+              "away",
+              "created_at",
+              "details_json",
+              "evaluated_at",
+              "home",
+              "id",
+              "kickoff_utc",
+              "league",
+              "market",
+              "match_date",
+              "match_rule",
+              "model",
+              "origin",
+              "original_event_id",
+              "price",
+              "price_status",
+              "probability",
+              "quote_key",
+              "quote_snapshot",
+              "root_id",
+              "selection",
+              "sport"
+            ]
+          },
+          "state": "PASS"
+        },
+        "valid_P1": {
+          "expected_record": true,
+          "generated_forecast_id_matches": true,
+          "generated_rows": [
+            {
+              "market": "1X2",
+              "odds": 2.2,
+              "selection": "П1",
+              "state": "PENDING"
+            }
+          ],
+          "native_invoked": true,
+          "native_return": "{'state': 'OK', 'new_forward_paper_experiments': 1, 'eligible_candidates': 1, 'fixed_stake_usd': 10.0, 'min_odds': 1.7, 'minimum_raw_ev_pct': 0.0, 'no_real_orders': True, 'retroactive_bets_forbidden': True}",
+          "native_sql_trace": [
+            "SELECT 1 FROM sqlite_master WHERE name='fb_full_history' AND type='table'",
+            "SELECT id,root_id,original_event_id,origin,market,selection, probability,price,quote_key,quote_snapshot,kickoff_utc,created_at FROM v5_forecasts WHERE root_id IS NOT NULL AND price_status='PRICE_ATTACHED_TIME_VALID' AND kickoff_utc>'2026-10-30T10:48:21+00:00' AND probability IS N",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P1','eva12_valid_P1','eva12_event_valid_P1','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P1','eva12_valid_P1','eva12_event_valid_P1','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P1','eva12_valid_P1','eva12_event_valid_P1','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P1','eva12_valid_P1','eva12_event_valid_P1','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P1','eva12_valid_P1','eva12_event_valid_P1','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P1','eva12_valid_P1','eva12_event_valid_P1','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P1','eva12_valid_P1','eva12_event_valid_P1','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P1','eva12_valid_P1','eva12_event_valid_P1','sf_forecas"
+          ],
+          "native_state": "RETURNED",
+          "pass": true,
+          "records_after": 1,
+          "seed_columns": {
+            "catalog": [
+              "active_quotes",
+              "away",
+              "home",
+              "kickoff_utc",
+              "league",
+              "market_codes",
+              "nested_events",
+              "packet_at",
+              "packet_version",
+              "place",
+              "quote_status",
+              "root_exists",
+              "root_id",
+              "sport",
+              "updated_at"
+            ],
+            "forecast": [
+              "away",
+              "created_at",
+              "details_json",
+              "evaluated_at",
+              "home",
+              "id",
+              "kickoff_utc",
+              "league",
+              "market",
+              "match_date",
+              "match_rule",
+              "model",
+              "origin",
+              "original_event_id",
+              "price",
+              "price_status",
+              "probability",
+              "quote_key",
+              "quote_snapshot",
+              "root_id",
+              "selection",
+              "sport"
+            ]
+          },
+          "state": "PASS"
+        },
+        "valid_P2": {
+          "expected_record": true,
+          "generated_forecast_id_matches": true,
+          "generated_rows": [
+            {
+              "market": "1X2",
+              "odds": 2.1,
+              "selection": "П2",
+              "state": "PENDING"
+            }
+          ],
+          "native_invoked": true,
+          "native_return": "{'state': 'OK', 'new_forward_paper_experiments': 1, 'eligible_candidates': 1, 'fixed_stake_usd': 10.0, 'min_odds': 1.7, 'minimum_raw_ev_pct': 0.0, 'no_real_orders': True, 'retroactive_bets_forbidden': True}",
+          "native_sql_trace": [
+            "SELECT 1 FROM sqlite_master WHERE name='fb_full_history' AND type='table'",
+            "SELECT id,root_id,original_event_id,origin,market,selection, probability,price,quote_key,quote_snapshot,kickoff_utc,created_at FROM v5_forecasts WHERE root_id IS NOT NULL AND price_status='PRICE_ATTACHED_TIME_VALID' AND kickoff_utc>'2026-10-30T10:48:21+00:00' AND probability IS N",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P2','eva12_valid_P2','eva12_event_valid_P2','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P2','eva12_valid_P2','eva12_event_valid_P2','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P2','eva12_valid_P2','eva12_event_valid_P2','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P2','eva12_valid_P2','eva12_event_valid_P2','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P2','eva12_valid_P2','eva12_event_valid_P2','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P2','eva12_valid_P2','eva12_event_valid_P2','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P2','eva12_valid_P2','eva12_event_valid_P2','sf_forecas",
+            "INSERT OR IGNORE INTO v55_paper( forecast_id,root_id,original_event_id,origin,market,selection, probability,odds,stake,quote_key,quote_at,kickoff_utc,registered_at, expected_ev_pct,status,reason) VALUES('eva12_forecast_valid_P2','eva12_valid_P2','eva12_event_valid_P2','sf_forecas"
+          ],
+          "native_state": "RETURNED",
+          "pass": true,
+          "records_after": 1,
+          "seed_columns": {
+            "catalog": [
+              "active_quotes",
+              "away",
+              "home",
+              "kickoff_utc",
+              "league",
+              "market_codes",
+              "nested_events",
+              "packet_at",
+              "packet_version",
+              "place",
+              "quote_status",
+              "root_exists",
+              "root_id",
+              "sport",
+              "updated_at"
+            ],
+            "forecast": [
+              "away",
+              "created_at",
+              "details_json",
+              "evaluated_at",
+              "home",
+              "id",
+              "kickoff_utc",
+              "league",
+              "market",
+              "match_date",
+              "match_rule",
+              "model",
+              "origin",
+              "original_event_id",
+              "price",
+              "price_status",
+              "probability",
+              "quote_key",
+              "quote_snapshot",
+              "root_id",
+              "selection",
+              "sport"
+            ]
+          },
+          "state": "PASS"
+        }
+      },
+      "network": "DOCKER_NETWORK_NONE",
+      "outcome": "PASS",
+      "persistent_generator_started": false,
+      "policy_contract": {
+        "accepted_synthetic_rows": 3,
+        "cases": {
+          "double_chance_cyrillic": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "double_chance_market": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "double_chance_selection": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "double_chance_titlecase": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "future_registration": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "invalid_probability": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "quote_after_registration": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "retro_after_kickoff": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "retro_registered_after_kickoff": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "settled_not_pending": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "too_high_odds": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "too_low_odds": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "valid_P1": {
+            "allowed": true,
+            "expected": true,
+            "pass": true
+          },
+          "valid_P2": {
+            "allowed": true,
+            "expected": true,
+            "pass": true
+          },
+          "valid_odds_3_50": {
+            "allowed": true,
+            "expected": true,
+            "pass": true
+          }
+        },
+        "engine_guard_installed": false,
+        "historic_pending_imported": false,
+        "state": "PASS"
+      },
+      "settlement_schema": {
+        "present_tables": [
+          "v55_paper",
+          "v5_catalog",
+          "v5_forecasts"
+        ],
+        "state": "PASS",
+        "v5_forecast_columns": [
+          "away",
+          "created_at",
+          "details_json",
+          "evaluated_at",
+          "home",
+          "id",
+          "kickoff_utc",
+          "league",
+          "market",
+          "match_date",
+          "match_rule",
+          "model",
+          "origin",
+          "original_event_id",
+          "price",
+          "price_status",
+          "probability",
+          "quote_key",
+          "quote_snapshot",
+          "root_id",
+          "selection",
+          "sport"
+        ]
+      },
+      "synthetic_inputs_only": true
+    }
+  },
+  "ready_to_start": false
+}

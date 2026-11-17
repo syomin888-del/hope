@@ -1,0 +1,25 @@
+{
+  "version": "EVA_SPORTS_ODDS_POLICY_1",
+  "scope": "ORACLE_EVA_ONLY",
+  "paper_research_only": true,
+  "min_odds_inclusive": "1.70",
+  "max_odds_inclusive": "3.50",
+  "reject_odds_above": "3.50",
+  "applies_to": [
+    "future_sports_paper_candidate_acceptance",
+    "future_sports_portfolio_selection",
+    "sports_backtest_filtered_reporting",
+    "sports_signal_analysis"
+  ],
+  "does_not_apply_to": [
+    "crypto_market_indicators",
+    "raw_bookmaker_quote_archive",
+    "raw_sports_event_archive"
+  ],
+  "historical_forecasts": "PRESERVE_IMMUTABLE; analytic inclusion by policy, never delete or rewrite",
+  "guard_module": "eva_odds_guard.py",
+  "runtime_guard_activation": "REQUIRED_BEFORE_EVA_ENGINE_START",
+  "runtime_wiring_verified": false,
+  "status": "STAGED_MANDATORY_POLICY_NOT_YET_BOUND_TO_OFFLINE_ENGINE",
+  "real_orders": 0
+}

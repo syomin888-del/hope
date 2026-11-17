@@ -1,0 +1,23 @@
+{
+  "version": "EVA_V1_4",
+  "state": "LIVE_FIXTURE_OBSERVATIONS_ONLY_NO_ODDS_NO_PREDICTIONS",
+  "provider_url": "https://api.openligadb.de/getmatchdata/bl1/2026",
+  "provider": "OPENLIGADB_BL1_2026_FUTURE_FIXTURES",
+  "scope": "bl1 2026/27, next 45 days",
+  "first_run": {
+    "run_id": "run_20261030T121110Z_62013f08",
+    "observed_utc": "2026-10-30T12:11:10+00:00",
+    "upcoming": 54,
+    "total_upstream": 306,
+    "raw_sha256": "b725c2f3e30a3320f75da9891a2cfd2b5b93aed231da16aab253cf81a6bd6b46",
+    "raw_file": "raw/run_20261030T121110Z_62013f08.json"
+  },
+  "raw_provenance_retained": true,
+  "historical_modules_executed": false,
+  "v130_db_changed": false,
+  "v55_paper_entries_created": 0,
+  "automated_schedule": false,
+  "bookmaker_odds_present": false,
+  "real_bets": 0,
+  "production_accessed": false
+}

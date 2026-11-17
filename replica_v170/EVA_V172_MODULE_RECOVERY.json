@@ -1,0 +1,51 @@
+{
+  "version": "1.7.2",
+  "state": "HISTORICAL_DEPENDENCIES_REPAIRED",
+  "installed_modules": [
+    {
+      "priority": 1000,
+      "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa",
+      "origin": "/root/ORACLE_V5_5_MAJOR/tests/fixtures/oracle_fonbet_bridge.py#sha256-pinned",
+      "module": "oracle_fonbet_bridge.py"
+    },
+    {
+      "priority": 101,
+      "sha256": "b590c75c076a3a4b57a9a5a0480dec09a2c5c38b4f6fccec37c6cbf2814b9297",
+      "origin": "ORACLE_UNIFIED_v23.zip!ORACLE_UNIFIED_v23/oracle_operations.py",
+      "module": "oracle_operations.py"
+    },
+    {
+      "sha256": "2e7d475c08ec03a9c72e63b6b11230dee3cd2a84b3080c0ca5973618322b107d",
+      "origin": "PRE_AGENT_ARCHIVE:ORACLE_TRIAGE_v251.zip!ORACLE_TRIAGE_v251/oracle_presignal.py",
+      "priority": 40,
+      "provenance": "ORACLE_PRE_AGENT_RESERVE_24_ARCHIVES.zip - verified preserved release archive; not active production source",
+      "module": "oracle_presignal.py"
+    },
+    {
+      "sha256": "2277660b511c782efe56ca020a458a7c24612d218549b773aff84dd887c19a65",
+      "origin": "PRE_AGENT_ARCHIVE:ORACLE_PRESIGNAL_v25.zip!ORACLE_PRESIGNAL_v25/oracle_rosterlab.py",
+      "priority": 40,
+      "provenance": "ORACLE_PRE_AGENT_RESERVE_24_ARCHIVES.zip - verified preserved release archive; not active production source",
+      "module": "oracle_rosterlab.py"
+    },
+    {
+      "sha256": "1564962dfff8b722643cc6f0777ae0362110c9f0aa7ea7b3a6712e5e9c56c16c",
+      "origin": "PRE_AGENT_ARCHIVE:ORACLE_UNIVERSE_v26.zip!ORACLE_UNIVERSE_v26/oracle_universe.py",
+      "priority": 40,
+      "provenance": "ORACLE_PRE_AGENT_RESERVE_24_ARCHIVES.zip - verified preserved release archive; not active production source",
+      "module": "oracle_universe.py"
+    },
+    {
+      "priority": 12,
+      "sha256": "df4de2acf33c20eec88bc771764d78a3b8330e021bfb81b00baadeab6e10f13e",
+      "origin": "ORACLE_V4_COMBINED.zip!files/oracle_v4_discovery.py",
+      "module": "oracle_v4_discovery.py"
+    }
+  ],
+  "tmpfs_limit_mib": 512,
+  "original_algorithms_unchanged": true,
+  "original_legacy_base_db_not_replaced": true,
+  "production_writes": 0,
+  "scheduler_started": false,
+  "pre_activation_host_disk_gib": 22.754
+}

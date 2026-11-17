@@ -1,0 +1,86 @@
+{
+  "at": "2026-11-17T09:09:25+00:00",
+  "bridge_settled": {
+    "backups_created": 0,
+    "newly_closed": 0,
+    "state": "NO_NEW_CONFIRMED_RESULTS"
+  },
+  "paper_only": true,
+  "production_modified": false,
+  "real_orders": 0,
+  "rejections": {
+    "NO_SUPPORTED_IDENTIFIED_FOOTBALL_EVENT": 215,
+    "TSDB_NOT_FOUND": 212
+  },
+  "request_limits": {
+    "espn_suppressed": 39,
+    "tsdb_days_suppressed": 0
+  },
+  "scheduler": "EVERY_3_HOURS",
+  "source_errors": [
+    {
+      "day": "2026-11-03",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-05",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-06",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-07",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-08",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-09",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    }
+  ],
+  "source_requests": 52,
+  "status": {
+    "paper": {
+      "FUTURE_PENDING": 205,
+      "OTHER_EVA_LEGACY_ARCHIVED": 743,
+      "PAST_DUE_PENDING": 222,
+      "PRE_V3_SETTLEMENT": 39,
+      "V3_AS_RECORDED_SIMULATION": 363
+    },
+    "pnl_separated": {
+      "PRE_V3_SETTLEMENT": {
+        "net_usd": 31.2,
+        "roi_pct": 8.0,
+        "rows": 39,
+        "stake_usd": 390.0
+      },
+      "V3_AS_RECORDED_SIMULATION": {
+        "net_usd": -637.9,
+        "roi_pct": -17.573,
+        "rows": 363,
+        "stake_usd": 3630.0
+      }
+    },
+    "portfolio": {
+      "EVA_LEGACY_ARCHIVED": 50,
+      "LOSS": 2,
+      "PENDING": 24,
+      "V3_AS_RECORDED_SIMULATION": 1
+    },
+    "real_orders": 0
+  },
+  "ui_modified": false,
+  "unverified_odds_disclosed": true,
+  "v3_processed_first": true
+}

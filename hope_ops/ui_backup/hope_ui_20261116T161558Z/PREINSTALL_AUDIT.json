@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-31T08:04:16.316823+00:00",
+  "target_preexisting": false,
+  "unit_preexisting": false,
+  "db_backed_up": false,
+  "reason": "NO_SQLITE_CHANGES; NO_EXISTING_UI_FILES",
+  "source_hash": {
+    "hope_server.py": "7709d176e674105cc5a2376d8dae07cad990a005eca381b61a5f6f4235dd8247",
+    "index.html": "11fe25cca80a82516a5d5193c34ee39e45c7bdb76c2459f2ed6c78eb0872797a",
+    "style.css": "e3839947fad5f7b2d1d32f863202bf21a437fc698d70f9c0bfe2752c5d34d7ca",
+    "app.js": "e9d36d8718fa56e2cb07f3b3055494270c9f8ba79a2a0dd22bcc075f2c049a8a"
+  }
+}

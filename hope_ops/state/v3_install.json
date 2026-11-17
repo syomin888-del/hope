@@ -1,0 +1,6 @@
+{
+  "previous_service": "# HOPE V2 isolated EVA reconciliation (no UI modifications)\n[Unit]\nDescription=HOPE EVA three-hour lifecycle reconciliation\nAfter=docker.service network-online.target\nWants=network-online.target\n[Service]\nType=oneshot\nUser=root\nWorkingDirectory=/opt/ORACLE_EVA/hope_ops/releases/v2_0_three_hour_reconciliation\nExecStart=/usr/bin/python3 /opt/ORACLE_EVA/hope_ops/releases/v2_0_three_hour_reconciliation/cycle.py run\nUMask=0077\nNoNewPrivileges=true\nTimeoutStartSec=2700\n",
+  "previous_timer": "# HOPE V2 isolated EVA, UTC 00,03,06,09,12,15,18,21\n[Unit]\nDescription=HOPE EVA every-three-hours reconciliation timer\n[Timer]\nUnit=oracle-hope-ops-settle.service\nOnCalendar=*-*-* 00/3:00:00 UTC\nAccuracySec=1min\nPersistent=true\nRandomizedDelaySec=0\n[Install]\nWantedBy=timers.target\n",
+  "timer_enabled_before": true,
+  "version": "HOPE_V3"
+}

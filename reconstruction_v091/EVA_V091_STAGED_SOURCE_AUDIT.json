@@ -1,0 +1,290 @@
+{
+  "source_python_verified": 52,
+  "non_python_manifest_entries": 11,
+  "fixtures_excluded": [
+    {
+      "branch": "v55",
+      "path": "historical_release_inputs/v55/tests/test_v52.py",
+      "sha256": "b12a38221dd503f0ce1f42d4fc683196ef8f054e6c9a48f9dc52940113f78081"
+    },
+    {
+      "branch": "v55",
+      "path": "historical_release_inputs/v55/tests/test_v51.py",
+      "sha256": "74a770656a503976eb6867dc2d6233952c20963e501f3e1953e80beda9f110d1"
+    },
+    {
+      "branch": "v55",
+      "path": "historical_release_inputs/v55/tests/test_v55.py",
+      "sha256": "38d069294ee89339c429de5a396dc8b58fcc3e7d1db5bad4c41a6b335a815c85"
+    },
+    {
+      "branch": "v55",
+      "path": "historical_release_inputs/v55/tests/test_v53.py",
+      "sha256": "081269fdb22f92e3f4d88f7760bfea10e1a9098bbac49387bfa2f049263a18e4"
+    },
+    {
+      "branch": "v55",
+      "path": "historical_release_inputs/v55/tests/test_v55_throughput.py",
+      "sha256": "ba34a596a842a9e68c83b70663129a1337d33281292ecf2fdae97d3e10190126"
+    },
+    {
+      "branch": "v55",
+      "path": "historical_release_inputs/v55/tests/test_v54.py",
+      "sha256": "ddb75ea61f40e2f8032db5dca849b9b13a1a63956e72140269ed0a9c916f4ec4"
+    },
+    {
+      "branch": "v55",
+      "path": "historical_release_inputs/v55/tests/test_installer_v55.py",
+      "sha256": "66d5363a953a1df93b5b90e2937b6bb563bb11413abfe2b074e7ecb8a464007d"
+    },
+    {
+      "branch": "v55",
+      "path": "historical_release_inputs/v55/tests/test_v5.py",
+      "sha256": "03711c8429384b5e514e94d6eb9f19a9543934514a0273be9e6b05435d9e8835"
+    },
+    {
+      "branch": "v55",
+      "path": "historical_release_inputs/v55/tests/fixtures/oracle_fonbet_bridge.py",
+      "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa"
+    },
+    {
+      "branch": "v55",
+      "path": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v4.py",
+      "sha256": "4843b3ca36433d3ae20f85e7e1babc6e8f73dd88e7ba2763ebb8436f52dfdcfb"
+    },
+    {
+      "branch": "v55",
+      "path": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v5.py",
+      "sha256": "1fa7be1e13a804cebd98682531385a1e00e104451f7b2ad90c6a49c2efb43ab1"
+    },
+    {
+      "branch": "v55",
+      "path": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_console.py",
+      "sha256": "78b5097b792df21fecc0c4638f089537de60d20d6c09bc15913519d0481375cd"
+    },
+    {
+      "branch": "v56",
+      "path": "historical_release_inputs/v56/tests/test_v56.py",
+      "sha256": "dc6748b29b94d6122a5c6592b0807dc8199f838a50752ae6dbb86d3953b193f8"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/test_v52.py",
+      "sha256": "b12a38221dd503f0ce1f42d4fc683196ef8f054e6c9a48f9dc52940113f78081"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/test_v57.py",
+      "sha256": "daa4299b17131817e6388ee52473d3bbf4fe96ae39e18ad84731368b2f4bb98c"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/test_installer_v7.py",
+      "sha256": "8e71b8cee81d5cf9027fdb08953111e5ed7727f6dbf8ea872ddf9e3b70242d80"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/test_v51.py",
+      "sha256": "74a770656a503976eb6867dc2d6233952c20963e501f3e1953e80beda9f110d1"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/test_v58.py",
+      "sha256": "14c9cae6462651cd7b0dc78080492189739b546861fc404293556cf87b93b936"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/test_v7.py",
+      "sha256": "6023b47d302e8981e5bdfce627a37ec41fccfad2e13c7e34d7331baf8f76aab3"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/test_v56.py",
+      "sha256": "dc6748b29b94d6122a5c6592b0807dc8199f838a50752ae6dbb86d3953b193f8"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/test_v55.py",
+      "sha256": "905fb006f2d02da5d3c377bb67eab546e7a87b9735dd18fc2c6c59d3ddf7187d"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/test_v53.py",
+      "sha256": "081269fdb22f92e3f4d88f7760bfea10e1a9098bbac49387bfa2f049263a18e4"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/test_v55_throughput.py",
+      "sha256": "ba34a596a842a9e68c83b70663129a1337d33281292ecf2fdae97d3e10190126"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/test_v54.py",
+      "sha256": "fd9beb12261992953363fbde3a6daa8a1a9f162c1d44c92287fba7c103f903e7"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/test_v5.py",
+      "sha256": "03711c8429384b5e514e94d6eb9f19a9543934514a0273be9e6b05435d9e8835"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/fixtures/oracle_fonbet_bridge.py",
+      "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/support/oracle_v4.py",
+      "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/support/oracle_v5_settlement.py",
+      "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/support/oracle_v56_portfolio.py",
+      "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5_settlement.py",
+      "sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5.py",
+      "sha256": "9da7360a760df46ffdf68d71a71661af71c86eede905fb97af1c3536572ba942"
+    },
+    {
+      "branch": "v70",
+      "path": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v56_portfolio.py",
+      "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e"
+    }
+  ],
+  "aliases_same_sha": [],
+  "selected_sources": [
+    {
+      "branch": "v55",
+      "module": "install.py",
+      "path": "historical_release_inputs/v55/install.py",
+      "sha256": "b3502381d39ca9de21fe593dcc665d177815b5c534c1c735e6daaffe16376a89"
+    },
+    {
+      "branch": "v55",
+      "module": "oracle_v4.py",
+      "path": "historical_release_inputs/v55/files/oracle_v4.py",
+      "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54"
+    },
+    {
+      "branch": "v55",
+      "module": "oracle_v5_settlement.py",
+      "path": "historical_release_inputs/v55/files/oracle_v5_settlement.py",
+      "sha256": "0144f0d6f40d7117ac54fd5f6cb59ec4f4b6034ea664500a49e66a6e5f670280"
+    },
+    {
+      "branch": "v55",
+      "module": "oracle_v5.py",
+      "path": "historical_release_inputs/v55/files/oracle_v5.py",
+      "sha256": "1bebdf415ca9410cfddebefbe905675704dc349a6d21ecbbf85daf8f200ec860"
+    },
+    {
+      "branch": "v55",
+      "module": "oracle_console.py",
+      "path": "historical_release_inputs/v55/files/oracle_console.py",
+      "sha256": "c9bf4a71014f2c55a19af2ea14aa6721a37d06035432b10a944ee670ec665183"
+    },
+    {
+      "branch": "v56",
+      "module": "install.py",
+      "path": "historical_release_inputs/v56/install.py",
+      "sha256": "9be9514c38d7894f431579ce32471f758be4efb0ef576c95266cb08efcf7f4d2"
+    },
+    {
+      "branch": "v56",
+      "module": "oracle_v5_settlement.py",
+      "path": "historical_release_inputs/v56/files/oracle_v5_settlement.py",
+      "sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788"
+    },
+    {
+      "branch": "v56",
+      "module": "oracle_v5.py",
+      "path": "historical_release_inputs/v56/files/oracle_v5.py",
+      "sha256": "29c9b2b9dbc69682ef6e8c6d28cdcf0d7b186636fd20b36c94ad6be5a2dda910"
+    },
+    {
+      "branch": "v56",
+      "module": "oracle_console.py",
+      "path": "historical_release_inputs/v56/files/oracle_console.py",
+      "sha256": "084f09b4d8e6999450f5e1a5259fb74b7ec820965af3a42bf7d16ec7f2abce73"
+    },
+    {
+      "branch": "v56",
+      "module": "oracle_v56_portfolio.py",
+      "path": "historical_release_inputs/v56/files/oracle_v56_portfolio.py",
+      "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e"
+    },
+    {
+      "branch": "v70",
+      "module": "install.py",
+      "path": "historical_release_inputs/v70/install.py",
+      "sha256": "2f28a07f54977ac490814e4bf1b0dee9d3e21580d40fe92ec92aa5bffff379ba"
+    },
+    {
+      "branch": "v70",
+      "module": "oracle_v5_settlement.py",
+      "path": "historical_release_inputs/v70/files/oracle_v5_settlement.py",
+      "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f"
+    },
+    {
+      "branch": "v70",
+      "module": "oracle_v5.py",
+      "path": "historical_release_inputs/v70/files/oracle_v5.py",
+      "sha256": "b243e223efdbe48b931dfa26bec729261885dbd0ca87a8ea07c24e5418d6ae1c"
+    },
+    {
+      "branch": "v70",
+      "module": "oracle_v7_core.py",
+      "path": "historical_release_inputs/v70/files/oracle_v7_core.py",
+      "sha256": "6755879820abd4be7aa85a916670a585343af5a0242851fe2c0b62d16384477b"
+    },
+    {
+      "branch": "v70",
+      "module": "oracle_v7_crypto.py",
+      "path": "historical_release_inputs/v70/files/oracle_v7_crypto.py",
+      "sha256": "2ca2477b7a41eaeb64fbc0427e8fab98b2ef5acee7c0807dc2015bdef3c4b21b"
+    },
+    {
+      "branch": "v70",
+      "module": "oracle_scorecard.py",
+      "path": "historical_release_inputs/v70/files/oracle_scorecard.py",
+      "sha256": "fe5c208469788a7d671b83e9ff39b94a727775ed9f91df2b5be5aa56b2a46f0d"
+    },
+    {
+      "branch": "v70",
+      "module": "oracle_v7.py",
+      "path": "historical_release_inputs/v70/files/oracle_v7.py",
+      "sha256": "372cf7d0a5520192d0b72d2dd64cf59062dca53e432c08048cc72bfa0bc4bf88"
+    },
+    {
+      "branch": "v70",
+      "module": "oracle_console.py",
+      "path": "historical_release_inputs/v70/files/oracle_console.py",
+      "sha256": "9d1b2a20f8e96700dd9ffde96fda04cb57f01d06bca3fe7c353fa8606c3835a3"
+    },
+    {
+      "branch": "v70",
+      "module": "oracle_v58_brain.py",
+      "path": "historical_release_inputs/v70/files/oracle_v58_brain.py",
+      "sha256": "bb67a9f58ea8f451b75af05fab192362ef61ad13d32a732e807facb8f981d0d0"
+    },
+    {
+      "branch": "v70",
+      "module": "oracle_v56_portfolio.py",
+      "path": "historical_release_inputs/v70/files/oracle_v56_portfolio.py",
+      "sha256": "0b27b7e272db7f2506ae011d1b733f0188dfdffea28e50d6506e5d4b3524567c"
+    }
+  ],
+  "source_manifest_entries": 63
+}

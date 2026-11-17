@@ -1,0 +1,435 @@
+{
+  "version": "ORACLE_EVA_V1_7_ORIGINAL_REPLICA",
+  "status": "RESTORED_SOURCE_AND_DATABASE_NOT_YET_RUNNING",
+  "created_utc": "2026-10-30T13:33:45.095809+00:00",
+  "input_baseline_sha256": "d941a928381bec7e51ea6eddfb2a7d702e2bf393b3704c9964f4f5683f309357",
+  "later_reference_sha256": "4b9e29c3d34f5cc1cd3afca1815ad1d6964e1aca0684bda0aa4b48db48c53775",
+  "original_archive_files": [
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2017-08.parquet",
+      "size": 10334,
+      "sha256": "a4d5ea51b52f9323689b6bcb2b7b049744107f4daba0d36f447f78f57cb47392"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2017-09.parquet",
+      "size": 18610,
+      "sha256": "38f7f42c818c3ee2325166c3bac1869162c5cb39c17aa0fdbb2f6853ac1b9557"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2017-10.parquet",
+      "size": 18965,
+      "sha256": "f4bd965fcf9aada9c7974a76301bcf8d0a858de140f3d4347adad18a055ad860"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2017-11.parquet",
+      "size": 19128,
+      "sha256": "d9cc53992e390f9237e54b03cf1ae8cb98e1099fe9448bf7297503f72bff5991"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2017-12.parquet",
+      "size": 20211,
+      "sha256": "2c937bc5728ea6e57a17a2f77566894ea7f225c83c252076923fade53540195f"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2018-01.parquet",
+      "size": 20075,
+      "sha256": "fd721925fd93a962da198f50c80eda5d69e683ca467a96c3dce6dfb53825f9f8"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2018-02.parquet",
+      "size": 17398,
+      "sha256": "78bb7f52c269b653fc2735dd35ff3e74bf397fe97f64b728c86361219c376b53"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2018-03.parquet",
+      "size": 19669,
+      "sha256": "edb427a7df1281f3e9be7372d0592c6535f5dc28c64a9e3c885f6835517dca01"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2018-04.parquet",
+      "size": 18714,
+      "sha256": "6cf488c47f628f36da6b08c3879f6ecd8568021bfd1b3c96f811412215a0b734"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2018-05.parquet",
+      "size": 19679,
+      "sha256": "69a3efb71f38b660af76f8cc4b418a990eb0613120f41c1296ee5f78c3f110ad"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2018-06.parquet",
+      "size": 18722,
+      "sha256": "813be784269864c48f3ebc9e8882afdb0f651b5eb4a9b2c4f63d0fd54c8645c0"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2018-07.parquet",
+      "size": 19479,
+      "sha256": "374f3c6d2f214be9f90e2677a4842e9329abdf9da51331f7066e915503a6920b"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2018-08.parquet",
+      "size": 19498,
+      "sha256": "6ffc6bf2835bc28bedb2abb5b1df396987d8488411b3d7ded7df594aca594e1c"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2018-09.parquet",
+      "size": 18720,
+      "sha256": "695b95253fc5cf1bc73cf277ecb02eb9518c7746c52c01b86be8a9de462f7cb8"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2018-10.parquet",
+      "size": 19050,
+      "sha256": "7f0feca9e97609c26c2dc5145fe0027e66f8848a462f417538672d13a11a7334"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2018-11.parquet",
+      "size": 19097,
+      "sha256": "b27c1af40bfec89f695de8b66a1c67c4c6551e5e520b4492c0c7474dfb18a693"
+    },
+    {
+      "relative_path": "candles/binance_archive/BTCUSDT/2026-08.parquet",
+      "size": 19844,
+      "sha256": "46d4c3cb5013bed051cba6c2ce1dffc06e34732d15033becf800861a6ed16ec1"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2017-08.parquet",
+      "size": 9566,
+      "sha256": "2e983fc340a6adca298537845b7f7b4eba0bbfca949a845cdcb9e55ba1af2f67"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2017-09.parquet",
+      "size": 17084,
+      "sha256": "2607be3a4bb320f66fc677bd869c8f105ede522718757b82c280e13eb1e78ae7"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2017-10.parquet",
+      "size": 17286,
+      "sha256": "a40171478e2c5d6488c257b46e50222bbc613f5f173ce1948a9cf0ee41c4e699"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2017-11.parquet",
+      "size": 17213,
+      "sha256": "eaed57e25a208642ad48b85dd995a70a5735f25b8c9785e8309887ddd81e457c"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2017-12.parquet",
+      "size": 17921,
+      "sha256": "60742174a1d29af987993770ab74367c1eb196a00fd7d2970f43a86a68781e25"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2018-01.parquet",
+      "size": 17880,
+      "sha256": "36325da6b9cbe072073c2a104bc35608dc6d546249cf963169901bab278d10de"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2018-02.parquet",
+      "size": 15804,
+      "sha256": "cb7f47f8668675304edd099e855f7b15b0d9fd0d2918bc05177203349ad5b1f5"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2018-03.parquet",
+      "size": 17939,
+      "sha256": "6427b6b6dd54d105ccfe6095be604c6bf6fc6772c985ec0fd7a018432ce777a8"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2018-04.parquet",
+      "size": 17407,
+      "sha256": "350fd91bbd061eb72d8cc605abcb418cdc4015fb7aebdf1df18d0b55012ba4cc"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2018-05.parquet",
+      "size": 17805,
+      "sha256": "edcd216c4fe776a8641d0acaad10c0256f892c84210f17b7138973b36aa0d016"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2018-06.parquet",
+      "size": 17105,
+      "sha256": "6c0227c81e21da40928a35fb639562586f3aafea38a7322c9d3db00f058f7835"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2018-07.parquet",
+      "size": 17453,
+      "sha256": "51ea41b7fbe823b055a94d98a4bda68a5ba2f81a1ae2e4b983ef650762e2b56a"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2018-08.parquet",
+      "size": 17740,
+      "sha256": "91e0f6ad3eab9e7118808210e647a9f0b6b668808968ff622b68cc8773651e02"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2018-09.parquet",
+      "size": 17699,
+      "sha256": "5a2787c26aec39c4513a2ebbe970607bb75029e0eb5235da22657efdeb1bb86a"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2018-10.parquet",
+      "size": 17295,
+      "sha256": "425a4f67a65d32019ccc22818833eb8a064e86472c2ae2fc72e6c2f9c48c4eed"
+    },
+    {
+      "relative_path": "candles/binance_archive/ETHUSDT/2018-11.parquet",
+      "size": 17394,
+      "sha256": "4c1186569b8e229256c6b32417ff54d03b1955f72394159c0d9bb3c204cf574f"
+    }
+  ],
+  "input_original_pending": 743,
+  "replica_old_pending_archived": 743,
+  "policy_triggers": [
+    "eva_forward_immutable_fields",
+    "eva_forward_insert",
+    "eva_forward_no_delete",
+    "eva_forward_valid_settlement"
+  ],
+  "original_code": [
+    {
+      "module": "dashboard.py",
+      "phase": "early_supplement",
+      "sha256": "f0f6516fd989f9cffb1f1e9dc14fea7d5b55ea1d816fa959ffe68d68df753df3"
+    },
+    {
+      "module": "oracle_causal.py",
+      "phase": "early_supplement",
+      "sha256": "99a0a224bc7a372d780eaa1ba10cf0036d1f2b9ac6c0c6a44a685beb0329b90e"
+    },
+    {
+      "module": "oracle_console.py",
+      "phase": "v70",
+      "sha256": "9d1b2a20f8e96700dd9ffde96fda04cb57f01d06bca3fe7c353fa8606c3835a3"
+    },
+    {
+      "module": "oracle_equities.py",
+      "phase": "early_supplement",
+      "sha256": "3b3b95fd77f8709becf0478981098fdc3b0cf8709d163971574870bb7bd3fea8"
+    },
+    {
+      "module": "oracle_fonbet_full.py",
+      "phase": "v55",
+      "sha256": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1"
+    },
+    {
+      "module": "oracle_library.py",
+      "phase": "early_supplement",
+      "sha256": "c1cb876ce5c65ea1475140af42bcfad073ac418a1999e5019bae17586f21b661"
+    },
+    {
+      "module": "oracle_odds_hub.py",
+      "phase": "v55",
+      "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8"
+    },
+    {
+      "module": "oracle_open_sources.py",
+      "phase": "early_supplement",
+      "sha256": "5a59d3dada096a9966d8e40136aab4f70b6fbd3519840e9db7ca9363c672f9ad"
+    },
+    {
+      "module": "oracle_profit.py",
+      "phase": "early_supplement",
+      "sha256": "ffac12978f9d1c5e41fdb1942a2c8a7ceea560205c6ae423a830999d6a676139"
+    },
+    {
+      "module": "oracle_scorecard.py",
+      "phase": "v70",
+      "sha256": "fe5c208469788a7d671b83e9ff39b94a727775ed9f91df2b5be5aa56b2a46f0d"
+    },
+    {
+      "module": "oracle_sports_brain.py",
+      "phase": "v55",
+      "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed"
+    },
+    {
+      "module": "oracle_v4.py",
+      "phase": "v55",
+      "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54"
+    },
+    {
+      "module": "oracle_v4_bookies.py",
+      "phase": "early_supplement",
+      "sha256": "a5183df5ab161f2e2980b91bbd0b006430eb0bca5a13e0075333807ba74f9e54"
+    },
+    {
+      "module": "oracle_v4_books.py",
+      "phase": "early_supplement",
+      "sha256": "552bc9065f1309fb2e78e6fa7b8897138bf1af55394ec8c4e98e05e7bc4e943d"
+    },
+    {
+      "module": "oracle_v4_fulltext.py",
+      "phase": "early_supplement",
+      "sha256": "c1281d8a78b1f31f78c60204ffe7ecc2b2db9ab43cab3910039852d528fe187b"
+    },
+    {
+      "module": "oracle_v4_learning.py",
+      "phase": "early_supplement",
+      "sha256": "16b34e820cbd5ac549fd51231cf20c0113b08557fc0b50e0cfcc36ef5dff149f"
+    },
+    {
+      "module": "oracle_v4_sports.py",
+      "phase": "v55",
+      "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d"
+    },
+    {
+      "module": "oracle_v5.py",
+      "phase": "v70",
+      "sha256": "b243e223efdbe48b931dfa26bec729261885dbd0ca87a8ea07c24e5418d6ae1c"
+    },
+    {
+      "module": "oracle_v56_portfolio.py",
+      "phase": "v70",
+      "sha256": "0b27b7e272db7f2506ae011d1b733f0188dfdffea28e50d6506e5d4b3524567c"
+    },
+    {
+      "module": "oracle_v58_brain.py",
+      "phase": "v70",
+      "sha256": "bb67a9f58ea8f451b75af05fab192362ef61ad13d32a732e807facb8f981d0d0"
+    },
+    {
+      "module": "oracle_v5_settlement.py",
+      "phase": "v70",
+      "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f"
+    },
+    {
+      "module": "oracle_v7.py",
+      "phase": "v70",
+      "sha256": "372cf7d0a5520192d0b72d2dd64cf59062dca53e432c08048cc72bfa0bc4bf88"
+    },
+    {
+      "module": "oracle_v7_core.py",
+      "phase": "v70",
+      "sha256": "6755879820abd4be7aa85a916670a585343af5a0242851fe2c0b62d16384477b"
+    },
+    {
+      "module": "oracle_v7_crypto.py",
+      "phase": "v70",
+      "sha256": "2ca2477b7a41eaeb64fbc0427e8fab98b2ef5acee7c0807dc2015bdef3c4b21b"
+    },
+    {
+      "module": "sports_free.py",
+      "phase": "v55",
+      "sha256": "2f798427c55ad0efdc9366aef0c046c683bb66212569489b21435b6c6d211d64"
+    }
+  ],
+  "phase_overrides": [
+    {
+      "module": "oracle_console.py",
+      "old_sha256": "c9bf4a71014f2c55a19af2ea14aa6721a37d06035432b10a944ee670ec665183",
+      "new_sha256": "084f09b4d8e6999450f5e1a5259fb74b7ec820965af3a42bf7d16ec7f2abce73",
+      "from": "v55",
+      "to": "v56"
+    },
+    {
+      "module": "oracle_v5.py",
+      "old_sha256": "1bebdf415ca9410cfddebefbe905675704dc349a6d21ecbbf85daf8f200ec860",
+      "new_sha256": "29c9b2b9dbc69682ef6e8c6d28cdcf0d7b186636fd20b36c94ad6be5a2dda910",
+      "from": "v55",
+      "to": "v56"
+    },
+    {
+      "module": "oracle_v5_settlement.py",
+      "old_sha256": "0144f0d6f40d7117ac54fd5f6cb59ec4f4b6034ea664500a49e66a6e5f670280",
+      "new_sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788",
+      "from": "v55",
+      "to": "v56"
+    },
+    {
+      "module": "oracle_console.py",
+      "old_sha256": "084f09b4d8e6999450f5e1a5259fb74b7ec820965af3a42bf7d16ec7f2abce73",
+      "new_sha256": "9d1b2a20f8e96700dd9ffde96fda04cb57f01d06bca3fe7c353fa8606c3835a3",
+      "from": "v56",
+      "to": "v70"
+    },
+    {
+      "module": "oracle_v5.py",
+      "old_sha256": "29c9b2b9dbc69682ef6e8c6d28cdcf0d7b186636fd20b36c94ad6be5a2dda910",
+      "new_sha256": "b243e223efdbe48b931dfa26bec729261885dbd0ca87a8ea07c24e5418d6ae1c",
+      "from": "v56",
+      "to": "v70"
+    },
+    {
+      "module": "oracle_v56_portfolio.py",
+      "old_sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e",
+      "new_sha256": "0b27b7e272db7f2506ae011d1b733f0188dfdffea28e50d6506e5d4b3524567c",
+      "from": "v56",
+      "to": "v70"
+    },
+    {
+      "module": "oracle_v5_settlement.py",
+      "old_sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788",
+      "new_sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f",
+      "from": "v56",
+      "to": "v70"
+    }
+  ],
+  "missing_required_code": [],
+  "historical_supplement_sources": [
+    {
+      "oracle_profit.py": "ORACLE_CONSOLIDATED_2026_10.zip!files/oracle_profit.py"
+    },
+    {
+      "oracle_v4_books.py": "ORACLE_VERSION_4.zip!files/oracle_v4_books.py"
+    },
+    {
+      "oracle_v4_fulltext.py": "ORACLE_V4_COMBINED.zip!files/oracle_v4_fulltext.py"
+    },
+    {
+      "oracle_open_sources.py": "ORACLE_V4_COMBINED.zip!files/oracle_open_sources.py"
+    },
+    {
+      "oracle_v4_learning.py": "ORACLE_VERSION_4.zip!files/oracle_v4_learning.py"
+    },
+    {
+      "dashboard.py": "ORACLE_CONSOLIDATED_2026_10.zip!files/dashboard.py"
+    },
+    {
+      "oracle_library.py": "ORACLE_VERSION_4.zip!files/oracle_library.py"
+    },
+    {
+      "oracle_causal.py": "ORACLE_VERSION_4.zip!files/oracle_causal.py"
+    },
+    {
+      "oracle_equities.py": "ORACLE_VERSION_4.zip!files/oracle_equities.py"
+    },
+    {
+      "oracle_v4_bookies.py": "ORACLE_V4_COMBINED.zip!files/oracle_v4_bookies.py"
+    }
+  ],
+  "ambiguous_early_supplement_candidates": {
+    "oracle_operations.py": [
+      {
+        "sha256": "1c8cb0553107432a70a0ee4e293de2a9c18b2555df974f993e1a6cc9c79148a0",
+        "origins": [
+          "ORACLE_CONSOLIDATED_2026_10.zip"
+        ]
+      },
+      {
+        "sha256": "b590c75c076a3a4b57a9a5a0480dec09a2c5c38b4f6fccec37c6cbf2814b9297",
+        "origins": [
+          "ORACLE_UNIFIED_v23.zip"
+        ]
+      }
+    ],
+    "oracle_v4_discovery.py": [
+      {
+        "sha256": "aac10a43baabb466dfc2c133fcfe85e1c436d644d3c02fdda942956991201258",
+        "origins": [
+          "ORACLE_VERSION_4.zip"
+        ]
+      },
+      {
+        "sha256": "df4de2acf33c20eec88bc771764d78a3b8330e021bfb81b00baadeab6e10f13e",
+        "origins": [
+          "ORACLE_V4_COMBINED.zip"
+        ]
+      }
+    ]
+  },
+  "exact_historical_scheduler_restored": false,
+  "hourly_scheduler_included_as_RECONSTRUCTION": true,
+  "runtime_identity_24_oct_proven": false,
+  "original_historical_snapshots_untouched": true,
+  "paper_only": true,
+  "no_real_orders": true,
+  "production_modified": false,
+  "cautions": [
+    "The original Docker Compose/runner were not found in archives. Hourly loop is a reconstruction, not a byte-exact historical scheduler.",
+    "V7.0 original source precedence supersedes V5.5 where the release updated a module.",
+    "Insufficient trust to enable unattended network execution until runtime dependencies pass."
+  ]
+}

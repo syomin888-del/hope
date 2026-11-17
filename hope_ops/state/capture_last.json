@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-17T10:26:05+00:00",
+  "claim_original_at_quote_at": false,
+  "cumulative": 45,
+  "db_original_writes": 0,
+  "late_skipped": 0,
+  "matched_at_post_registration_capture": 0,
+  "price_mismatch": 0,
+  "quote_absent": 0,
+  "saved_this_run": 0
+}

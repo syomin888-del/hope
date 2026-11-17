@@ -1,0 +1,34 @@
+name: oracle_core_v10
+# Deploy on an owned Linux server with Docker. Do not expose dashboard publicly.
+x-oracle: &oracle
+  build: .
+  restart: unless-stopped
+  environment:
+    ORACLE_DB: /app/state/oracle.sqlite3
+    ORACLE_ARCHIVE_DIR: /app/archives
+    ORACLE_BACKUP_DIR: /app/backups
+    PYTHONUNBUFFERED: "1"
+  env_file:
+    - path: .env
+      required: false
+  volumes:
+    - oracle-data:/app/state
+    - ./logs:/app/logs
+    - ./model_artifacts:/app/model_artifacts
+    - ./backups:/app/backups
+    - oracle-archives:/app/archives
+services:
+  sources:
+    <<: *oracle
+    command: ["python", "daemon.py", "run"]
+  research:
+    <<: *oracle
+    command: ["python", "brain_daemon.py", "run"]
+  dashboard:
+    <<: *oracle
+    command: ["python", "dashboard.py", "--host", "0.0.0.0"]
+    ports:
+      - "127.0.0.1:8765:8765"
+volumes:
+  oracle-data:
+  oracle-archives:

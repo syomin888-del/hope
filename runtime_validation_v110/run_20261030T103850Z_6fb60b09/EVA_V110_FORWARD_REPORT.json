@@ -1,0 +1,178 @@
+{
+  "version": "EVA_V1_1_FORWARD_PREPARE_SANDBOX",
+  "created_utc": "2026-10-30T10:38:50.089537+00:00",
+  "historical_sources_verified": 9,
+  "original_sources_total": 10,
+  "provenance": "SHA_VERIFIED_SOURCE_HYPOTHESIS_NOT_24_OCT_RUNTIME_ATTESTATION",
+  "benchmark_original_223_usd": 223.0,
+  "benchmark_without_dc_usd": 243.4,
+  "odds_range_inclusive": [
+    1.7,
+    3.5
+  ],
+  "exclude_double_chance": true,
+  "home_away_filter": false,
+  "production_modified": false,
+  "historical_sqlite_opened": false,
+  "historical_pending_reactivated": false,
+  "generator_started": false,
+  "forecast_produced": false,
+  "real_bets": 0,
+  "notes": [
+    "One short-lived container: no network and no production mounts.",
+    "Original prepare() is invoked on an empty, in-memory SQLite, never on a historic or live DB.",
+    "A prospective SQL insert guard is tested using synthetic bets; it is NOT installed into EVA production.",
+    "No source data feed, live events, model training, settlement, real bets or crypto run.",
+    "A returned empty prepare() is not proof of real forecast production or future profitability."
+  ],
+  "python_container_image": "python:3.12-alpine",
+  "smoke": {
+    "state": "PASS",
+    "runtime_test_passed": true,
+    "exit_code": 0,
+    "detail": {
+      "database": "ONLY_SQLITE_MEMORY",
+      "external_orders": false,
+      "historical_db_opened": false,
+      "historical_pending_imported": false,
+      "kind": "ORACLE_EVA_V110_CONTAINER_FORWARD",
+      "module_imports": {
+        "oracle_fonbet_full": {
+          "has_prepare": false,
+          "has_setup": true,
+          "state": "IMPORTED"
+        },
+        "oracle_odds_hub": {
+          "has_prepare": false,
+          "has_setup": true,
+          "state": "IMPORTED"
+        },
+        "oracle_sports_brain": {
+          "has_prepare": false,
+          "has_setup": true,
+          "state": "IMPORTED"
+        },
+        "oracle_v4_sports": {
+          "has_prepare": false,
+          "has_setup": true,
+          "state": "IMPORTED"
+        },
+        "oracle_v5": {
+          "has_prepare": false,
+          "has_setup": true,
+          "state": "IMPORTED"
+        },
+        "oracle_v5_settlement": {
+          "has_prepare": true,
+          "has_setup": true,
+          "state": "IMPORTED"
+        },
+        "sports_free": {
+          "has_prepare": false,
+          "has_setup": false,
+          "state": "IMPORTED"
+        }
+      },
+      "network": "DOCKER_NETWORK_NONE",
+      "policy_contract": {
+        "accepted_synthetic_rows": 3,
+        "cases": {
+          "double_chance_cyrillic": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "double_chance_market": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "double_chance_selection": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "double_chance_titlecase": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "future_registration": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "invalid_probability": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "quote_after_registration": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "retro_after_kickoff": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "retro_registered_after_kickoff": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "settled_not_pending": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "too_high_odds": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "too_low_odds": {
+            "allowed": false,
+            "expected": false,
+            "pass": true
+          },
+          "valid_P1": {
+            "allowed": true,
+            "expected": true,
+            "pass": true
+          },
+          "valid_P2": {
+            "allowed": true,
+            "expected": true,
+            "pass": true
+          },
+          "valid_odds_3_50": {
+            "allowed": true,
+            "expected": true,
+            "pass": true
+          }
+        },
+        "engine_guard_installed": false,
+        "historic_pending_imported": false,
+        "state": "PASS"
+      },
+      "prediction_generator_invoked": true,
+      "prepare": {
+        "invoked": true,
+        "records_after": 0,
+        "return_summary": "{'state': 'OK', 'new_forward_paper_experiments': 0, 'eligible_candidates': 0, 'fixed_stake_usd': 10.0, 'min_odds': 1.7, 'minimum_raw_ev_pct': 0.0, 'no_real_orders': True, 'retroactive_bets_forbidden': True}",
+        "state": "RETURNED"
+      },
+      "settlement_schema": {
+        "state": "PASS",
+        "tables": [
+          "v55_archive_prices",
+          "v55_paper",
+          "v55_settlement_runs"
+        ]
+      }
+    }
+  },
+  "ready_to_start": false
+}

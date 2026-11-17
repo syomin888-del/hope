@@ -1,0 +1,27 @@
+services:
+  historic-oracle:
+    image: python:3.12-alpine
+    working_dir: /app
+    command: ["python", "-u", "/runner/loop.py"]
+    restart: unless-stopped
+    read_only: true
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 128
+    mem_limit: 4g
+    memswap_limit: 5g
+    environment:
+      ORACLE_DB: /data/oracle.sqlite3
+      ORACLE_EVA_PAPER_ONLY: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - type: bind
+        source: ./state/eva-tmp/container-tmp
+        target: /tmp
+        bind:
+          create_host_path: false
+      - ./app:/app:ro
+      - ./runner:/runner:ro
+      - ./state:/data:rw
+      - ./logs:/logs:rw

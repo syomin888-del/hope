@@ -1,0 +1,1 @@
+Original HOPE UI preserved; no automatic fallback to skeleton.

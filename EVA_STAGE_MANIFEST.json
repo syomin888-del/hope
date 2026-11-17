@@ -1,0 +1,447 @@
+{
+  "mode": "HISTORIC_SOURCE_STAGING_ONLY",
+  "ready_to_start": false,
+  "original_generator": "ORACLE V5.5 / v55_paper",
+  "original_crypto": "ORACLE V7.0, not yet merged into runnable environment",
+  "source_file_count": 63,
+  "sources": [
+    {
+      "path": "historical_release_inputs/v55/README_RU.md",
+      "sha256": "c661856c0a5be12e27cf4bc7f318b6126814cae5bb51cdbf4facfd4435efb04a",
+      "from": "/root/ORACLE_V5_5_MAJOR/README_RU.md"
+    },
+    {
+      "path": "historical_release_inputs/v55/install.py",
+      "sha256": "b3502381d39ca9de21fe593dcc665d177815b5c534c1c735e6daaffe16376a89",
+      "from": "/root/ORACLE_V5_5_MAJOR/install.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/AUDIT_RU.md",
+      "sha256": "ea04d85f1d736e8d159cf6ba10150feacfa2bbad39a6622250a3ce23c5693cab",
+      "from": "/root/ORACLE_V5_5_MAJOR/AUDIT_RU.md"
+    },
+    {
+      "path": "historical_release_inputs/v55/CHANGELOG.md",
+      "sha256": "a854d106fd502913e2cd6c77ebf43db9fa8f1372622eb73e6f4c103e1ce9ad60",
+      "from": "/root/ORACLE_V5_5_MAJOR/CHANGELOG.md"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/test_v52.py",
+      "sha256": "b12a38221dd503f0ce1f42d4fc683196ef8f054e6c9a48f9dc52940113f78081",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/test_v52.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/test_v51.py",
+      "sha256": "74a770656a503976eb6867dc2d6233952c20963e501f3e1953e80beda9f110d1",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/test_v51.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/test_v55.py",
+      "sha256": "38d069294ee89339c429de5a396dc8b58fcc3e7d1db5bad4c41a6b335a815c85",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/test_v55.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/test_v53.py",
+      "sha256": "081269fdb22f92e3f4d88f7760bfea10e1a9098bbac49387bfa2f049263a18e4",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/test_v53.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/test_v55_throughput.py",
+      "sha256": "ba34a596a842a9e68c83b70663129a1337d33281292ecf2fdae97d3e10190126",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/test_v55_throughput.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/test_v54.py",
+      "sha256": "ddb75ea61f40e2f8032db5dca849b9b13a1a63956e72140269ed0a9c916f4ec4",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/test_v54.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/test_installer_v55.py",
+      "sha256": "66d5363a953a1df93b5b90e2937b6bb563bb11413abfe2b074e7ecb8a464007d",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/test_installer_v55.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/test_v5.py",
+      "sha256": "03711c8429384b5e514e94d6eb9f19a9543934514a0273be9e6b05435d9e8835",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/test_v5.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/files/oracle_v4.py",
+      "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54",
+      "from": "/root/ORACLE_V5_5_MAJOR/files/oracle_v4.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/files/oracle_v5_settlement.py",
+      "sha256": "0144f0d6f40d7117ac54fd5f6cb59ec4f4b6034ea664500a49e66a6e5f670280",
+      "from": "/root/ORACLE_V5_5_MAJOR/files/oracle_v5_settlement.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/files/oracle_v5.html",
+      "sha256": "4a52a007335bf6b3c695dd30bb2e17b9096aa7f1400519971ca7c2634e6f15fe",
+      "from": "/root/ORACLE_V5_5_MAJOR/files/oracle_v5.html"
+    },
+    {
+      "path": "historical_release_inputs/v55/files/oracle_v5.py",
+      "sha256": "1bebdf415ca9410cfddebefbe905675704dc349a6d21ecbbf85daf8f200ec860",
+      "from": "/root/ORACLE_V5_5_MAJOR/files/oracle_v5.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/files/oracle_console.py",
+      "sha256": "c9bf4a71014f2c55a19af2ea14aa6721a37d06035432b10a944ee670ec665183",
+      "from": "/root/ORACLE_V5_5_MAJOR/files/oracle_console.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/fixtures/oracle_fonbet_bridge.py",
+      "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/fixtures/oracle_fonbet_bridge.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v4.py",
+      "sha256": "4843b3ca36433d3ae20f85e7e1babc6e8f73dd88e7ba2763ebb8436f52dfdcfb",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/fixtures/base_v53/oracle_v4.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v5.html",
+      "sha256": "7e5cf3155c8998f56fdab6521b18a914d234c0749845bde45e76b31ded624091",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/fixtures/base_v53/oracle_v5.html"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v5.py",
+      "sha256": "1fa7be1e13a804cebd98682531385a1e00e104451f7b2ad90c6a49c2efb43ab1",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/fixtures/base_v53/oracle_v5.py"
+    },
+    {
+      "path": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_console.py",
+      "sha256": "78b5097b792df21fecc0c4638f089537de60d20d6c09bc15913519d0481375cd",
+      "from": "/root/ORACLE_V5_5_MAJOR/tests/fixtures/base_v53/oracle_console.py"
+    },
+    {
+      "path": "historical_release_inputs/v56/README_RU.md",
+      "sha256": "d9f3e36d0aeafb6b47bca80fd1deaf7a9d30faeb57bcea74fb13e5eac0994bdd",
+      "from": "/root/ORACLE_V5_6_PORTFOLIO/README_RU.md"
+    },
+    {
+      "path": "historical_release_inputs/v56/install.py",
+      "sha256": "9be9514c38d7894f431579ce32471f758be4efb0ef576c95266cb08efcf7f4d2",
+      "from": "/root/ORACLE_V5_6_PORTFOLIO/install.py"
+    },
+    {
+      "path": "historical_release_inputs/v56/tests/test_v56.py",
+      "sha256": "dc6748b29b94d6122a5c6592b0807dc8199f838a50752ae6dbb86d3953b193f8",
+      "from": "/root/ORACLE_V5_6_PORTFOLIO/tests/test_v56.py"
+    },
+    {
+      "path": "historical_release_inputs/v56/files/oracle_v5_settlement.py",
+      "sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788",
+      "from": "/root/ORACLE_V5_6_PORTFOLIO/files/oracle_v5_settlement.py"
+    },
+    {
+      "path": "historical_release_inputs/v56/files/oracle_v5.html",
+      "sha256": "a59d464db3f0fc4cc6c51738c97b8802c65c48cb3b1e2c4badee30f0c9c1df86",
+      "from": "/root/ORACLE_V5_6_PORTFOLIO/files/oracle_v5.html"
+    },
+    {
+      "path": "historical_release_inputs/v56/files/oracle_v5.py",
+      "sha256": "29c9b2b9dbc69682ef6e8c6d28cdcf0d7b186636fd20b36c94ad6be5a2dda910",
+      "from": "/root/ORACLE_V5_6_PORTFOLIO/files/oracle_v5.py"
+    },
+    {
+      "path": "historical_release_inputs/v56/files/oracle_console.py",
+      "sha256": "084f09b4d8e6999450f5e1a5259fb74b7ec820965af3a42bf7d16ec7f2abce73",
+      "from": "/root/ORACLE_V5_6_PORTFOLIO/files/oracle_console.py"
+    },
+    {
+      "path": "historical_release_inputs/v56/files/oracle_v56_portfolio.py",
+      "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e",
+      "from": "/root/ORACLE_V5_6_PORTFOLIO/files/oracle_v56_portfolio.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/README_RU.md",
+      "sha256": "76aea07f68f2996d389e6018de0d48b4ddc95e145822e106a39f369e093c9107",
+      "from": "/root/ORACLE_V7_0_GLOBAL/README_RU.md"
+    },
+    {
+      "path": "historical_release_inputs/v70/install.py",
+      "sha256": "2f28a07f54977ac490814e4bf1b0dee9d3e21580d40fe92ec92aa5bffff379ba",
+      "from": "/root/ORACLE_V7_0_GLOBAL/install.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/AUDIT_RU.md",
+      "sha256": "d2e1742fcab85c24edf5ca35875991e16fcd8bdee15c23a743a44be61060cf69",
+      "from": "/root/ORACLE_V7_0_GLOBAL/AUDIT_RU.md"
+    },
+    {
+      "path": "historical_release_inputs/v70/CHANGELOG.md",
+      "sha256": "e2e31174115502c5277d887ed1d96898f4fc16cf215974f3f0aaeddbb471736c",
+      "from": "/root/ORACLE_V7_0_GLOBAL/CHANGELOG.md"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/test_v52.py",
+      "sha256": "b12a38221dd503f0ce1f42d4fc683196ef8f054e6c9a48f9dc52940113f78081",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/test_v52.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/test_v57.py",
+      "sha256": "daa4299b17131817e6388ee52473d3bbf4fe96ae39e18ad84731368b2f4bb98c",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/test_v57.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/test_installer_v7.py",
+      "sha256": "8e71b8cee81d5cf9027fdb08953111e5ed7727f6dbf8ea872ddf9e3b70242d80",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/test_installer_v7.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/test_v51.py",
+      "sha256": "74a770656a503976eb6867dc2d6233952c20963e501f3e1953e80beda9f110d1",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/test_v51.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/test_v58.py",
+      "sha256": "14c9cae6462651cd7b0dc78080492189739b546861fc404293556cf87b93b936",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/test_v58.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/test_v7.py",
+      "sha256": "6023b47d302e8981e5bdfce627a37ec41fccfad2e13c7e34d7331baf8f76aab3",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/test_v7.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/test_v56.py",
+      "sha256": "dc6748b29b94d6122a5c6592b0807dc8199f838a50752ae6dbb86d3953b193f8",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/test_v56.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/test_v55.py",
+      "sha256": "905fb006f2d02da5d3c377bb67eab546e7a87b9735dd18fc2c6c59d3ddf7187d",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/test_v55.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/test_v53.py",
+      "sha256": "081269fdb22f92e3f4d88f7760bfea10e1a9098bbac49387bfa2f049263a18e4",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/test_v53.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/test_v55_throughput.py",
+      "sha256": "ba34a596a842a9e68c83b70663129a1337d33281292ecf2fdae97d3e10190126",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/test_v55_throughput.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/test_v54.py",
+      "sha256": "fd9beb12261992953363fbde3a6daa8a1a9f162c1d44c92287fba7c103f903e7",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/test_v54.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/test_v5.py",
+      "sha256": "03711c8429384b5e514e94d6eb9f19a9543934514a0273be9e6b05435d9e8835",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/test_v5.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/files/oracle_v7.html",
+      "sha256": "b8db6596269c19a0fcd459df6e144364172ecec0218195ba8e6e3f46b0ba19b0",
+      "from": "/root/ORACLE_V7_0_GLOBAL/files/oracle_v7.html"
+    },
+    {
+      "path": "historical_release_inputs/v70/files/oracle_v5_settlement.py",
+      "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f",
+      "from": "/root/ORACLE_V7_0_GLOBAL/files/oracle_v5_settlement.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/files/oracle_v5.py",
+      "sha256": "b243e223efdbe48b931dfa26bec729261885dbd0ca87a8ea07c24e5418d6ae1c",
+      "from": "/root/ORACLE_V7_0_GLOBAL/files/oracle_v5.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/files/oracle_v7_core.py",
+      "sha256": "6755879820abd4be7aa85a916670a585343af5a0242851fe2c0b62d16384477b",
+      "from": "/root/ORACLE_V7_0_GLOBAL/files/oracle_v7_core.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/files/oracle_v7_crypto.py",
+      "sha256": "2ca2477b7a41eaeb64fbc0427e8fab98b2ef5acee7c0807dc2015bdef3c4b21b",
+      "from": "/root/ORACLE_V7_0_GLOBAL/files/oracle_v7_crypto.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/files/oracle_scorecard.py",
+      "sha256": "fe5c208469788a7d671b83e9ff39b94a727775ed9f91df2b5be5aa56b2a46f0d",
+      "from": "/root/ORACLE_V7_0_GLOBAL/files/oracle_scorecard.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/files/oracle_v7.py",
+      "sha256": "372cf7d0a5520192d0b72d2dd64cf59062dca53e432c08048cc72bfa0bc4bf88",
+      "from": "/root/ORACLE_V7_0_GLOBAL/files/oracle_v7.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/files/oracle_console.py",
+      "sha256": "9d1b2a20f8e96700dd9ffde96fda04cb57f01d06bca3fe7c353fa8606c3835a3",
+      "from": "/root/ORACLE_V7_0_GLOBAL/files/oracle_console.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/files/oracle_v58_brain.py",
+      "sha256": "bb67a9f58ea8f451b75af05fab192362ef61ad13d32a732e807facb8f981d0d0",
+      "from": "/root/ORACLE_V7_0_GLOBAL/files/oracle_v58_brain.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/files/oracle_v56_portfolio.py",
+      "sha256": "0b27b7e272db7f2506ae011d1b733f0188dfdffea28e50d6506e5d4b3524567c",
+      "from": "/root/ORACLE_V7_0_GLOBAL/files/oracle_v56_portfolio.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/fixtures/oracle_fonbet_bridge.py",
+      "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/fixtures/oracle_fonbet_bridge.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/support/oracle_v4.py",
+      "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/support/oracle_v4.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/support/oracle_v5_settlement.py",
+      "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/support/oracle_v5_settlement.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/support/oracle_v56_portfolio.py",
+      "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/support/oracle_v56_portfolio.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5_settlement.py",
+      "sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/fixtures/base_v57/oracle_v5_settlement.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5.py",
+      "sha256": "9da7360a760df46ffdf68d71a71661af71c86eede905fb97af1c3536572ba942",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/fixtures/base_v57/oracle_v5.py"
+    },
+    {
+      "path": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v56_portfolio.py",
+      "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e",
+      "from": "/root/ORACLE_V7_0_GLOBAL/tests/fixtures/base_v57/oracle_v56_portfolio.py"
+    }
+  ],
+  "core_archive_sha256": "38b495a901282cd95cd0054390b4a2e88e2adfd912311a2b44b91cdb048bbb25",
+  "db_input": {
+    "path": "/opt/ORACLE_CORE_v11/backups/ORACLE_V7_2_20261024T134113Z/oracle-before.sqlite3",
+    "exists": true,
+    "table_count": 157,
+    "has_v55_paper": true,
+    "has_v5_forecasts": true,
+    "has_v56_portfolio": true,
+    "post_baseline_tables": [],
+    "paper_status": {
+      "PENDING": 743
+    },
+    "paper_times": {
+      "first_registered_at": "2026-10-24T09:34:30+00:00",
+      "last_registered_at": "2026-10-24T13:12:46+00:00"
+    },
+    "unique_root_ids": 126,
+    "origin_counts": {
+      "sb_independent_forecasts": 20,
+      "sf_forecasts": 377,
+      "v4_sport_preds": 14,
+      "v58_brain": 332
+    },
+    "settled_net_usd": 0.0,
+    "model_counts": [
+      {
+        "origin": "sf_forecasts",
+        "model": "openfootball-poisson-shrink-0.1-UNCALIBRATED",
+        "count": 1605
+      },
+      {
+        "origin": "v58_brain",
+        "model": "v58_POISSON_WALKFORWARD",
+        "count": 303
+      },
+      {
+        "origin": "v58_brain",
+        "model": "v58_ELO_WALKFORWARD",
+        "count": 261
+      },
+      {
+        "origin": "v58_brain",
+        "model": "v58_FORM_WALKFORWARD",
+        "count": 222
+      },
+      {
+        "origin": "sb_independent_forecasts",
+        "model": "elo_fixed_v1_UNCALIBRATED",
+        "count": 45
+      },
+      {
+        "origin": "v4_sport_preds",
+        "model": "v4_sports",
+        "count": 33
+      }
+    ]
+  },
+  "db_staged": {
+    "path": "/opt/.eva_staging_7pwvl2iy/state/oracle-historical-input.sqlite3",
+    "exists": true,
+    "table_count": 157,
+    "has_v55_paper": true,
+    "has_v5_forecasts": true,
+    "has_v56_portfolio": true,
+    "post_baseline_tables": [],
+    "paper_status": {
+      "PENDING": 743
+    },
+    "paper_times": {
+      "first_registered_at": "2026-10-24T09:34:30+00:00",
+      "last_registered_at": "2026-10-24T13:12:46+00:00"
+    },
+    "unique_root_ids": 126,
+    "origin_counts": {
+      "sb_independent_forecasts": 20,
+      "sf_forecasts": 377,
+      "v4_sport_preds": 14,
+      "v58_brain": 332
+    },
+    "settled_net_usd": 0.0,
+    "model_counts": [
+      {
+        "origin": "sf_forecasts",
+        "model": "openfootball-poisson-shrink-0.1-UNCALIBRATED",
+        "count": 1605
+      },
+      {
+        "origin": "v58_brain",
+        "model": "v58_POISSON_WALKFORWARD",
+        "count": 303
+      },
+      {
+        "origin": "v58_brain",
+        "model": "v58_ELO_WALKFORWARD",
+        "count": 261
+      },
+      {
+        "origin": "v58_brain",
+        "model": "v58_FORM_WALKFORWARD",
+        "count": 222
+      },
+      {
+        "origin": "sb_independent_forecasts",
+        "model": "elo_fixed_v1_UNCALIBRATED",
+        "count": 45
+      },
+      {
+        "origin": "v4_sport_preds",
+        "model": "v4_sports",
+        "count": 33
+      }
+    ]
+  },
+  "database_sha256": "d941a928381bec7e51ea6eddfb2a7d702e2bf393b3704c9964f4f5683f309357",
+  "archive_history_copied": false,
+  "not_performed": [
+    "old installers NOT run",
+    "no Docker containers launched",
+    "no systemd services created",
+    "no AI agent or later-version module copied",
+    "no existing Oracle files modified"
+  ],
+  "blocking_reason": "Historical release inputs must be reconstructed/tested into executable original model stack and full archives must be copied before launch."
+}

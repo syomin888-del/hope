@@ -1,0 +1,6 @@
+{
+  "previous_service": "# HOPE V3 isolated as-recorded paper finality; preserve UI and production\n[Unit]\nDescription=HOPE EVA V3 paper result reconciliation\nAfter=docker.service network-online.target\nWants=network-online.target\n[Service]\nType=oneshot\nUser=root\nWorkingDirectory=/opt/ORACLE_EVA/hope_ops/releases/v3_0_paper_finality\nExecStart=/usr/bin/python3 /opt/ORACLE_EVA/hope_ops/releases/v3_0_paper_finality/finality.py run\nUMask=0077\nNoNewPrivileges=true\nTimeoutStartSec=5400\n",
+  "previous_timer": "# HOPE V2 isolated EVA, UTC 00,03,06,09,12,15,18,21\n[Unit]\nDescription=HOPE EVA every-three-hours reconciliation timer\n[Timer]\nUnit=oracle-hope-ops-settle.service\nOnCalendar=*-*-* 00/3:00:00 UTC\nAccuracySec=1min\nPersistent=true\nRandomizedDelaySec=0\n[Install]\nWantedBy=timers.target\n",
+  "timer_was_enabled": true,
+  "version": "HOPE_V4"
+}

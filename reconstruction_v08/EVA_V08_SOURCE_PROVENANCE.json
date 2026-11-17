@@ -1,0 +1,219 @@
+{
+  "version": "ORACLE_EVA_V0.8_SOURCE_PROVENANCE",
+  "created_utc": "2026-10-29T17:31:40.081060+00:00",
+  "state": "OFFLINE_EARLY_ARCHIVE_CANDIDATES_QUARANTINED_NOT_RUNTIME",
+  "v07_truncated": false,
+  "historical_benchmarks": {
+    "frozen_233": {
+      "bets": 233,
+      "wins": 96,
+      "losses": 137,
+      "net_usd": 96.5,
+      "unique_matches": 39
+    },
+    "original_223_baseline": {
+      "bets": 150,
+      "wins": 79,
+      "losses": 71,
+      "net_usd": 223.0,
+      "unique_matches": 34
+    },
+    "current_user_policy_243_40": {
+      "bets": 117,
+      "wins": 64,
+      "losses": 53,
+      "net_usd": 243.4,
+      "unique_matches": 30
+    },
+    "excluded_double_chance": {
+      "bets": 33,
+      "wins": 15,
+      "losses": 18,
+      "net_usd": -20.4,
+      "unique_matches": 15
+    },
+    "first_206_odds_kept": {
+      "bets": 127,
+      "wins": 63,
+      "losses": 64,
+      "net_usd": 101.5,
+      "unique_matches": 33
+    },
+    "last_27_odds_kept": {
+      "bets": 23,
+      "wins": 16,
+      "losses": 7,
+      "net_usd": 121.5,
+      "unique_matches": 8
+    },
+    "unique_match_market_selection_odds_created_combinations": 75,
+    "duplicate_experiment_rows_by_that_key": 75
+  },
+  "active_policy_status": "DRAFT_NOT_WIRED_TO_RUNTIME",
+  "odds_min_inclusive": 1.7,
+  "odds_max_inclusive": 3.5,
+  "double_chance_excluded": true,
+  "home_away_only_filter": false,
+  "source_variant_counts": {
+    "sports_free.py": {
+      "seen": 6,
+      "matched_to_early_archives": 0
+    },
+    "oracle_sports_brain.py": {
+      "seen": 2,
+      "matched_to_early_archives": 0
+    },
+    "oracle_v4_sports.py": {
+      "seen": 2,
+      "matched_to_early_archives": 0
+    },
+    "oracle_fonbet_full.py": {
+      "seen": 4,
+      "matched_to_early_archives": 0
+    },
+    "oracle_odds_hub.py": {
+      "seen": 2,
+      "matched_to_early_archives": 0
+    }
+  },
+  "module_variants": {
+    "sports_free.py": {
+      "08753669076edc43a8a43077f4a69a6754cfd6f7afa00a8a8a5832d38a02510c": {
+        "recorded_copies": 2,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      },
+      "0c91a776eb486e49e9ecfa0b79ab5c26af8b59324704f5e6d5f87f33fcd5b90c": {
+        "recorded_copies": 4,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      },
+      "2f798427c55ad0efdc9366aef0c046c683bb66212569489b21435b6c6d211d64": {
+        "recorded_copies": 2,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      },
+      "a102b774730db3abc7902bfc5c6ea3a5c950f76ff219d46c9f6a4ad10b2fb159": {
+        "recorded_copies": 4,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      },
+      "a6f27e2a84bb855b96951c6f3918a3390d0f3e33464e334360f9c2069e2288c1": {
+        "recorded_copies": 5,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      },
+      "d9c0a15d3f5e6ddba3f63b0e0b5bb9eda85fa884ffb89e051ea4180c8cba83ea": {
+        "recorded_copies": 5,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      }
+    },
+    "oracle_sports_brain.py": {
+      "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed": {
+        "recorded_copies": 9,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      },
+      "95ecc5968e841a37fb0712e2b2bb0d9feba9287837a6b366eb9a85ec48b1c0f1": {
+        "recorded_copies": 4,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      }
+    },
+    "oracle_v4_sports.py": {
+      "c350be33609b35d2ced43be68d4555edf1d0c884409d15436c03998149c8be81": {
+        "recorded_copies": 2,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      },
+      "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d": {
+        "recorded_copies": 7,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      }
+    },
+    "oracle_fonbet_full.py": {
+      "a0aaa882cf235ecbabd40caa65fda84d25de8ed53f490e8c3d99e030204b3a47": {
+        "recorded_copies": 2,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      },
+      "d2dbd757e70d18c5ce4c09db274f6649b678e0833eaf1c03bf58f7c9b3bf792d": {
+        "recorded_copies": 2,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      },
+      "e3c769fce42c23e06c1a37515ee4f3b82d1edbcc4c4ec4bd1238521e51cf6642": {
+        "recorded_copies": 2,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      },
+      "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1": {
+        "recorded_copies": 7,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      }
+    },
+    "oracle_odds_hub.py": {
+      "128d6802db3b192d56ca07cfb12b19a8022ba129cce50b2912e7d9f0eea3327b": {
+        "recorded_copies": 2,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      },
+      "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8": {
+        "recorded_copies": 11,
+        "archive_verified": false,
+        "sources": [],
+        "imports": [],
+        "trusted_for_runtime": false
+      }
+    }
+  },
+  "static_dependencies": [],
+  "selected_24_oct_runtime_hashes": {},
+  "runtime_identity_proven": false,
+  "ready_to_start": false,
+  "real_wagers_or_orders": 0,
+  "network_calls": 0,
+  "production_changed": false,
+  "production_read_write": false,
+  "limitations": [
+    "A module found in early-labeled release archives does not prove its use on October 24-25.",
+    "No historical source is automatically promoted to a runtime module.",
+    "Quarantine code must never be placed on sys.path for an active EVA service before explicit verification.",
+    "Module dependencies were parsed, not imported or run.",
+    "Original 233 results are outcome-known and do not prove out-of-sample profits.",
+    "No Docker, daemon, timer, database, active service or existing file is modified."
+  ]
+}

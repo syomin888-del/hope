@@ -1,0 +1,58 @@
+{
+  "at": "2026-11-17T09:09:13+00:00",
+  "categories": {
+    "AWAITING_EVENT": 205,
+    "NEW_OR_OTHER_STATUS": 743,
+    "OFFICIAL_SETTLED": 402,
+    "RETRY_UNRESOLVED": 222
+  },
+  "extra_source_errors": [],
+  "extra_source_requests": 6,
+  "independent_extra_matches": {},
+  "ledger": {
+    "paper_rows_total": 1572,
+    "portfolio_unlinked_total": 0
+  },
+  "mode": "PAPER_ONLY",
+  "native_r10_summary": {
+    "previous_settled_pnl": {
+      "all_paper": {
+        "net_usd": -606.7,
+        "roi_pct": -15.092,
+        "settled": 402,
+        "stake_usd": 4020.0
+      },
+      "selected_portfolio": {
+        "net_usd": -30.0,
+        "roi_pct": -100.0,
+        "settled": 3,
+        "stake_usd": 30.0
+      }
+    },
+    "research_only_preview": {
+      "WARNING": "RESEARCH_ONLY: source final is not proof of executable odds or realized PnL; repeated paper rows are correlated.",
+      "by_evidence_grade": {},
+      "states": {
+        "KICKOFF_NOT_CONFIRMED": 12,
+        "NOT_EVALUATED": 215,
+        "NO_VALIDATED_ESPN_FINAL": 200
+      }
+    }
+  },
+  "no_forged_win_loss": true,
+  "official_pnl_only_native_r10": true,
+  "pending_in_r10": 427,
+  "portfolio_by_paper_status": {
+    "EVA_LEGACY_ARCHIVED": 50,
+    "LOSS": 3,
+    "PENDING": 24
+  },
+  "portfolio_rows": 77,
+  "portfolio_unique_ids": 77,
+  "portfolio_unlinked": 0,
+  "r10_newly_settled": 0,
+  "r10_report": "/opt/ORACLE_EVA/replica_v170/state/eva-reports/eva_r10_census_20261117T090913Z_9ff1b088.json",
+  "real_orders": 0,
+  "scheduler": "EVERY_3_HOURS",
+  "unresolved_remain_in_auto_retry": true
+}

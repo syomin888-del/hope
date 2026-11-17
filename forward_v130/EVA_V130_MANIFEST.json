@@ -1,0 +1,45 @@
+{
+  "version": "EVA_V1_3",
+  "state": "INDEPENDENT_EMPTY_FORWARD_DB_NO_FEED",
+  "created_utc": "2026-10-30T11:18:58+00:00",
+  "source_evidence_v120": "/opt/ORACLE_EVA/runtime_validation_v120/run_20261030T104817Z_4fc8ccb8/EVA_V120_NATIVE_FIXTURE_REPORT.json",
+  "source_hashes_sha256": {
+    "oracle_console.py": "c9bf4a71014f2c55a19af2ea14aa6721a37d06035432b10a944ee670ec665183",
+    "oracle_fonbet_full.py": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1",
+    "oracle_odds_hub.py": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+    "oracle_sports_brain.py": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+    "oracle_v4.py": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54",
+    "oracle_v4_sports.py": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+    "oracle_v5.py": "1bebdf415ca9410cfddebefbe905675704dc349a6d21ecbbf85daf8f200ec860",
+    "oracle_v5_settlement.py": "0144f0d6f40d7117ac54fd5f6cb59ec4f4b6034ea664500a49e66a6e5f670280",
+    "sports_free.py": "2f798427c55ad0efdc9366aef0c046c683bb66212569489b21435b6c6d211d64"
+  },
+  "docker_image": "python:3.12-alpine",
+  "trigger_hashes_sha256": {
+    "eva_forward_immutable_fields": "f9ead3fad48a21be20d625718320196c23a14a8b04b993f062c75551b1204d5a",
+    "eva_forward_insert": "46af16464f38249a330c571a5c821695b93c56322ba776fe7b8fd47a98a29f72",
+    "eva_forward_no_delete": "38658c5b78035e105650f99b85284be2ea2918e8c87188e7d23f6c49ead1933f",
+    "eva_forward_valid_settlement": "0201d2f866b4758180f011caa77482a100368d1ca3bc996e2e15cbe13453d85a"
+  },
+  "database_relpath": "state/eva_forward.sqlite3",
+  "policy": {
+    "min_odds": 1.7,
+    "max_odds": 3.5,
+    "exclude_double_chance": true,
+    "home_away_filter": false,
+    "fixed_paper_stake_usd": 10
+  },
+  "benchmarks_historical_usd": {
+    "filtered_150": 223.0,
+    "no_dc_117": 243.4
+  },
+  "no_history_copied": true,
+  "old_pending_reactivated": false,
+  "production_modified": false,
+  "network_enabled": false,
+  "schedule_enabled": false,
+  "actual_prediction_feed_active": false,
+  "actual_model_predictions": 0,
+  "paper_registered": 0,
+  "real_bets": 0
+}

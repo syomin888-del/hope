@@ -1,0 +1,9 @@
+{
+  "original_units": {
+    "oracle-hope-ops-settle.service": "# HOPE AUTOPILOT v1.0: isolated EVA, never production\n[Unit]\nDescription=HOPE EVA guarded settle\nAfter=docker.service network-online.target\nWants=network-online.target\n[Service]\nType=oneshot\nUser=root\nWorkingDirectory=/opt/ORACLE_EVA/hope_ops/current\nExecStart=/usr/bin/python3 /opt/ORACLE_EVA/hope_ops/current/hope_ops.py settle\nUMask=0077\nNoNewPrivileges=true\nTimeoutStartSec=2700\n",
+    "oracle-hope-ops-settle.timer": "# HOPE AUTOPILOT v1.0: isolated EVA, never production\n[Unit]\nDescription=HOPE EVA guarded settle timer\n[Timer]\nUnit=oracle-hope-ops-settle.service\nOnCalendar=hourly\nRandomizedDelaySec=480\nPersistent=true\n[Install]\nWantedBy=timers.target\n"
+  },
+  "previous_timer_enabled": true,
+  "rollback_available": true,
+  "version": "HOPE_V2_3H"
+}

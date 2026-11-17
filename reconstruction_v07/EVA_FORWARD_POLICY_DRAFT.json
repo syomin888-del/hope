@@ -1,0 +1,26 @@
+{
+  "version": "EVA_SPORTS_FORWARD_POLICY_0.7",
+  "status": "DRAFT_NOT_WIRED_TO_RUNTIME",
+  "paper_only": true,
+  "real_orders_enabled": false,
+  "odds_min_inclusive": 1.7,
+  "odds_max_inclusive": 3.5,
+  "exclude_markets": [
+    "DOUBLE_CHANCE",
+    "ДВОЙНОЙ ШАНС"
+  ],
+  "home_away_exclusion_rules": [],
+  "production_activation_utc": null,
+  "old_pending": "ARCHIVE_ONLY_NO_AUTO_REPLAY_NO_DELETION",
+  "duplicate_research_rows": "RETAIN_WITH_FLAG_NO_INDEPENDENCE_CLAIM",
+  "retroactive_new_paper": "FORBIDDEN",
+  "required_additional_gates": [
+    "quote observed before kickoff",
+    "forecast registered before kickoff",
+    "source as-of verified",
+    "unique prospective candidate identity",
+    "locked source algorithm"
+  ],
+  "baseline_original_223_usd_not_runtime_target": 223.0,
+  "baseline_with_double_chance_exclusion_usd_not_runtime_target": 243.4
+}

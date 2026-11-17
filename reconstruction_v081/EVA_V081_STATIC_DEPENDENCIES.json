@@ -1,0 +1,23 @@
+[
+  {
+    "module": "oracle_v4_sports.py",
+    "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+    "candidate_required_provider_imports": [],
+    "unresolved_original_runtime_imports": [],
+    "not_executed": true
+  },
+  {
+    "module": "sports_free.py",
+    "sha256": "a102b774730db3abc7902bfc5c6ea3a5c950f76ff219d46c9f6a4ad10b2fb159",
+    "candidate_required_provider_imports": [],
+    "unresolved_original_runtime_imports": [],
+    "not_executed": true
+  },
+  {
+    "module": "sports_free.py",
+    "sha256": "a6f27e2a84bb855b96951c6f3918a3390d0f3e33464e334360f9c2069e2288c1",
+    "candidate_required_provider_imports": [],
+    "unresolved_original_runtime_imports": [],
+    "not_executed": true
+  }
+]

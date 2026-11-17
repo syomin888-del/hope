@@ -1,0 +1,375 @@
+{
+  "release": "EVA-EVIDENCE-0.2",
+  "created_at_utc": "2026-10-29T13:32:21.770805+00:00",
+  "eva": "/opt/ORACLE_EVA",
+  "action": "EVIDENCE_READ_ONLY",
+  "production_modified": false,
+  "eva_running": false,
+  "historic_cutoff_utc": "2026-10-24T13:41:13+00:00",
+  "free_disk_bytes": 44753629184,
+  "source": {
+    "modules": {
+      "v55": {
+        "oracle_v5_settlement.py": [
+          {
+            "file": "historical_release_inputs/v55/files/oracle_v5_settlement.py",
+            "sha256": "0144f0d6f40d7117ac54fd5f6cb59ec4f4b6034ea664500a49e66a6e5f670280",
+            "manifest_match": true
+          }
+        ],
+        "oracle_v5.py": [
+          {
+            "file": "historical_release_inputs/v55/files/oracle_v5.py",
+            "sha256": "1bebdf415ca9410cfddebefbe905675704dc349a6d21ecbbf85daf8f200ec860",
+            "manifest_match": true
+          },
+          {
+            "file": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v5.py",
+            "sha256": "1fa7be1e13a804cebd98682531385a1e00e104451f7b2ad90c6a49c2efb43ab1",
+            "manifest_match": true
+          }
+        ],
+        "sports_free.py": [],
+        "oracle_sports_brain.py": [],
+        "oracle_v4_sports.py": [],
+        "oracle_fonbet_bridge.py": [
+          {
+            "file": "historical_release_inputs/v55/tests/fixtures/oracle_fonbet_bridge.py",
+            "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa",
+            "manifest_match": true
+          }
+        ]
+      },
+      "v56": {
+        "oracle_v56_portfolio.py": [
+          {
+            "file": "historical_release_inputs/v56/files/oracle_v56_portfolio.py",
+            "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e",
+            "manifest_match": true
+          }
+        ]
+      },
+      "v70": {
+        "oracle_v7_crypto.py": [
+          {
+            "file": "historical_release_inputs/v70/files/oracle_v7_crypto.py",
+            "sha256": "2ca2477b7a41eaeb64fbc0427e8fab98b2ef5acee7c0807dc2015bdef3c4b21b",
+            "manifest_match": true
+          }
+        ],
+        "oracle_v7.py": [
+          {
+            "file": "historical_release_inputs/v70/files/oracle_v7.py",
+            "sha256": "372cf7d0a5520192d0b72d2dd64cf59062dca53e432c08048cc72bfa0bc4bf88",
+            "manifest_match": true
+          }
+        ],
+        "oracle_v7_core.py": [
+          {
+            "file": "historical_release_inputs/v70/files/oracle_v7_core.py",
+            "sha256": "6755879820abd4be7aa85a916670a585343af5a0242851fe2c0b62d16384477b",
+            "manifest_match": true
+          }
+        ],
+        "oracle_v58_brain.py": [
+          {
+            "file": "historical_release_inputs/v70/files/oracle_v58_brain.py",
+            "sha256": "bb67a9f58ea8f451b75af05fab192362ef61ad13d32a732e807facb8f981d0d0",
+            "manifest_match": true
+          }
+        ]
+      }
+    },
+    "missing": {
+      "v55": [
+        "sports_free.py",
+        "oracle_sports_brain.py",
+        "oracle_v4_sports.py"
+      ],
+      "v56": [],
+      "v70": []
+    },
+    "note": "Same-named modules in nested fixtures/backups may differ; NO automatic overlay or installer execution."
+  },
+  "staged_db": {
+    "path": "/opt/ORACLE_EVA/state/oracle-historical-input.sqlite3",
+    "sha256_verified": true,
+    "table_count": 157,
+    "states": {
+      "PENDING": 743
+    },
+    "registered_range": [
+      "2026-10-24T09:34:30+00:00",
+      "2026-10-24T13:12:46+00:00"
+    ],
+    "unique_roots": 126,
+    "by_origin": {
+      "sb_independent_forecasts": 20,
+      "sf_forecasts": 377,
+      "v4_sport_preds": 14,
+      "v58_brain": 332
+    },
+    "net_known_usd": 0.0,
+    "quick_check": "ok"
+  },
+  "late_backup_cohort_comparisons": [
+    {
+      "path": "/var/lib/docker/volumes/oracle_core_v10_oracle-data/_data/oracle-before-v85-20261026T135930Z.sqlite3",
+      "exists": true,
+      "comparison_only_not_for_eva": true,
+      "table_count": 161,
+      "states": {
+        "LOSS": 137,
+        "PENDING": 915,
+        "WIN": 96
+      },
+      "registered_range": [
+        "2026-10-24T09:34:30+00:00",
+        "2026-10-26T13:48:19+00:00"
+      ],
+      "unique_roots": 192,
+      "by_origin": {
+        "sb_independent_forecasts": 22,
+        "sf_forecasts": 611,
+        "v4_sport_preds": 16,
+        "v58_brain": 499
+      },
+      "net_known_usd": 96.5,
+      "resolved_total": 233,
+      "resolved_matched_in_staged_743": 206,
+      "resolved_not_in_staged": 27,
+      "wins_losses_in_later_backup": {
+        "LOSS": 137,
+        "WIN": 96
+      },
+      "net_all_resolved_usd": 96.5,
+      "net_matched_staged_usd": 15.0,
+      "unique_matched_roots": 39,
+      "matches_exact_233_cohort": true,
+      "exact_cohort_ids_present_in_stage": 206
+    },
+    {
+      "path": "/var/lib/docker/volumes/oracle_core_v10_oracle-data/_data/oracle-before-v79-20261026T063227685511Z.sqlite3",
+      "exists": true,
+      "comparison_only_not_for_eva": true,
+      "table_count": 161,
+      "states": {
+        "LOSS": 78,
+        "PENDING": 1001,
+        "WIN": 62
+      },
+      "registered_range": [
+        "2026-10-24T09:34:30+00:00",
+        "2026-10-26T05:47:58+00:00"
+      ],
+      "unique_roots": 190,
+      "by_origin": {
+        "sb_independent_forecasts": 22,
+        "sf_forecasts": 607,
+        "v4_sport_preds": 16,
+        "v58_brain": 496
+      },
+      "net_known_usd": 240.9,
+      "resolved_total": 140,
+      "resolved_matched_in_staged_743": 132,
+      "resolved_not_in_staged": 8,
+      "wins_losses_in_later_backup": {
+        "LOSS": 78,
+        "WIN": 62
+      },
+      "net_all_resolved_usd": 240.9,
+      "net_matched_staged_usd": 257.9,
+      "unique_matched_roots": 30,
+      "matches_exact_233_cohort": false,
+      "exact_cohort_ids_present_in_stage": null
+    },
+    {
+      "path": "/root/ORACLE_ONE_PRIVATE_SNAPSHOT/sqlite_backups/oracle-live-20261027T235148Z.sqlite3",
+      "exists": true,
+      "comparison_only_not_for_eva": true,
+      "table_count": 163,
+      "states": {
+        "LOSS": 143,
+        "PENDING": 905,
+        "WIN": 100
+      },
+      "registered_range": [
+        "2026-10-24T09:34:30+00:00",
+        "2026-10-26T13:48:19+00:00"
+      ],
+      "unique_roots": 192,
+      "by_origin": {
+        "sb_independent_forecasts": 22,
+        "sf_forecasts": 611,
+        "v4_sport_preds": 16,
+        "v58_brain": 499
+      },
+      "net_known_usd": 90.5,
+      "resolved_total": 243,
+      "resolved_matched_in_staged_743": 209,
+      "resolved_not_in_staged": 34,
+      "wins_losses_in_later_backup": {
+        "LOSS": 143,
+        "WIN": 100
+      },
+      "net_all_resolved_usd": 90.5,
+      "net_matched_staged_usd": 34.0,
+      "unique_matched_roots": 40,
+      "matches_exact_233_cohort": false,
+      "exact_cohort_ids_present_in_stage": null
+    }
+  ],
+  "archive_sources": [
+    {
+      "path": "/var/lib/docker/volumes/oracle_core_v10_oracle-archives/_data",
+      "exists": true,
+      "copied": false,
+      "point_in_time_verified": false,
+      "file_count_examined": 29,
+      "scan_truncated": false,
+      "bytes_examined": 514948,
+      "files_mtime_on_or_before_cutoff": 9,
+      "files_mtime_after_cutoff": 20,
+      "common_extensions": [
+        [
+          ".parquet",
+          29
+        ]
+      ],
+      "sample": [
+        {
+          "file": "candles/binance_archive/BTCUSDT/2018-08.parquet",
+          "bytes": 19498,
+          "modified_utc": "2026-10-28T16:34:40.568615+00:00"
+        },
+        {
+          "file": "candles/binance_archive/BTCUSDT/2017-09.parquet",
+          "bytes": 18610,
+          "modified_utc": "2026-10-23T04:21:40.915105+00:00"
+        },
+        {
+          "file": "candles/binance_archive/BTCUSDT/2017-12.parquet",
+          "bytes": 20211,
+          "modified_utc": "2026-10-24T16:25:36.889091+00:00"
+        },
+        {
+          "file": "candles/binance_archive/BTCUSDT/2018-03.parquet",
+          "bytes": 19669,
+          "modified_utc": "2026-10-26T04:30:33.307860+00:00"
+        },
+        {
+          "file": "candles/binance_archive/BTCUSDT/2018-04.parquet",
+          "bytes": 18714,
+          "modified_utc": "2026-10-26T16:31:52.716457+00:00"
+        },
+        {
+          "file": "candles/binance_archive/BTCUSDT/2017-10.parquet",
+          "bytes": 18965,
+          "modified_utc": "2026-10-23T16:22:53.974863+00:00"
+        },
+        {
+          "file": "candles/binance_archive/BTCUSDT/2017-11.parquet",
+          "bytes": 19128,
+          "modified_utc": "2026-10-24T04:23:55.064750+00:00"
+        },
+        {
+          "file": "candles/binance_archive/BTCUSDT/2018-02.parquet",
+          "bytes": 17398,
+          "modified_utc": "2026-10-25T16:29:34.142011+00:00"
+        }
+      ],
+      "note": "mtime is not proof data was available at prediction time. This audit does not copy archives."
+    },
+    {
+      "path": "/opt/ORACLE_CORE_v11/archives",
+      "exists": false,
+      "copied": false,
+      "point_in_time_verified": false
+    },
+    {
+      "path": "/opt/ORACLE_CORE_v11/data",
+      "exists": false,
+      "copied": false,
+      "point_in_time_verified": false
+    },
+    {
+      "path": "/var/lib/docker/volumes/oracle_core_v10_oracle-data/_data",
+      "exists": true,
+      "copied": false,
+      "point_in_time_verified": false,
+      "file_count_examined": 32,
+      "scan_truncated": false,
+      "bytes_examined": 58465011408,
+      "files_mtime_on_or_before_cutoff": 1,
+      "files_mtime_after_cutoff": 31,
+      "common_extensions": [
+        [
+          ".sqlite3",
+          13
+        ],
+        [
+          ".sqlite3-shm",
+          9
+        ],
+        [
+          ".sqlite3-wal",
+          9
+        ],
+        [
+          ".lock",
+          1
+        ]
+      ],
+      "sample": [
+        {
+          "file": "oracle-before-v79-20261025T063117820141Z.sqlite3-shm",
+          "bytes": 32768,
+          "modified_utc": "2026-10-27T14:35:05.947703+00:00"
+        },
+        {
+          "file": "oracle-before-v79-20261028T000513096630Z.sqlite3",
+          "bytes": 6567878656,
+          "modified_utc": "2026-10-28T00:05:27.608715+00:00"
+        },
+        {
+          "file": "oracle-before-v79-20261025T063117820141Z.sqlite3",
+          "bytes": 2917617664,
+          "modified_utc": "2026-10-25T06:31:22.873782+00:00"
+        },
+        {
+          "file": "oracle-before-v79-20261026T063227685511Z.sqlite3",
+          "bytes": 4372123648,
+          "modified_utc": "2026-10-26T06:32:35.647684+00:00"
+        },
+        {
+          "file": "oracle.sqlite3-wal",
+          "bytes": 505153232,
+          "modified_utc": "2026-10-29T13:31:57.013427+00:00"
+        },
+        {
+          "file": "oracle-before-v73-20261024T152216Z.sqlite3-shm",
+          "bytes": 32768,
+          "modified_utc": "2026-10-27T14:35:05.913702+00:00"
+        },
+        {
+          "file": "oracle-before-v79-20261025T063117820141Z.sqlite3-wal",
+          "bytes": 0,
+          "modified_utc": "2026-10-27T14:35:05.947703+00:00"
+        },
+        {
+          "file": "oracle-before-v79-20261024T171107821444Z.sqlite3-wal",
+          "bytes": 0,
+          "modified_utc": "2026-10-27T14:35:05.936702+00:00"
+        }
+      ],
+      "note": "mtime is not proof data was available at prediction time. This audit does not copy archives."
+    }
+  ],
+  "limits": [
+    "No historical archives were copied by this release",
+    "Later results DB used read-only only to match forecast IDs, never as prediction input",
+    "Original source dependency/runtime equivalence not yet tested",
+    "No Docker, systemd, or bookmaker/crypto forecasting processes started",
+    "No real bets or real crypto orders"
+  ]
+}

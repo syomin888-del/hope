@@ -1,0 +1,858 @@
+{
+  "release": "EVA_SOURCE_LOCK_0.4",
+  "created_utc": "2026-10-29T14:17:32.003109+00:00",
+  "state": "HISTORICAL_CODE_PROVENANCE_ONLY_NOT_RUNNING",
+  "historical_source_files_verified": 63,
+  "modules_with_pre_cutoff_original_candidates": {
+    "sports_free.py": [],
+    "oracle_sports_brain.py": [],
+    "oracle_v4_sports.py": [],
+    "oracle_fonbet_full.py": [],
+    "oracle_odds_hub.py": [],
+    "oracle_v4.py": [
+      {
+        "relative_path": "historical_release_inputs/v55/files/oracle_v4.py",
+        "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54",
+        "release": "v55"
+      },
+      {
+        "relative_path": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v4.py",
+        "sha256": "4843b3ca36433d3ae20f85e7e1babc6e8f73dd88e7ba2763ebb8436f52dfdcfb",
+        "release": "v55"
+      },
+      {
+        "relative_path": "historical_release_inputs/v70/tests/support/oracle_v4.py",
+        "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54",
+        "release": "v70"
+      }
+    ],
+    "oracle_v5.py": [
+      {
+        "relative_path": "historical_release_inputs/v55/files/oracle_v5.py",
+        "sha256": "1bebdf415ca9410cfddebefbe905675704dc349a6d21ecbbf85daf8f200ec860",
+        "release": "v55"
+      },
+      {
+        "relative_path": "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v5.py",
+        "sha256": "1fa7be1e13a804cebd98682531385a1e00e104451f7b2ad90c6a49c2efb43ab1",
+        "release": "v55"
+      },
+      {
+        "relative_path": "historical_release_inputs/v56/files/oracle_v5.py",
+        "sha256": "29c9b2b9dbc69682ef6e8c6d28cdcf0d7b186636fd20b36c94ad6be5a2dda910",
+        "release": "v56"
+      },
+      {
+        "relative_path": "historical_release_inputs/v70/files/oracle_v5.py",
+        "sha256": "b243e223efdbe48b931dfa26bec729261885dbd0ca87a8ea07c24e5418d6ae1c",
+        "release": "v70"
+      },
+      {
+        "relative_path": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5.py",
+        "sha256": "9da7360a760df46ffdf68d71a71661af71c86eede905fb97af1c3536572ba942",
+        "release": "v70"
+      }
+    ],
+    "oracle_v5_settlement.py": [
+      {
+        "relative_path": "historical_release_inputs/v55/files/oracle_v5_settlement.py",
+        "sha256": "0144f0d6f40d7117ac54fd5f6cb59ec4f4b6034ea664500a49e66a6e5f670280",
+        "release": "v55"
+      },
+      {
+        "relative_path": "historical_release_inputs/v56/files/oracle_v5_settlement.py",
+        "sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788",
+        "release": "v56"
+      },
+      {
+        "relative_path": "historical_release_inputs/v70/files/oracle_v5_settlement.py",
+        "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f",
+        "release": "v70"
+      },
+      {
+        "relative_path": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5_settlement.py",
+        "sha256": "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788",
+        "release": "v70"
+      },
+      {
+        "relative_path": "historical_release_inputs/v70/tests/support/oracle_v5_settlement.py",
+        "sha256": "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f",
+        "release": "v70"
+      }
+    ],
+    "oracle_v56_portfolio.py": [
+      {
+        "relative_path": "historical_release_inputs/v56/files/oracle_v56_portfolio.py",
+        "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e",
+        "release": "v56"
+      },
+      {
+        "relative_path": "historical_release_inputs/v70/files/oracle_v56_portfolio.py",
+        "sha256": "0b27b7e272db7f2506ae011d1b733f0188dfdffea28e50d6506e5d4b3524567c",
+        "release": "v70"
+      },
+      {
+        "relative_path": "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v56_portfolio.py",
+        "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e",
+        "release": "v70"
+      },
+      {
+        "relative_path": "historical_release_inputs/v70/tests/support/oracle_v56_portfolio.py",
+        "sha256": "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e",
+        "release": "v70"
+      }
+    ],
+    "oracle_v58_brain.py": [
+      {
+        "relative_path": "historical_release_inputs/v70/files/oracle_v58_brain.py",
+        "sha256": "bb67a9f58ea8f451b75af05fab192362ef61ad13d32a732e807facb8f981d0d0",
+        "release": "v70"
+      }
+    ],
+    "oracle_v7.py": [
+      {
+        "relative_path": "historical_release_inputs/v70/files/oracle_v7.py",
+        "sha256": "372cf7d0a5520192d0b72d2dd64cf59062dca53e432c08048cc72bfa0bc4bf88",
+        "release": "v70"
+      }
+    ],
+    "oracle_v7_core.py": [
+      {
+        "relative_path": "historical_release_inputs/v70/files/oracle_v7_core.py",
+        "sha256": "6755879820abd4be7aa85a916670a585343af5a0242851fe2c0b62d16384477b",
+        "release": "v70"
+      }
+    ],
+    "oracle_v7_crypto.py": [
+      {
+        "relative_path": "historical_release_inputs/v70/files/oracle_v7_crypto.py",
+        "sha256": "2ca2477b7a41eaeb64fbc0427e8fab98b2ef5acee7c0807dc2015bdef3c4b21b",
+        "release": "v70"
+      }
+    ],
+    "oracle_fonbet_bridge.py": [
+      {
+        "relative_path": "historical_release_inputs/v55/tests/fixtures/oracle_fonbet_bridge.py",
+        "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa",
+        "release": "v55"
+      },
+      {
+        "relative_path": "historical_release_inputs/v70/tests/fixtures/oracle_fonbet_bridge.py",
+        "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa",
+        "release": "v70"
+      }
+    ]
+  },
+  "candidate_source_ambiguities": {
+    "oracle_v4.py": [
+      "4843b3ca36433d3ae20f85e7e1babc6e8f73dd88e7ba2763ebb8436f52dfdcfb",
+      "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54"
+    ],
+    "oracle_v5.py": [
+      "1bebdf415ca9410cfddebefbe905675704dc349a6d21ecbbf85daf8f200ec860",
+      "1fa7be1e13a804cebd98682531385a1e00e104451f7b2ad90c6a49c2efb43ab1",
+      "29c9b2b9dbc69682ef6e8c6d28cdcf0d7b186636fd20b36c94ad6be5a2dda910",
+      "9da7360a760df46ffdf68d71a71661af71c86eede905fb97af1c3536572ba942",
+      "b243e223efdbe48b931dfa26bec729261885dbd0ca87a8ea07c24e5418d6ae1c"
+    ],
+    "oracle_v5_settlement.py": [
+      "0144f0d6f40d7117ac54fd5f6cb59ec4f4b6034ea664500a49e66a6e5f670280",
+      "831f6e3836297614da58b736509104e1372073b66facdb124bac43526fbbf788",
+      "a22936af760b26e0cbed3eacdea5f3a6ade0f757e4297caf6a881a3dca3ecf2f"
+    ],
+    "oracle_v56_portfolio.py": [
+      "0b27b7e272db7f2506ae011d1b733f0188dfdffea28e50d6506e5d4b3524567c",
+      "a9e12d1de13afbbf003d61196da80d12bfca5a8cdfa793771c584b09118cbe8e"
+    ]
+  },
+  "historical_code_imports": {
+    "historical_release_inputs/v55/files/oracle_v4.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "oracle_causal",
+        "oracle_equities",
+        "oracle_fonbet_bridge",
+        "oracle_fonbet_full",
+        "oracle_library",
+        "oracle_odds_hub",
+        "oracle_open_sources",
+        "oracle_sports_brain",
+        "oracle_v4_bookies",
+        "oracle_v4_books",
+        "oracle_v4_discovery",
+        "oracle_v4_fulltext",
+        "oracle_v4_learning",
+        "oracle_v4_sports",
+        "oracle_v5",
+        "os",
+        "pathlib",
+        "sqlite3",
+        "time"
+      ]
+    },
+    "historical_release_inputs/v55/files/oracle_v5_settlement.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "json",
+        "math",
+        "oracle_v5",
+        "os",
+        "sqlite3"
+      ]
+    },
+    "historical_release_inputs/v55/files/oracle_v5.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "difflib",
+        "hashlib",
+        "json",
+        "math",
+        "oracle_fonbet_bridge",
+        "os",
+        "re",
+        "sqlite3",
+        "time",
+        "typing",
+        "unicodedata",
+        "urllib",
+        "xml",
+        "zoneinfo"
+      ]
+    },
+    "historical_release_inputs/v55/tests/fixtures/oracle_fonbet_bridge.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "json",
+        "re",
+        "sqlite3",
+        "unicodedata"
+      ]
+    },
+    "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v4.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "oracle_causal",
+        "oracle_equities",
+        "oracle_fonbet_bridge",
+        "oracle_fonbet_full",
+        "oracle_library",
+        "oracle_odds_hub",
+        "oracle_open_sources",
+        "oracle_sports_brain",
+        "oracle_v4_bookies",
+        "oracle_v4_books",
+        "oracle_v4_discovery",
+        "oracle_v4_fulltext",
+        "oracle_v4_learning",
+        "oracle_v4_sports",
+        "oracle_v5",
+        "os",
+        "pathlib",
+        "sqlite3",
+        "time"
+      ]
+    },
+    "historical_release_inputs/v55/tests/fixtures/base_v53/oracle_v5.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "difflib",
+        "hashlib",
+        "json",
+        "math",
+        "oracle_fonbet_bridge",
+        "os",
+        "re",
+        "sqlite3",
+        "time",
+        "typing",
+        "unicodedata",
+        "urllib",
+        "xml",
+        "zoneinfo"
+      ]
+    },
+    "historical_release_inputs/v56/files/oracle_v5_settlement.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "json",
+        "math",
+        "oracle_v5",
+        "os",
+        "sqlite3"
+      ]
+    },
+    "historical_release_inputs/v56/files/oracle_v5.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "difflib",
+        "hashlib",
+        "json",
+        "math",
+        "oracle_fonbet_bridge",
+        "os",
+        "re",
+        "sqlite3",
+        "time",
+        "typing",
+        "unicodedata",
+        "urllib",
+        "xml",
+        "zoneinfo"
+      ]
+    },
+    "historical_release_inputs/v56/files/oracle_v56_portfolio.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "json",
+        "math",
+        "oracle_v5",
+        "statistics"
+      ]
+    },
+    "historical_release_inputs/v70/files/oracle_v5_settlement.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "json",
+        "math",
+        "oracle_v5",
+        "os",
+        "sqlite3"
+      ]
+    },
+    "historical_release_inputs/v70/files/oracle_v5.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "difflib",
+        "hashlib",
+        "json",
+        "math",
+        "oracle_fonbet_bridge",
+        "os",
+        "re",
+        "sqlite3",
+        "time",
+        "typing",
+        "unicodedata",
+        "urllib",
+        "xml",
+        "zoneinfo"
+      ]
+    },
+    "historical_release_inputs/v70/files/oracle_v7_core.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "datetime",
+        "json",
+        "oracle_v7_crypto",
+        "os",
+        "pathlib",
+        "sqlite3",
+        "urllib"
+      ]
+    },
+    "historical_release_inputs/v70/files/oracle_v7_crypto.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "json",
+        "math",
+        "sqlite3",
+        "statistics"
+      ]
+    },
+    "historical_release_inputs/v70/files/oracle_v7.py": {
+      "syntax": "OK",
+      "imports": [
+        "argparse",
+        "json",
+        "oracle_v7_core",
+        "oracle_v7_crypto",
+        "os",
+        "sqlite3"
+      ]
+    },
+    "historical_release_inputs/v70/files/oracle_v58_brain.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "oracle_v5",
+        "os",
+        "sqlite3",
+        "statistics",
+        "time",
+        "urllib"
+      ]
+    },
+    "historical_release_inputs/v70/files/oracle_v56_portfolio.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "json",
+        "math",
+        "oracle_v5",
+        "statistics"
+      ]
+    },
+    "historical_release_inputs/v70/tests/fixtures/oracle_fonbet_bridge.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "json",
+        "re",
+        "sqlite3",
+        "unicodedata"
+      ]
+    },
+    "historical_release_inputs/v70/tests/support/oracle_v4.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "oracle_causal",
+        "oracle_equities",
+        "oracle_fonbet_bridge",
+        "oracle_fonbet_full",
+        "oracle_library",
+        "oracle_odds_hub",
+        "oracle_open_sources",
+        "oracle_sports_brain",
+        "oracle_v4_bookies",
+        "oracle_v4_books",
+        "oracle_v4_discovery",
+        "oracle_v4_fulltext",
+        "oracle_v4_learning",
+        "oracle_v4_sports",
+        "oracle_v5",
+        "os",
+        "pathlib",
+        "sqlite3",
+        "time"
+      ]
+    },
+    "historical_release_inputs/v70/tests/support/oracle_v5_settlement.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "json",
+        "math",
+        "oracle_v5",
+        "os",
+        "sqlite3"
+      ]
+    },
+    "historical_release_inputs/v70/tests/support/oracle_v56_portfolio.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "json",
+        "math",
+        "oracle_v5",
+        "statistics"
+      ]
+    },
+    "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5_settlement.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "json",
+        "math",
+        "oracle_v5",
+        "os",
+        "sqlite3"
+      ]
+    },
+    "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v5.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "difflib",
+        "hashlib",
+        "json",
+        "math",
+        "oracle_fonbet_bridge",
+        "os",
+        "re",
+        "sqlite3",
+        "time",
+        "typing",
+        "unicodedata",
+        "urllib",
+        "xml",
+        "zoneinfo"
+      ]
+    },
+    "historical_release_inputs/v70/tests/fixtures/base_v57/oracle_v56_portfolio.py": {
+      "syntax": "OK",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "json",
+        "math",
+        "oracle_v5",
+        "statistics"
+      ]
+    }
+  },
+  "missing_from_historical_inputs": [
+    "sports_free.py",
+    "oracle_sports_brain.py",
+    "oracle_v4_sports.py",
+    "oracle_fonbet_full.py",
+    "oracle_odds_hub.py"
+  ],
+  "early_release_manifests": [
+    {
+      "release": "v55",
+      "manifest": "/root/ORACLE_V5_5_MAJOR/manifest.json",
+      "sha256": "9e82ced9a52b7caa8880ef1c64a322fde7f1f49c0be73d4282793e4452932800",
+      "matchable_records": 0
+    },
+    {
+      "release": "v56",
+      "manifest": "/root/ORACLE_V5_6_PORTFOLIO/manifest.json",
+      "sha256": "8883b289e6d82f5ab1119674754c4d98f35a77c2658539b88eff916a746ba6c4",
+      "matchable_records": 0
+    },
+    {
+      "release": "v70",
+      "manifest": "/root/ORACLE_V7_0_GLOBAL/manifest.json",
+      "sha256": "13c9d9b3b390adc46e9f7625843d8d5e257e8e1aac672024739996ff65dede03",
+      "matchable_records": 0
+    }
+  ],
+  "production_file_comparison_READ_ONLY": {
+    "sports_free.py": {
+      "sha256": "d9c0a15d3f5e6ddba3f63b0e0b5bb9eda85fa884ffb89e051ea4180c8cba83ea",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_sports_brain.py": {
+      "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_v4_sports.py": {
+      "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_fonbet_full.py": {
+      "sha256": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_odds_hub.py": {
+      "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_v4.py": {
+      "sha256": "a5e38d418ed5a666df3d20fb8a5d7adfaf59d7e2efbdede7563dc9f6392bfa54",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_v5.py": {
+      "sha256": "b243e223efdbe48b931dfa26bec729261885dbd0ca87a8ea07c24e5418d6ae1c",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_v5_settlement.py": {
+      "sha256": "694c85d831965f0c6dc1c772f93990f7901efbe98f5ece254b55dff28bc38491",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_v56_portfolio.py": {
+      "sha256": "9236ede861b7299f681f18958aeadd38476a277b2830c0fed3a2879a90313f40",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_v58_brain.py": {
+      "sha256": "ff1709ce50507e66c6503097004c98b96271dfeaebc7cf3448e2b62cedb666fb",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_v7.py": {
+      "sha256": "372cf7d0a5520192d0b72d2dd64cf59062dca53e432c08048cc72bfa0bc4bf88",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_v7_core.py": {
+      "sha256": "518dc699366e2c0b21695a8bcca300298c482df435b53f6b0ffccb7868fa1157",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_v7_crypto.py": {
+      "sha256": "2ca2477b7a41eaeb64fbc0427e8fab98b2ef5acee7c0807dc2015bdef3c4b21b",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    },
+    "oracle_fonbet_bridge.py": {
+      "sha256": "011566ef1d53aa107e31df016e73d1f771b59fd5faf832e977e7878be4dfd3fa",
+      "matches_early_release_manifest": [],
+      "historically_certified": false
+    }
+  },
+  "historically_hash_attested_production_missing_modules": [],
+  "not_attested_do_not_use": [
+    "sports_free.py",
+    "oracle_sports_brain.py",
+    "oracle_v4_sports.py",
+    "oracle_fonbet_full.py",
+    "oracle_odds_hub.py"
+  ],
+  "historical_provider_ready": false,
+  "quarantined_small_archive_count": 29,
+  "quarantined_small_archive_bytes": 514948,
+  "archive_classification": "PRESERVATION_ONLY; excluded from as-of forecasting until independently proven as available by cutoff",
+  "important_limitations": [
+    "manifest hash attestation does not by itself prove which runtime module was loaded at forecast creation",
+    "historical registry variants are preserved, not picked by newest timestamp",
+    "staged 743 forecasts and 233 later results are NOT merged",
+    "no production SQL queried and no large database opened",
+    "live runtime has not been constructed, deployed, or tested"
+  ],
+  "production_changed": false,
+  "eva_engine_started": false,
+  "quarantine_archive_manifest": [
+    {
+      "path": "candles/binance_archive/BTCUSDT/2017-08.parquet",
+      "size": 10334,
+      "sha256": "a4d5ea51b52f9323689b6bcb2b7b049744107f4daba0d36f447f78f57cb47392",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2017-09.parquet",
+      "size": 18610,
+      "sha256": "38f7f42c818c3ee2325166c3bac1869162c5cb39c17aa0fdbb2f6853ac1b9557",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2017-10.parquet",
+      "size": 18965,
+      "sha256": "f4bd965fcf9aada9c7974a76301bcf8d0a858de140f3d4347adad18a055ad860",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2017-11.parquet",
+      "size": 19128,
+      "sha256": "d9cc53992e390f9237e54b03cf1ae8cb98e1099fe9448bf7297503f72bff5991",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2017-12.parquet",
+      "size": 20211,
+      "sha256": "2c937bc5728ea6e57a17a2f77566894ea7f225c83c252076923fade53540195f",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2018-01.parquet",
+      "size": 20075,
+      "sha256": "fd721925fd93a962da198f50c80eda5d69e683ca467a96c3dce6dfb53825f9f8",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2018-02.parquet",
+      "size": 17398,
+      "sha256": "78bb7f52c269b653fc2735dd35ff3e74bf397fe97f64b728c86361219c376b53",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2018-03.parquet",
+      "size": 19669,
+      "sha256": "edb427a7df1281f3e9be7372d0592c6535f5dc28c64a9e3c885f6835517dca01",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2018-04.parquet",
+      "size": 18714,
+      "sha256": "6cf488c47f628f36da6b08c3879f6ecd8568021bfd1b3c96f811412215a0b734",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2018-05.parquet",
+      "size": 19679,
+      "sha256": "69a3efb71f38b660af76f8cc4b418a990eb0613120f41c1296ee5f78c3f110ad",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2018-06.parquet",
+      "size": 18722,
+      "sha256": "813be784269864c48f3ebc9e8882afdb0f651b5eb4a9b2c4f63d0fd54c8645c0",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2018-07.parquet",
+      "size": 19479,
+      "sha256": "374f3c6d2f214be9f90e2677a4842e9329abdf9da51331f7066e915503a6920b",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2018-08.parquet",
+      "size": 19498,
+      "sha256": "6ffc6bf2835bc28bedb2abb5b1df396987d8488411b3d7ded7df594aca594e1c",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2018-09.parquet",
+      "size": 18720,
+      "sha256": "695b95253fc5cf1bc73cf277ecb02eb9518c7746c52c01b86be8a9de462f7cb8",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/BTCUSDT/2026-08.parquet",
+      "size": 19844,
+      "sha256": "46d4c3cb5013bed051cba6c2ce1dffc06e34732d15033becf800861a6ed16ec1",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2017-08.parquet",
+      "size": 9566,
+      "sha256": "2e983fc340a6adca298537845b7f7b4eba0bbfca949a845cdcb9e55ba1af2f67",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2017-09.parquet",
+      "size": 17084,
+      "sha256": "2607be3a4bb320f66fc677bd869c8f105ede522718757b82c280e13eb1e78ae7",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2017-10.parquet",
+      "size": 17286,
+      "sha256": "a40171478e2c5d6488c257b46e50222bbc613f5f173ce1948a9cf0ee41c4e699",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2017-11.parquet",
+      "size": 17213,
+      "sha256": "eaed57e25a208642ad48b85dd995a70a5735f25b8c9785e8309887ddd81e457c",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2017-12.parquet",
+      "size": 17921,
+      "sha256": "60742174a1d29af987993770ab74367c1eb196a00fd7d2970f43a86a68781e25",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2018-01.parquet",
+      "size": 17880,
+      "sha256": "36325da6b9cbe072073c2a104bc35608dc6d546249cf963169901bab278d10de",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2018-02.parquet",
+      "size": 15804,
+      "sha256": "cb7f47f8668675304edd099e855f7b15b0d9fd0d2918bc05177203349ad5b1f5",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2018-03.parquet",
+      "size": 17939,
+      "sha256": "6427b6b6dd54d105ccfe6095be604c6bf6fc6772c985ec0fd7a018432ce777a8",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2018-04.parquet",
+      "size": 17407,
+      "sha256": "350fd91bbd061eb72d8cc605abcb418cdc4015fb7aebdf1df18d0b55012ba4cc",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2018-05.parquet",
+      "size": 17805,
+      "sha256": "edcd216c4fe776a8641d0acaad10c0256f892c84210f17b7138973b36aa0d016",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2018-06.parquet",
+      "size": 17105,
+      "sha256": "6c0227c81e21da40928a35fb639562586f3aafea38a7322c9d3db00f058f7835",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2018-07.parquet",
+      "size": 17453,
+      "sha256": "51ea41b7fbe823b055a94d98a4bda68a5ba2f81a1ae2e4b983ef650762e2b56a",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2018-08.parquet",
+      "size": 17740,
+      "sha256": "91e0f6ad3eab9e7118808210e647a9f0b6b668808968ff622b68cc8773651e02",
+      "excluded_from_predictions": true
+    },
+    {
+      "path": "candles/binance_archive/ETHUSDT/2018-09.parquet",
+      "size": 17699,
+      "sha256": "5a2787c26aec39c4513a2ebbe970607bb75029e0eb5235da22657efdeb1bb86a",
+      "excluded_from_predictions": true
+    }
+  ],
+  "sha_manifest_historically_attested_code": {}
+}

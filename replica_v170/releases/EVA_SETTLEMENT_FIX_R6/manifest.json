@@ -1,0 +1,13 @@
+{
+  "container_id": "51b9334b1eb4",
+  "created_utc": "20261116T064316Z",
+  "db_backup_container": "/data/eva-backups/eva_settlement_r6_20261116T064316Z.sqlite3",
+  "db_backup_host": "/opt/ORACLE_EVA/replica_v170/state/eva-backups/eva_settlement_r6_20261116T064316Z.sqlite3",
+  "original_app_files_untouched": true,
+  "probe_sha_after": "48398f0b7c1c176c08d1c5c29385eb53cc6c27c5907ef7b88505b8038e82feb7",
+  "probe_sha_before": "4dc27ec6b3efd93de706acbc48dea83fa882be8001cadc9607628faa8c4bf2d2",
+  "real_orders": 0,
+  "release": "EVA_SETTLEMENT_FIX_R6_2",
+  "runner_sha": "af6c4ec7caee47b2bc4ff7fb3c36707004cb4cf9ba00d0372ce893ac1f88a85d",
+  "status": "APPLIED"
+}

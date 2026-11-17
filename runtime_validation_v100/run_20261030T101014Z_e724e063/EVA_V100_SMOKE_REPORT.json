@@ -1,0 +1,97 @@
+{
+  "version": "EVA_V1_0_CONTROLLED_SMOKE",
+  "created_utc": "2026-10-30T10:10:14.084840+00:00",
+  "historical_sources_verified": 9,
+  "original_sources_total": 10,
+  "provenance": "SHA_VERIFIED_SOURCE_HYPOTHESIS_NOT_24_OCT_RUNTIME_ATTESTATION",
+  "benchmark_original_223_usd": 223.0,
+  "benchmark_without_dc_usd": 243.4,
+  "odds_range_inclusive": [
+    1.7,
+    3.5
+  ],
+  "exclude_double_chance": true,
+  "home_away_filter": false,
+  "production_modified": false,
+  "historical_sqlite_opened": false,
+  "historical_pending_reactivated": false,
+  "generator_started": false,
+  "forecast_produced": false,
+  "real_bets": 0,
+  "notes": [
+    "Only a fresh short-lived sandbox is used; NO network, NO production mounts.",
+    "Smoketest imports early modules and calls setup() on SQLite :memory: only.",
+    "No model training, forecast, prepare, settlement, odds fetch or crypto run.",
+    "An import/schema pass is not proof of numerical or runtime parity."
+  ],
+  "python_container_image": "python:3.12-alpine",
+  "smoke": {
+    "state": "PASS",
+    "runtime_test_passed": true,
+    "exit_code": 0,
+    "detail": {
+      "database": "SQLITE_IN_MEMORY_ONLY",
+      "external_orders": false,
+      "kind": "ORACLE_EVA_V100_CONTAINER_SMOKE",
+      "module_imports": {
+        "oracle_fonbet_full": {
+          "has_prepare": false,
+          "has_settle": false,
+          "has_setup": true,
+          "state": "IMPORTED"
+        },
+        "oracle_odds_hub": {
+          "has_prepare": false,
+          "has_settle": false,
+          "has_setup": true,
+          "state": "IMPORTED"
+        },
+        "oracle_sports_brain": {
+          "has_prepare": false,
+          "has_settle": false,
+          "has_setup": true,
+          "state": "IMPORTED"
+        },
+        "oracle_v4_sports": {
+          "has_prepare": false,
+          "has_settle": true,
+          "has_setup": true,
+          "state": "IMPORTED"
+        },
+        "oracle_v5": {
+          "has_prepare": false,
+          "has_settle": false,
+          "has_setup": true,
+          "state": "IMPORTED"
+        },
+        "oracle_v5_settlement": {
+          "has_prepare": true,
+          "has_settle": true,
+          "has_setup": true,
+          "state": "IMPORTED"
+        },
+        "sports_free": {
+          "has_prepare": false,
+          "has_settle": false,
+          "has_setup": false,
+          "state": "IMPORTED"
+        }
+      },
+      "network": "DISABLED_BY_DOCKER",
+      "prediction_generator_invoked": false,
+      "settlement_invoked": false,
+      "settlement_schema": {
+        "expected_tables_present": [
+          "v55_archive_prices",
+          "v55_paper",
+          "v55_settlement_runs"
+        ],
+        "state": "PASS",
+        "unexpected_tables": [
+          "sqlite_sequence"
+        ]
+      }
+    }
+  },
+  "ready_to_start": false
+}

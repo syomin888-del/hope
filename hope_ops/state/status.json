@@ -1,0 +1,122 @@
+{
+  "at": "2026-11-17T10:22:32+00:00",
+  "capture": {
+    "at": "2026-11-17T10:22:25+00:00",
+    "claim_original_at_quote_at": false,
+    "cumulative": 45,
+    "db_original_writes": 0,
+    "late_skipped": 0,
+    "matched_at_post_registration_capture": 0,
+    "price_mismatch": 0,
+    "quote_absent": 0,
+    "saved_this_run": 0
+  },
+  "disk_free_bytes": 104704282624,
+  "eva": {
+    "db_bytes": 5954760704,
+    "mount_source": "/opt/ORACLE_EVA/replica_v170/state",
+    "name": "/oracle_eva_v170_legacy-historic-oracle-1"
+  },
+  "issues": [
+    "NEURAL_ACTIVE_PROCESS_UNVERIFIED"
+  ],
+  "last_paper_registration": "2026-11-17T00:33:59+00:00",
+  "last_settlement_run": "2026-11-17T09:35:11+00:00",
+  "mode": "PAPER_ONLY",
+  "monitor": "HOST_SIDE_ONLY",
+  "non_r10_settlements_present": true,
+  "other_engine_settlements_need_independent_evidence_audit": true,
+  "paper_status": {
+    "EVA_LEGACY_ARCHIVED": 743,
+    "LOSS": 249,
+    "PENDING": 427,
+    "WIN": 153
+  },
+  "production_oracle_mutations": 0,
+  "real_orders": 0,
+  "settlement": {
+    "at": "2026-11-17T09:09:13+00:00",
+    "db_original_code_changed": false,
+    "disk": {
+      "free_bytes": 107496075264,
+      "required_bytes": 16106127360
+    },
+    "duration_seconds": 18.36,
+    "ended": "NO_CHANGES",
+    "errors": [],
+    "eva": {
+      "db_bytes": 5935341568,
+      "mount_source": "/opt/ORACLE_EVA/replica_v170/state",
+      "name": "/oracle_eva_v170_legacy-historic-oracle-1"
+    },
+    "exit_code": 0,
+    "log": "/opt/ORACLE_EVA/hope_ops/logs/settle_20261117T090854Z.log",
+    "real_orders": 0,
+    "result": "PASS",
+    "summary": {
+      "census": 427,
+      "mode": "apply",
+      "newly_settled": 0,
+      "real_orders": 0,
+      "report": "/data/eva-reports/eva_r10_census_20261117T090913Z_9ff1b088.json",
+      "unresolved_in_initial_census": 222
+    }
+  },
+  "settlement_sources": [
+    {
+      "net_usd": -128.2,
+      "rows": 193,
+      "source": "HOPE_V3_AS_RECORDED_ODDS_NOT_BOOKMAKER_VERIFIED_TWO_PROVIDER_SCORES"
+    },
+    {
+      "net_usd": -509.7,
+      "rows": 170,
+      "source": "HOPE_V3_AS_RECORDED_ODDS_NOT_BOOKMAKER_VERIFIED_ESPN_FINAL_ONLY"
+    },
+    {
+      "net_usd": 30.1,
+      "rows": 26,
+      "source": "v4_games_FINAL"
+    },
+    {
+      "net_usd": 1.1,
+      "rows": 13,
+      "source": "EVA_R8_ESPN_FOOTBALLDATA_FINAL_EXACT_QUOTE"
+    }
+  ],
+  "state": "DEGRADED",
+  "timers": {
+    "capture": "active",
+    "health": "active",
+    "settle": "active"
+  },
+  "ui": {
+    "checked_at": "2026-11-17T10:22:32+00:00",
+    "health_http": 200,
+    "neural_active_verified": false,
+    "neural_api_http": 200,
+    "neural_http": 200,
+    "neural_page_bytes_sampled": 6039,
+    "neural_status": "NO_VERIFIED_ACTIVE_PROCESS",
+    "no_ui_files_modified": true,
+    "renderer_hints": {
+      "canvas": false,
+      "glb": false,
+      "three": false,
+      "webgl": true
+    },
+    "service": "oracle-hope-ui.service",
+    "service_active": true,
+    "ui_http_healthy": true,
+    "ui_renders_3d_not_proven_by_http": true,
+    "ui_state": "OK",
+    "ui_version": "0.7.2",
+    "unit_matches_expected": true
+  },
+  "ui_recovery": {
+    "failures": 0,
+    "restart_attempted": false,
+    "restarts_last_24h": 0
+  },
+  "unverified_predictions_not_promoted": true
+}

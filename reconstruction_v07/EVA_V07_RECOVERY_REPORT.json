@@ -1,0 +1,1573 @@
+{
+  "version": "EVA_V0_7_SOURCE_RECOVERY",
+  "created_utc": "2026-10-29T17:23:16.618893+00:00",
+  "state": "OFFLINE_SOURCE_INVENTORY_NO_ENGINE",
+  "frozen_233_summary": {
+    "frozen_233": {
+      "bets": 233,
+      "wins": 96,
+      "losses": 137,
+      "net_usd": 96.5,
+      "unique_matches": 39
+    },
+    "original_223_baseline": {
+      "bets": 150,
+      "wins": 79,
+      "losses": 71,
+      "net_usd": 223.0,
+      "unique_matches": 34
+    },
+    "current_user_policy_243_40": {
+      "bets": 117,
+      "wins": 64,
+      "losses": 53,
+      "net_usd": 243.4,
+      "unique_matches": 30
+    },
+    "excluded_double_chance": {
+      "bets": 33,
+      "wins": 15,
+      "losses": 18,
+      "net_usd": -20.4,
+      "unique_matches": 15
+    },
+    "first_206_odds_kept": {
+      "bets": 127,
+      "wins": 63,
+      "losses": 64,
+      "net_usd": 101.5,
+      "unique_matches": 33
+    },
+    "last_27_odds_kept": {
+      "bets": 23,
+      "wins": 16,
+      "losses": 7,
+      "net_usd": 121.5,
+      "unique_matches": 8
+    },
+    "unique_match_market_selection_odds_created_combinations": 75,
+    "duplicate_experiment_rows_by_that_key": 75
+  },
+  "scan": {
+    "files_visited": 4741,
+    "zips_inspected": 138,
+    "truncated": false,
+    "limits": {
+      "max_files": 20000,
+      "max_zip": 160,
+      "max_candidates": 250
+    }
+  },
+  "historical_module_candidates": {
+    "oracle_fonbet_full.py": {
+      "total_candidates": 13,
+      "unique_sha256": 4,
+      "candidate_origins": [
+        {
+          "sha256": "e3c769fce42c23e06c1a37515ee4f3b82d1edbcc4c4ec4bd1238521e51cf6642",
+          "origin": "/root/ORACLE_FONBET_DIRECT_V4.zip!files/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "d2dbd757e70d18c5ce4c09db274f6649b678e0833eaf1c03bf58f7c9b3bf792d",
+          "origin": "/root/ORACLE_FONBET_GZIP_FIXED_V4.zip!files/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "gzip",
+            "hashlib",
+            "io",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1",
+          "origin": "/root/ORACLE_FONBET_LOCKFIX_V4.zip!files/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "contextlib",
+            "datetime",
+            "fcntl",
+            "gzip",
+            "hashlib",
+            "http",
+            "io",
+            "json",
+            "math",
+            "os",
+            "socket",
+            "sqlite3",
+            "ssl",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "a0aaa882cf235ecbabd40caa65fda84d25de8ed53f490e8c3d99e030204b3a47",
+          "origin": "/root/ORACLE_FONBET_MA_V4.zip!files/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "gzip",
+            "hashlib",
+            "http",
+            "io",
+            "json",
+            "math",
+            "os",
+            "socket",
+            "sqlite3",
+            "ssl",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/SPORTS_INTEGRATION_SANDBOX/app/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "contextlib",
+            "datetime",
+            "fcntl",
+            "gzip",
+            "hashlib",
+            "http",
+            "io",
+            "json",
+            "math",
+            "os",
+            "socket",
+            "sqlite3",
+            "ssl",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/SPORTS_SANDBOX_PRE_E2E_ARCHIVE/app/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "contextlib",
+            "datetime",
+            "fcntl",
+            "gzip",
+            "hashlib",
+            "http",
+            "io",
+            "json",
+            "math",
+            "os",
+            "socket",
+            "sqlite3",
+            "ssl",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/app/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "contextlib",
+            "datetime",
+            "fcntl",
+            "gzip",
+            "hashlib",
+            "http",
+            "io",
+            "json",
+            "math",
+            "os",
+            "socket",
+            "sqlite3",
+            "ssl",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/preserved_sources/server_root/opt/ORACLE_CORE_v11/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "contextlib",
+            "datetime",
+            "fcntl",
+            "gzip",
+            "hashlib",
+            "http",
+            "io",
+            "json",
+            "math",
+            "os",
+            "socket",
+            "sqlite3",
+            "ssl",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e3c769fce42c23e06c1a37515ee4f3b82d1edbcc4c4ec4bd1238521e51cf6642",
+          "origin": "/root/oracle_fonbet_direct_v4/files/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "d2dbd757e70d18c5ce4c09db274f6649b678e0833eaf1c03bf58f7c9b3bf792d",
+          "origin": "/root/oracle_fonbet_gzip_fixed/files/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "gzip",
+            "hashlib",
+            "io",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1",
+          "origin": "/root/oracle_fonbet_lockfix_v4/files/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "contextlib",
+            "datetime",
+            "fcntl",
+            "gzip",
+            "hashlib",
+            "http",
+            "io",
+            "json",
+            "math",
+            "os",
+            "socket",
+            "sqlite3",
+            "ssl",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "a0aaa882cf235ecbabd40caa65fda84d25de8ed53f490e8c3d99e030204b3a47",
+          "origin": "/root/oracle_fonbet_ma_v4/files/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "gzip",
+            "hashlib",
+            "http",
+            "io",
+            "json",
+            "math",
+            "os",
+            "socket",
+            "sqlite3",
+            "ssl",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1",
+          "origin": "/opt/ORACLE_CORE_v11/oracle_fonbet_full.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "contextlib",
+            "datetime",
+            "fcntl",
+            "gzip",
+            "hashlib",
+            "http",
+            "io",
+            "json",
+            "math",
+            "os",
+            "socket",
+            "sqlite3",
+            "ssl",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        }
+      ]
+    },
+    "oracle_odds_hub.py": {
+      "total_candidates": 13,
+      "unique_sha256": 2,
+      "candidate_origins": [
+        {
+          "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+          "origin": "/root/ORACLE_FONBET_DIRECT_V4.zip!files/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+          "origin": "/root/ORACLE_FONBET_GZIP_FIXED_V4.zip!files/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+          "origin": "/root/ORACLE_FONBET_MA_V4.zip!files/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "128d6802db3b192d56ca07cfb12b19a8022ba129cce50b2912e7d9f0eea3327b",
+          "origin": "/root/ORACLE_ODDS_HUB_V4.zip!files/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/SPORTS_INTEGRATION_SANDBOX/app/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/SPORTS_SANDBOX_PRE_E2E_ARCHIVE/app/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/app/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/preserved_sources/server_root/opt/ORACLE_CORE_v11/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+          "origin": "/root/oracle_fonbet_direct_v4/files/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+          "origin": "/root/oracle_fonbet_gzip_fixed/files/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+          "origin": "/root/oracle_fonbet_ma_v4/files/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "128d6802db3b192d56ca07cfb12b19a8022ba129cce50b2912e7d9f0eea3327b",
+          "origin": "/root/oracle_odds_hub_release/files/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+          "origin": "/opt/ORACLE_CORE_v11/oracle_odds_hub.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "re",
+            "sqlite3",
+            "unicodedata",
+            "urllib"
+          ],
+          "parse": "OK"
+        }
+      ]
+    },
+    "oracle_sports_brain.py": {
+      "total_candidates": 13,
+      "unique_sha256": 2,
+      "candidate_origins": [
+        {
+          "sha256": "95ecc5968e841a37fb0712e2b2bb0d9feba9287837a6b366eb9a85ec48b1c0f1",
+          "origin": "/root/ORACLE_SPORTS_BRAIN_V4_2.zip!files/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+          "origin": "/root/ORACLE_V_5_0.zip!files/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "email",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib",
+            "xml"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "95ecc5968e841a37fb0712e2b2bb0d9feba9287837a6b366eb9a85ec48b1c0f1",
+          "origin": "/root/ORACLE_V_5_0.zip!tests/fixtures/v42/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+          "origin": "/root/ORACLE_V_5_0.zip!tests/fixtures/v43/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "email",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib",
+            "xml"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/SPORTS_INTEGRATION_SANDBOX/app/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "email",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib",
+            "xml"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/SPORTS_SANDBOX_PRE_E2E_ARCHIVE/app/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "email",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib",
+            "xml"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/app/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "email",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib",
+            "xml"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/preserved_sources/server_root/opt/ORACLE_CORE_v11/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "email",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib",
+            "xml"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "95ecc5968e841a37fb0712e2b2bb0d9feba9287837a6b366eb9a85ec48b1c0f1",
+          "origin": "/root/oracle_sports_brain_v4_2/files/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+          "origin": "/root/oracle_v5_release/files/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "email",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib",
+            "xml"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "95ecc5968e841a37fb0712e2b2bb0d9feba9287837a6b366eb9a85ec48b1c0f1",
+          "origin": "/root/oracle_v5_release/tests/fixtures/v42/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+          "origin": "/root/oracle_v5_release/tests/fixtures/v43/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "email",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib",
+            "xml"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+          "origin": "/opt/ORACLE_CORE_v11/oracle_sports_brain.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "argparse",
+            "collections",
+            "datetime",
+            "email",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "time",
+            "urllib",
+            "xml"
+          ],
+          "parse": "OK"
+        }
+      ]
+    },
+    "oracle_v4_sports.py": {
+      "total_candidates": 9,
+      "unique_sha256": 2,
+      "candidate_origins": [
+        {
+          "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+          "origin": "/root/ORACLE_V4_COMBINED.zip!files/oracle_v4_sports.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib",
+            "zoneinfo"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "c350be33609b35d2ced43be68d4555edf1d0c884409d15436c03998149c8be81",
+          "origin": "/root/ORACLE_VERSION_4.zip!files/oracle_v4_sports.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib",
+            "zoneinfo"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/SPORTS_INTEGRATION_SANDBOX/app/oracle_v4_sports.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib",
+            "zoneinfo"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/SPORTS_SANDBOX_PRE_E2E_ARCHIVE/app/oracle_v4_sports.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib",
+            "zoneinfo"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/app/oracle_v4_sports.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib",
+            "zoneinfo"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/preserved_sources/server_root/opt/ORACLE_CORE_v11/oracle_v4_sports.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib",
+            "zoneinfo"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+          "origin": "/root/oracle_v4_combined/files/oracle_v4_sports.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib",
+            "zoneinfo"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "c350be33609b35d2ced43be68d4555edf1d0c884409d15436c03998149c8be81",
+          "origin": "/root/oracle_v4_release/files/oracle_v4_sports.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib",
+            "zoneinfo"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+          "origin": "/opt/ORACLE_CORE_v11/oracle_v4_sports.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "math",
+            "os",
+            "sqlite3",
+            "urllib",
+            "zoneinfo"
+          ],
+          "parse": "OK"
+        }
+      ]
+    },
+    "sports_free.py": {
+      "total_candidates": 22,
+      "unique_sha256": 6,
+      "candidate_origins": [
+        {
+          "sha256": "a102b774730db3abc7902bfc5c6ea3a5c950f76ff219d46c9f6a4ad10b2fb159",
+          "origin": "ORACLE_PRE_AGENT_RESERVE_24_ARCHIVES.zip/source_archives/ORACLE_UNIFIED_v22.zip!ORACLE_UNIFIED_v22/sports_free.py",
+          "trust": "HISTORICAL_ARCHIVE_VERIFIED_BUT_RUNTIME_UNPROVEN",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "a6f27e2a84bb855b96951c6f3918a3390d0f3e33464e334360f9c2069e2288c1",
+          "origin": "ORACLE_PRE_AGENT_RESERVE_24_ARCHIVES.zip/source_archives/ORACLE_UNIFIED_v23.zip!ORACLE_UNIFIED_v23/sports_free.py",
+          "trust": "HISTORICAL_ARCHIVE_VERIFIED_BUT_RUNTIME_UNPROVEN",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "08753669076edc43a8a43077f4a69a6754cfd6f7afa00a8a8a5832d38a02510c",
+          "origin": "/root/ORACLE_CONSOLIDATED_2026_10.zip!files/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "a6f27e2a84bb855b96951c6f3918a3390d0f3e33464e334360f9c2069e2288c1",
+          "origin": "/root/ORACLE_SOURCE_REVIEW.zip!source/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "a102b774730db3abc7902bfc5c6ea3a5c950f76ff219d46c9f6a4ad10b2fb159",
+          "origin": "/root/ORACLE_UNIFIED_v22.zip!ORACLE_UNIFIED_v22/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "a6f27e2a84bb855b96951c6f3918a3390d0f3e33464e334360f9c2069e2288c1",
+          "origin": "/root/ORACLE_UNIFIED_v23.zip!ORACLE_UNIFIED_v23/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "0c91a776eb486e49e9ecfa0b79ab5c26af8b59324704f5e6d5f87f33fcd5b90c",
+          "origin": "/root/ORACLE_VERSION_4.zip!files/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "oracle_v4",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "2f798427c55ad0efdc9366aef0c046c683bb66212569489b21435b6c6d211d64",
+          "origin": "/root/ORACLE_V_5_0.zip!files/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "oracle_v4",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "0c91a776eb486e49e9ecfa0b79ab5c26af8b59324704f5e6d5f87f33fcd5b90c",
+          "origin": "/root/ORACLE_V_5_0.zip!tests/fixtures/v42/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "oracle_v4",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "d9c0a15d3f5e6ddba3f63b0e0b5bb9eda85fa884ffb89e051ea4180c8cba83ea",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/SPORTS_INTEGRATION_SANDBOX/app/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "oracle_v4",
+            "oracle_v78_training",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "d9c0a15d3f5e6ddba3f63b0e0b5bb9eda85fa884ffb89e051ea4180c8cba83ea",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/SPORTS_SANDBOX_PRE_E2E_ARCHIVE/app/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "oracle_v4",
+            "oracle_v78_training",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "d9c0a15d3f5e6ddba3f63b0e0b5bb9eda85fa884ffb89e051ea4180c8cba83ea",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/app/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "oracle_v4",
+            "oracle_v78_training",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "a102b774730db3abc7902bfc5c6ea3a5c950f76ff219d46c9f6a4ad10b2fb159",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/unactivated_modules/ORACLE_UNIFIED_v22/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "a6f27e2a84bb855b96951c6f3918a3390d0f3e33464e334360f9c2069e2288c1",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/ONE_CANDIDATE/unactivated_modules/ORACLE_UNIFIED_v23/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "d9c0a15d3f5e6ddba3f63b0e0b5bb9eda85fa884ffb89e051ea4180c8cba83ea",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/preserved_sources/server_root/opt/ORACLE_CORE_v11/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "oracle_v4",
+            "oracle_v78_training",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "a102b774730db3abc7902bfc5c6ea3a5c950f76ff219d46c9f6a4ad10b2fb159",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/preserved_sources/server_root/opt/ORACLE_UNIFIED_v22/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "a6f27e2a84bb855b96951c6f3918a3390d0f3e33464e334360f9c2069e2288c1",
+          "origin": "/root/ORACLE_ONE_WORKSPACE/preserved_sources/server_root/opt/ORACLE_UNIFIED_v23/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "08753669076edc43a8a43077f4a69a6754cfd6f7afa00a8a8a5832d38a02510c",
+          "origin": "/root/oracle_integrated_release/files/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "0c91a776eb486e49e9ecfa0b79ab5c26af8b59324704f5e6d5f87f33fcd5b90c",
+          "origin": "/root/oracle_v4_release/files/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "oracle_v4",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "2f798427c55ad0efdc9366aef0c046c683bb66212569489b21435b6c6d211d64",
+          "origin": "/root/oracle_v5_release/files/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "oracle_v4",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "0c91a776eb486e49e9ecfa0b79ab5c26af8b59324704f5e6d5f87f33fcd5b90c",
+          "origin": "/root/oracle_v5_release/tests/fixtures/v42/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "oracle_v4",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        },
+        {
+          "sha256": "d9c0a15d3f5e6ddba3f63b0e0b5bb9eda85fa884ffb89e051ea4180c8cba83ea",
+          "origin": "/opt/ORACLE_CORE_v11/sports_free.py",
+          "trust": "UNATTESTED_NEVER_AUTO_SELECT",
+          "imports": [
+            "__future__",
+            "collections",
+            "csv",
+            "datetime",
+            "io",
+            "json",
+            "math",
+            "oracle_v4",
+            "oracle_v78_training",
+            "os",
+            "pathlib",
+            "sqlite3",
+            "sys",
+            "time",
+            "urllib"
+          ],
+          "parse": "OK"
+        }
+      ]
+    }
+  },
+  "missing_any_candidate": [],
+  "exact_oct24_runtime_source_attested": false,
+  "prospective_model_evaluation_ran": false,
+  "no_future_outcomes_used_to_approve_rule": true,
+  "future_gate_activated": false,
+  "production_modified": false,
+  "limitations": [
+    "An archive label or matching SHA does not prove a particular module was loaded Oct 24-25.",
+    "No inferred causal reason for match outcomes from final score alone.",
+    "The +223 and +243.4 are descriptive results selected after outcomes were known.",
+    "Historical rows are dependent; no proof of independent betting edge.",
+    "This tool does not start or reconfigure any processes."
+  ]
+}

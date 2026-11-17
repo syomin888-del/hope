@@ -1,0 +1,1377 @@
+{
+  "oracle_fonbet_full.py": {
+    "sha256": "e91770ece0523f47eb5533b46a64b9c89cb10900fca1c53cb706c9093dff4ff1",
+    "functions": [
+      {
+        "name": "stamp",
+        "args": [
+          "t"
+        ],
+        "line": 33
+      },
+      {
+        "name": "canonical_host",
+        "args": [
+          "host"
+        ],
+        "line": 37
+      },
+      {
+        "name": "canonical_url",
+        "args": [],
+        "line": 43
+      },
+      {
+        "name": "decode_json_body",
+        "args": [
+          "raw",
+          "encoding"
+        ],
+        "line": 60
+      },
+      {
+        "name": "fetch_json",
+        "args": [
+          "fetcher"
+        ],
+        "line": 77
+      },
+      {
+        "name": "snapshot_data",
+        "args": [
+          "doc"
+        ],
+        "line": 100
+      },
+      {
+        "name": "summarize_payload",
+        "args": [
+          "doc"
+        ],
+        "line": 110
+      },
+      {
+        "name": "setup",
+        "args": [
+          "c"
+        ],
+        "line": 119
+      },
+      {
+        "name": "iso_start",
+        "args": [
+          "value"
+        ],
+        "line": 142
+      },
+      {
+        "name": "unpack_sports",
+        "args": [
+          "d"
+        ],
+        "line": 146
+      },
+      {
+        "name": "make_stage_rows",
+        "args": [
+          "d",
+          "ids",
+          "root_for"
+        ],
+        "line": 158
+      },
+      {
+        "name": "ingest",
+        "args": [
+          "c",
+          "document",
+          "observed_at"
+        ],
+        "line": 178
+      },
+      {
+        "name": "status",
+        "args": [
+          "c"
+        ],
+        "line": 284
+      },
+      {
+        "name": "importer_lock",
+        "args": [
+          "c"
+        ],
+        "line": 309
+      },
+      {
+        "name": "_locked_error",
+        "args": [
+          "error"
+        ],
+        "line": 322
+      },
+      {
+        "name": "_ingest_retry",
+        "args": [
+          "c",
+          "doc",
+          "at"
+        ],
+        "line": 325
+      },
+      {
+        "name": "_audit_failure",
+        "args": [
+          "c",
+          "at",
+          "result"
+        ],
+        "line": 334
+      },
+      {
+        "name": "cooldown",
+        "args": [
+          "c",
+          "now"
+        ],
+        "line": 345
+      },
+      {
+        "name": "once",
+        "args": [
+          "c",
+          "loader",
+          "now"
+        ],
+        "line": 351
+      },
+      {
+        "name": "main",
+        "args": [],
+        "line": 387
+      }
+    ],
+    "count": 20
+  },
+  "oracle_odds_hub.py": {
+    "sha256": "1dfb3864c9df4aeb731e09818c81f3590bad022aee6f71969102626c38a9d4c8",
+    "functions": [
+      {
+        "name": "provider_url",
+        "args": [
+          "provider",
+          "sport"
+        ],
+        "line": 27
+      },
+      {
+        "name": "utc",
+        "args": [
+          "value"
+        ],
+        "line": 48
+      },
+      {
+        "name": "stamp",
+        "args": [
+          "v"
+        ],
+        "line": 54
+      },
+      {
+        "name": "norm",
+        "args": [
+          "s"
+        ],
+        "line": 56
+      },
+      {
+        "name": "dec_american",
+        "args": [
+          "value"
+        ],
+        "line": 62
+      },
+      {
+        "name": "dec_price",
+        "args": [
+          "value"
+        ],
+        "line": 68
+      },
+      {
+        "name": "fetch_json",
+        "args": [
+          "url",
+          "max_bytes"
+        ],
+        "line": 73
+      },
+      {
+        "name": "setup",
+        "args": [
+          "c"
+        ],
+        "line": 83
+      },
+      {
+        "name": "find_existing_soccer",
+        "args": [
+          "c",
+          "home",
+          "away",
+          "kickoff"
+        ],
+        "line": 104
+      },
+      {
+        "name": "persist_event",
+        "args": [
+          "c",
+          "pid",
+          "eid",
+          "sport",
+          "league",
+          "kick",
+          "home",
+          "away",
+          "inplay",
+          "now"
+        ],
+        "line": 114
+      },
+      {
+        "name": "persist_quote",
+        "args": [
+          "c",
+          "pid",
+          "eid",
+          "book",
+          "market",
+          "period",
+          "selection",
+          "point",
+          "price",
+          "now",
+          "updated",
+          "polled",
+          "inplay",
+          "url"
+        ],
+        "line": 122
+      },
+      {
+        "name": "bridge_1x2",
+        "args": [
+          "c",
+          "sport",
+          "eid",
+          "home",
+          "away",
+          "kick",
+          "book",
+          "prices",
+          "now",
+          "updated",
+          "src",
+          "pid"
+        ],
+        "line": 130
+      },
+      {
+        "name": "parse_oddslink",
+        "args": [
+          "c",
+          "sport",
+          "data",
+          "now"
+        ],
+        "line": 145
+      },
+      {
+        "name": "parse_movi",
+        "args": [
+          "c",
+          "sport",
+          "data",
+          "now"
+        ],
+        "line": 195
+      },
+      {
+        "name": "default_sports",
+        "args": [
+          "name"
+        ],
+        "line": 236
+      },
+      {
+        "name": "cooldown_remaining",
+        "args": [
+          "c",
+          "provider",
+          "now"
+        ],
+        "line": 241
+      },
+      {
+        "name": "set_cooldown",
+        "args": [
+          "c",
+          "provider",
+          "now",
+          "seconds",
+          "reason"
+        ],
+        "line": 245
+      },
+      {
+        "name": "poll",
+        "args": [
+          "c",
+          "now",
+          "loader",
+          "providers",
+          "sports"
+        ],
+        "line": 252
+      },
+      {
+        "name": "summary",
+        "args": [
+          "c"
+        ],
+        "line": 299
+      },
+      {
+        "name": "coverage",
+        "args": [
+          "c",
+          "at"
+        ],
+        "line": 320
+      },
+      {
+        "name": "probe",
+        "args": [
+          "loader"
+        ],
+        "line": 355
+      }
+    ],
+    "count": 21
+  },
+  "oracle_sports_brain.py": {
+    "sha256": "6dedf1c7d1a2d77009342e4563bd2635db2dffa351c73f31bb031ce7ce27c6ed",
+    "functions": [
+      {
+        "name": "parse",
+        "args": [
+          "s"
+        ],
+        "line": 28
+      },
+      {
+        "name": "stamp",
+        "args": [
+          "v"
+        ],
+        "line": 33
+      },
+      {
+        "name": "exists",
+        "args": [
+          "c",
+          "t"
+        ],
+        "line": 36
+      },
+      {
+        "name": "setup",
+        "args": [
+          "c"
+        ],
+        "line": 39
+      },
+      {
+        "name": "packet",
+        "args": [
+          "c"
+        ],
+        "line": 68
+      },
+      {
+        "name": "chosen",
+        "args": [
+          "c",
+          "now",
+          "hours"
+        ],
+        "line": 74
+      },
+      {
+        "name": "coverage",
+        "args": [
+          "c",
+          "event",
+          "now",
+          "latest",
+          "max_age_min"
+        ],
+        "line": 99
+      },
+      {
+        "name": "load_history",
+        "args": [
+          "c",
+          "league",
+          "at",
+          "limit"
+        ],
+        "line": 124
+      },
+      {
+        "name": "form",
+        "args": [
+          "rows",
+          "team",
+          "asof",
+          "n"
+        ],
+        "line": 132
+      },
+      {
+        "name": "elo_p3",
+        "args": [
+          "rows",
+          "home",
+          "away"
+        ],
+        "line": 144
+      },
+      {
+        "name": "recent_news",
+        "args": [
+          "c",
+          "event",
+          "asof",
+          "limit"
+        ],
+        "line": 163
+      },
+      {
+        "name": "dossier",
+        "args": [
+          "c",
+          "event",
+          "at"
+        ],
+        "line": 171
+      },
+      {
+        "name": "cycle",
+        "args": [
+          "c",
+          "at",
+          "hours",
+          "fetch_news"
+        ],
+        "line": 190
+      },
+      {
+        "name": "exists_forecast",
+        "args": [
+          "c",
+          "key"
+        ],
+        "line": 242
+      },
+      {
+        "name": "news_query",
+        "args": [
+          "ev"
+        ],
+        "line": 250
+      },
+      {
+        "name": "google_news_url",
+        "args": [
+          "ev"
+        ],
+        "line": 257
+      },
+      {
+        "name": "gdelt_news_url",
+        "args": [
+          "ev"
+        ],
+        "line": 263
+      },
+      {
+        "name": "fetch_bytes",
+        "args": [
+          "url",
+          "approved_prefix",
+          "limit"
+        ],
+        "line": 269
+      },
+      {
+        "name": "request_gdelt",
+        "args": [
+          "url"
+        ],
+        "line": 281
+      },
+      {
+        "name": "request_google_rss",
+        "args": [
+          "url"
+        ],
+        "line": 287
+      },
+      {
+        "name": "_news_error",
+        "args": [
+          "error"
+        ],
+        "line": 306
+      },
+      {
+        "name": "_insert_news",
+        "args": [
+          "c",
+          "ev",
+          "articles",
+          "at",
+          "provider"
+        ],
+        "line": 313
+      },
+      {
+        "name": "discover_news",
+        "args": [
+          "c",
+          "events",
+          "at",
+          "loader",
+          "rss_loader",
+          "pause"
+        ],
+        "line": 341
+      },
+      {
+        "name": "score",
+        "args": [
+          "c"
+        ],
+        "line": 405
+      },
+      {
+        "name": "score_independent",
+        "args": [
+          "c"
+        ],
+        "line": 429
+      },
+      {
+        "name": "summary",
+        "args": [
+          "c",
+          "at",
+          "limit"
+        ],
+        "line": 451
+      },
+      {
+        "name": "odds",
+        "args": [
+          "c",
+          "key",
+          "limit",
+          "offset"
+        ],
+        "line": 476
+      },
+      {
+        "name": "main",
+        "args": [],
+        "line": 495
+      }
+    ],
+    "count": 28
+  },
+  "oracle_v4_sports.py": {
+    "sha256": "e9df913984d2d6b89118a20e8ca26efba76097ddc33b3b01e2338bcb10bc3b8d",
+    "functions": [
+      {
+        "name": "stamp",
+        "args": [
+          "at"
+        ],
+        "line": 14
+      },
+      {
+        "name": "parse_time",
+        "args": [
+          "raw"
+        ],
+        "line": 17
+      },
+      {
+        "name": "get_json",
+        "args": [
+          "url",
+          "headers"
+        ],
+        "line": 21
+      },
+      {
+        "name": "setup",
+        "args": [
+          "c"
+        ],
+        "line": 29
+      },
+      {
+        "name": "log",
+        "args": [
+          "c",
+          "job",
+          "status",
+          "details",
+          "at"
+        ],
+        "line": 52
+      },
+      {
+        "name": "due",
+        "args": [
+          "c",
+          "job",
+          "seconds",
+          "at"
+        ],
+        "line": 57
+      },
+      {
+        "name": "fulltime",
+        "args": [
+          "m"
+        ],
+        "line": 61
+      },
+      {
+        "name": "normalize_game",
+        "args": [
+          "m",
+          "league",
+          "source",
+          "at"
+        ],
+        "line": 75
+      },
+      {
+        "name": "ingest_openliga",
+        "args": [
+          "c",
+          "at",
+          "loader",
+          "seasons",
+          "leagues"
+        ],
+        "line": 86
+      },
+      {
+        "name": "_poisson_cdf",
+        "args": [
+          "lam",
+          "limit"
+        ],
+        "line": 120
+      },
+      {
+        "name": "estimate",
+        "args": [
+          "c",
+          "league",
+          "home",
+          "away",
+          "kickoff"
+        ],
+        "line": 125
+      },
+      {
+        "name": "propose",
+        "args": [
+          "c",
+          "at",
+          "horizon_days"
+        ],
+        "line": 148
+      },
+      {
+        "name": "settle",
+        "args": [
+          "c",
+          "at"
+        ],
+        "line": 167
+      },
+      {
+        "name": "normalized",
+        "args": [
+          "s"
+        ],
+        "line": 186
+      },
+      {
+        "name": "match_candidate",
+        "args": [
+          "c",
+          "game",
+          "asof"
+        ],
+        "line": 189
+      },
+      {
+        "name": "normalize_odds",
+        "args": [
+          "c",
+          "data",
+          "at"
+        ],
+        "line": 198
+      },
+      {
+        "name": "ingest_odds",
+        "args": [
+          "c",
+          "key",
+          "at",
+          "loader",
+          "league_key"
+        ],
+        "line": 225
+      },
+      {
+        "name": "paper_candidates",
+        "args": [
+          "c",
+          "at",
+          "min_odds",
+          "min_raw_ev"
+        ],
+        "line": 239
+      },
+      {
+        "name": "settle_paper_bets",
+        "args": [
+          "c",
+          "at"
+        ],
+        "line": 267
+      },
+      {
+        "name": "sports_summary",
+        "args": [
+          "c",
+          "at"
+        ],
+        "line": 280
+      }
+    ],
+    "count": 20
+  },
+  "sports_free.py": {
+    "sha256": "2f798427c55ad0efdc9366aef0c046c683bb66212569489b21435b6c6d211d64",
+    "functions": [
+      {
+        "name": "now",
+        "args": [],
+        "line": 23
+      },
+      {
+        "name": "day",
+        "args": [],
+        "line": 24
+      },
+      {
+        "name": "db",
+        "args": [],
+        "line": 25
+      },
+      {
+        "name": "initialize",
+        "args": [
+          "c"
+        ],
+        "line": 34
+      },
+      {
+        "name": "normalize",
+        "args": [
+          "payload",
+          "season",
+          "code",
+          "when"
+        ],
+        "line": 67
+      },
+      {
+        "name": "save_matches",
+        "args": [
+          "c",
+          "rows"
+        ],
+        "line": 92
+      },
+      {
+        "name": "schedule_sources",
+        "args": [],
+        "line": 100
+      },
+      {
+        "name": "fetch",
+        "args": [
+          "url",
+          "timeout"
+        ],
+        "line": 108
+      },
+      {
+        "name": "ingest",
+        "args": [
+          "c",
+          "limit",
+          "loader",
+          "clock"
+        ],
+        "line": 115
+      },
+      {
+        "name": "normalize_nfl_csv",
+        "args": [
+          "content",
+          "observed"
+        ],
+        "line": 148
+      },
+      {
+        "name": "ingest_nfl",
+        "args": [
+          "c",
+          "loader",
+          "at"
+        ],
+        "line": 175
+      },
+      {
+        "name": "estimate_nfl",
+        "args": [
+          "c",
+          "home",
+          "away",
+          "date"
+        ],
+        "line": 199
+      },
+      {
+        "name": "poisson_probs",
+        "args": [
+          "mean"
+        ],
+        "line": 223
+      },
+      {
+        "name": "probability_markets",
+        "args": [
+          "home",
+          "away"
+        ],
+        "line": 230
+      },
+      {
+        "name": "estimate",
+        "args": [
+          "c",
+          "league",
+          "home",
+          "away",
+          "match_date"
+        ],
+        "line": 244
+      },
+      {
+        "name": "propose",
+        "args": [
+          "c",
+          "max_fixtures",
+          "at"
+        ],
+        "line": 267
+      },
+      {
+        "name": "validate_historical",
+        "args": [
+          "c",
+          "max_games_per_league"
+        ],
+        "line": 289
+      },
+      {
+        "name": "settle_sports",
+        "args": [
+          "c",
+          "at"
+        ],
+        "line": 330
+      },
+      {
+        "name": "log",
+        "args": [
+          "c",
+          "job",
+          "status",
+          "details"
+        ],
+        "line": 358
+      },
+      {
+        "name": "status",
+        "args": [
+          "c"
+        ],
+        "line": 361
+      },
+      {
+        "name": "retry_known_parser_errors",
+        "args": [
+          "c"
+        ],
+        "line": 379
+      },
+      {
+        "name": "run",
+        "args": [],
+        "line": 391
+      }
+    ],
+    "count": 22
+  },
+  "oracle_v5.py": {
+    "sha256": "1bebdf415ca9410cfddebefbe905675704dc349a6d21ecbbf85daf8f200ec860",
+    "functions": [
+      {
+        "name": "stamp",
+        "args": [
+          "t"
+        ],
+        "line": 256
+      },
+      {
+        "name": "parse",
+        "args": [
+          "s"
+        ],
+        "line": 261
+      },
+      {
+        "name": "has_table",
+        "args": [
+          "c",
+          "t"
+        ],
+        "line": 267
+      },
+      {
+        "name": "chash",
+        "args": [
+          "*v"
+        ],
+        "line": 271
+      },
+      {
+        "name": "norm",
+        "args": [
+          "s"
+        ],
+        "line": 275
+      },
+      {
+        "name": "translit",
+        "args": [
+          "s"
+        ],
+        "line": 286
+      },
+      {
+        "name": "name_sets",
+        "args": [
+          "s"
+        ],
+        "line": 290
+      },
+      {
+        "name": "name_match",
+        "args": [
+          "src",
+          "fb"
+        ],
+        "line": 296
+      },
+      {
+        "name": "sport_norm",
+        "args": [
+          "s"
+        ],
+        "line": 304
+      },
+      {
+        "name": "setup",
+        "args": [
+          "c"
+        ],
+        "line": 313
+      },
+      {
+        "name": "source_packet",
+        "args": [
+          "c"
+        ],
+        "line": 370
+      },
+      {
+        "name": "ingest_catalog",
+        "args": [
+          "c",
+          "now",
+          "force"
+        ],
+        "line": 376
+      },
+      {
+        "name": "iter_predictions",
+        "args": [
+          "c",
+          "now"
+        ],
+        "line": 438
+      },
+      {
+        "name": "selected_predictions",
+        "args": [
+          "c",
+          "now"
+        ],
+        "line": 473
+      },
+      {
+        "name": "canonical_selection",
+        "args": [
+          "market",
+          "selection"
+        ],
+        "line": 478
+      },
+      {
+        "name": "total_line",
+        "args": [
+          "point"
+        ],
+        "line": 506
+      },
+      {
+        "name": "local_match_day",
+        "args": [
+          "p",
+          "kick"
+        ],
+        "line": 537
+      },
+      {
+        "name": "is_fixture_market",
+        "args": [
+          "root"
+        ],
+        "line": 560
+      },
+      {
+        "name": "verified_fixture_pair",
+        "args": [
+          "p",
+          "root"
+        ],
+        "line": 575
+      },
+      {
+        "name": "detect_match",
+        "args": [
+          "p",
+          "events_by_date",
+          "root_index",
+          "links"
+        ],
+        "line": 588
+      },
+      {
+        "name": "safe_prob",
+        "args": [
+          "x"
+        ],
+        "line": 626
+      },
+      {
+        "name": "current_quotes",
+        "args": [
+          "c",
+          "ids"
+        ],
+        "line": 633
+      },
+      {
+        "name": "verified_quote_semantics",
+        "args": [
+          "factor_id",
+          "point",
+          "canonical"
+        ],
+        "line": 665
+      },
+      {
+        "name": "refresh_predictions",
+        "args": [
+          "c",
+          "now"
+        ],
+        "line": 682
+      },
+      {
+        "name": "catalog_events",
+        "args": [
+          "c"
+        ],
+        "line": 803
+      },
+      {
+        "name": "prepare_research",
+        "args": [
+          "c",
+          "now"
+        ],
+        "line": 811
+      },
+      {
+        "name": "evidence_feed_url",
+        "args": [
+          "event"
+        ],
+        "line": 835
+      },
+      {
+        "name": "fetch_rss",
+        "args": [
+          "url",
+          "timeout"
+        ],
+        "line": 856
+      },
+      {
+        "name": "check_public_evidence",
+        "args": [
+          "c",
+          "now",
+          "max_events",
+          "loader",
+          "pause"
+        ],
+        "line": 873
+      },
+      {
+        "name": "form_team",
+        "args": [
+          "c",
+          "team",
+          "at",
+          "n"
+        ],
+        "line": 947
+      },
+      {
+        "name": "build_dossiers",
+        "args": [
+          "c",
+          "now"
+        ],
+        "line": 965
+      },
+      {
+        "name": "archive_due",
+        "args": [
+          "c",
+          "now"
+        ],
+        "line": 1003
+      },
+      {
+        "name": "run",
+        "args": [
+          "c",
+          "now",
+          "force"
+        ],
+        "line": 1014
+      },
+      {
+        "name": "catalog_page",
+        "args": [
+          "c",
+          "sport",
+          "query",
+          "limit",
+          "offset",
+          "all_history"
+        ],
+        "line": 1033
+      },
+      {
+        "name": "price_page",
+        "args": [
+          "c",
+          "root",
+          "limit",
+          "offset"
+        ],
+        "line": 1055
+      },
+      {
+        "name": "forecast_page",
+        "args": [
+          "c",
+          "status",
+          "limit",
+          "offset",
+          "future_only"
+        ],
+        "line": 1126
+      },
+      {
+        "name": "status",
+        "args": [
+          "c"
+        ],
+        "line": 1155
+      },
+      {
+        "name": "triage",
+        "args": [
+          "c",
+          "limit",
+          "now"
+        ],
+        "line": 1201
+      },
+      {
+        "name": "doctor",
+        "args": [
+          "c"
+        ],
+        "line": 1245
+      },
+      {
+        "name": "main",
+        "args": [],
+        "line": 1292
+      }
+    ],
+    "count": 40
+  },
+  "oracle_v5_settlement.py": {
+    "sha256": "0144f0d6f40d7117ac54fd5f6cb59ec4f4b6034ea664500a49e66a6e5f670280",
+    "functions": [
+      {
+        "name": "setup",
+        "args": [
+          "c"
+        ],
+        "line": 16
+      },
+      {
+        "name": "_at",
+        "args": [
+          "t"
+        ],
+        "line": 46
+      },
+      {
+        "name": "_parse",
+        "args": [
+          "t"
+        ],
+        "line": 51
+      },
+      {
+        "name": "prepare",
+        "args": [
+          "c",
+          "now"
+        ],
+        "line": 56
+      },
+      {
+        "name": "_market_outcome",
+        "args": [
+          "market",
+          "sel",
+          "h",
+          "a"
+        ],
+        "line": 91
+      },
+      {
+        "name": "_resolve_score",
+        "args": [
+          "c",
+          "origin",
+          "eid",
+          "kick"
+        ],
+        "line": 108
+      },
+      {
+        "name": "settle",
+        "args": [
+          "c",
+          "now"
+        ],
+        "line": 133
+      },
+      {
+        "name": "backfill",
+        "args": [
+          "c",
+          "now",
+          "limit"
+        ],
+        "line": 164
+      },
+      {
+        "name": "summary",
+        "args": [
+          "c"
+        ],
+        "line": 218
+      },
+      {
+        "name": "paper_page",
+        "args": [
+          "c",
+          "limit",
+          "offset"
+        ],
+        "line": 236
+      }
+    ],
+    "count": 10
+  }
+}

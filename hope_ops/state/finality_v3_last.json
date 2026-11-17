@@ -1,0 +1,56 @@
+{
+  "all_pending_remain_in_next_three_hour_audit": true,
+  "at": "2026-11-17T09:09:14+00:00",
+  "mode": "PAPER_ONLY",
+  "native_r10_strict_newly_settled": 0,
+  "production_changed": false,
+  "quote_unverified_simulations_are_not_executable_price_proof": true,
+  "real_orders": 0,
+  "remaining_r10_reasons": {
+    "ESPN_ONLY": 12,
+    "NFL_TWO_SOURCE_FINAL_REQUIRED": 10,
+    "NOT_YET_DUE": 205,
+    "NO_PROVIDER_FINAL": 200
+  },
+  "scheduler": "EVERY_3_HOURS",
+  "simulated_as_recorded": {
+    "backups_created": 0,
+    "newly_closed": 0,
+    "state": "NO_ELIGIBLE_SIMULATED_RESULTS"
+  },
+  "status": {
+    "WARNING": "NATIVE_R10_ALL_PAPER_PNL_INCLUDES_V3_SIMULATIONS_AFTER_V3_APPLY; USE_SEPARATED_PNL",
+    "paper": {
+      "FINISHED_AS_RECORDED_UNVERIFIED_ODDS": 363,
+      "FINISHED_PREEXISTING": 39,
+      "LEGACY_ARCHIVED_NOT_SETTLED": 743,
+      "STILL_NEEDS_RESULT_OR_EVIDENCE": 222,
+      "WAITING_EVENT": 205
+    },
+    "pnl_separated_by_quote_evidence": {
+      "PREEXISTING_SETTLEMENT": {
+        "net_usd": 31.2,
+        "roi_pct": 8.0,
+        "rows": 39,
+        "stake_usd": 390.0
+      },
+      "SIMULATED_UNVERIFIED_ODDS": {
+        "net_usd": -637.9,
+        "roi_pct": -17.573,
+        "rows": 363,
+        "stake_usd": 3630.0
+      }
+    },
+    "portfolio": {
+      "EVA_LEGACY_ARCHIVED": 50,
+      "FINISHED_AS_RECORDED_UNVERIFIED_ODDS": 1,
+      "LOSS": 2,
+      "PENDING": 24
+    },
+    "portfolio_unlinked": 0,
+    "still_due_pending": 222,
+    "total_paper": 1572,
+    "total_portfolio": 77
+  },
+  "ui_changed": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "SPORT-example-20261020-01",
+  "kind": "sport",
+  "title": "Команда А — Команда Б",
+  "issued_at": "2026-10-20T10:00:00Z",
+  "horizon_at": "2026-10-22T10:00:00Z",
+  "model_id": "NOT_CERTIFIED",
+  "probability": 0.68,
+  "probability_lower": 0.63,
+  "odds": 1.8,
+  "bookmaker": "EXAMPLE_BOOKMAKER",
+  "selection": "Команда А",
+  "odds_checked_at": "2026-10-20T10:00:00Z",
+  "sources": [
+    {"publisher_id":"data_source_one","url":"https://example.org/illustration","published_at":"2026-10-20T09:00:00Z","reason":"Демонстрационный источник"},
+    {"publisher_id":"data_source_two","url":"https://example.com/illustration","published_at":"2026-10-20T09:30:00Z","reason":"Демонстрационный источник"}
+  ],
+  "risks": ["Демонстрационный пример — не реальная ставка"]
+}

@@ -1,0 +1,15 @@
+{
+  "state": "REVIEW_ONLY_NO_ENGINE",
+  "rows": 233,
+  "distinct_matches": 39,
+  "accepted": 150,
+  "accepted_net_usd": 223.0,
+  "unreviewed_pending_not_deleted": true,
+  "runtime_policy_wiring_verified": false,
+  "no_proven_causes_from_score_only": true,
+  "current_oracle_modified": false,
+  "source_sha256": "1540ca82586ecd734efbea6c44905a7e239141b01119193bad68a1482baa094f",
+  "metadata_linked": 233,
+  "score_linked": 233,
+  "status_inconsistencies": []
+}
