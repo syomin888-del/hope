@@ -1,7 +1,7 @@
 {
-  "at": "2026-11-17T11:34:22+00:00",
+  "at": "2026-11-17T11:39:32+00:00",
   "capture": {
-    "at": "2026-11-17T11:34:22+00:00",
+    "at": "2026-11-17T11:38:52+00:00",
     "claim_original_at_quote_at": false,
     "cumulative": 45,
     "db_original_writes": 0,
@@ -11,15 +11,17 @@
     "quote_absent": 0,
     "saved_this_run": 0
   },
-  "disk_free_bytes": 91110330368,
+  "disk_free_bytes": 91167342592,
   "eva": {
-    "db_bytes": 5986074624,
+    "db_bytes": 5986648064,
     "mount_source": "/opt/ORACLE_EVA/replica_v170/state",
     "name": "/oracle_eva_v170_legacy-historic-oracle-1"
   },
-  "issues": [],
+  "issues": [
+    "NEURAL_ACTIVE_PROCESS_UNVERIFIED"
+  ],
   "last_paper_registration": "2026-11-17T00:33:59+00:00",
-  "last_settlement_run": "2026-11-17T10:35:58+00:00",
+  "last_settlement_run": "2026-11-17T11:35:54+00:00",
   "mode": "PAPER_ONLY",
   "monitor": "HOST_SIDE_ONLY",
   "non_r10_settlements_present": true,
@@ -82,20 +84,20 @@
       "source": "EVA_R8_ESPN_FOOTBALLDATA_FINAL_EXACT_QUOTE"
     }
   ],
-  "state": "OK",
+  "state": "DEGRADED",
   "timers": {
     "capture": "active",
     "health": "active",
     "settle": "active"
   },
   "ui": {
-    "checked_at": "2026-11-17T11:34:22+00:00",
+    "checked_at": "2026-11-17T11:39:32+00:00",
     "health_http": 200,
-    "neural_active_verified": true,
+    "neural_active_verified": false,
     "neural_api_http": 200,
     "neural_http": 200,
     "neural_page_bytes_sampled": 6039,
-    "neural_status": "RUNNING",
+    "neural_status": "NO_VERIFIED_ACTIVE_PROCESS",
     "no_ui_files_modified": true,
     "renderer_hints": {
       "canvas": false,
