@@ -1,0 +1,205 @@
+{
+  "generated_at": "2026-11-17T16:22:17.809558",
+  "queue": [
+    {
+      "file": "/opt/agent/queue/005_watchdog.md.done",
+      "name": "005_watchdog.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-17T10:47:59.106386"
+    },
+    {
+      "file": "/opt/agent/queue/00_supervisor.md.done",
+      "name": "00_supervisor.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-17T12:12:15.693542"
+    },
+    {
+      "file": "/opt/agent/queue/01_audit.md.done",
+      "name": "01_audit.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-17T10:29:02.359997"
+    },
+    {
+      "file": "/opt/agent/queue/02_settle_analysis.md.done",
+      "name": "02_settle_analysis.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-17T10:43:32.678366"
+    },
+    {
+      "file": "/opt/agent/queue/03_stats_split.md.done",
+      "name": "03_stats_split.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-17T10:43:42.228680"
+    },
+    {
+      "file": "/opt/agent/queue/04_harden_backup.md.done",
+      "name": "04_harden_backup.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-17T10:43:47.663859"
+    },
+    {
+      "file": "/opt/agent/queue/05_tg_interface.md.done",
+      "name": "05_tg_interface.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-17T10:44:20.216936"
+    },
+    {
+      "file": "/opt/agent/queue/07_logrotate.md.done",
+      "name": "07_logrotate.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-17T10:48:08.491713"
+    },
+    {
+      "file": "/opt/agent/queue/08_daily_report.md.done",
+      "name": "08_daily_report.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-17T10:48:16.816003"
+    },
+    {
+      "file": "/opt/agent/queue/09_github_mirror.md.done",
+      "name": "09_github_mirror.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-17T10:54:20.201948"
+    },
+    {
+      "file": "/opt/agent/queue/10_1794917788.md.md.failed",
+      "name": "10_1794917788.md.md.failed",
+      "status": "pending",
+      "timestamp": "2026-11-17T12:16:28.311832"
+    },
+    {
+      "file": "/opt/agent/queue/10_autopilot.md.done",
+      "name": "10_autopilot.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-17T11:14:08.364994"
+    },
+    {
+      "file": "/opt/agent/queue/11_cockpit.md.md",
+      "name": "11_cockpit.md.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T11:21:19.774579"
+    },
+    {
+      "file": "/opt/agent/queue/13_tg_miniapp.md.md",
+      "name": "13_tg_miniapp.md.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T11:25:16.776633"
+    },
+    {
+      "file": "/opt/agent/queue/17_tg_digest.md.md",
+      "name": "17_tg_digest.md.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T12:48:00.362446"
+    },
+    {
+      "file": "/opt/agent/queue/18_stats_split_impl.md.md",
+      "name": "18_stats_split_impl.md.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T14:58:36.638773"
+    },
+    {
+      "file": "/opt/agent/queue/19_miniapp_host.md.md",
+      "name": "19_miniapp_host.md.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T15:36:56.889295"
+    },
+    {
+      "file": "/opt/agent/queue/20_selfheal.md",
+      "name": "20_selfheal.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T16:04:53.320763"
+    },
+    {
+      "file": "/opt/agent/queue/21_tg_heartbeat.md",
+      "name": "21_tg_heartbeat.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T16:16:15.340123"
+    },
+    {
+      "file": "/opt/agent/queue/auto_auto_20261117_150356.md.md",
+      "name": "auto_auto_20261117_150356.md.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T15:03:56.101857"
+    },
+    {
+      "file": "/opt/agent/queue/auto_auto_20261117_153326.md.done",
+      "name": "auto_auto_20261117_153326.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-17T15:33:26.958011"
+    },
+    {
+      "file": "/opt/agent/queue/auto_sv_20261117T142857Z_Supervisor_fallback_review_progress_and_advance_goal.md",
+      "name": "auto_sv_20261117T142857Z_Supervisor_fallback_review_progress_and_advance_goal.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T14:28:57.103515"
+    },
+    {
+      "file": "/opt/agent/queue/auto_sv_20261117T143113Z_Supervisor_fallback_review_progress_and_advance_goal.md",
+      "name": "auto_sv_20261117T143113Z_Supervisor_fallback_review_progress_and_advance_goal.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T14:31:13.933826"
+    },
+    {
+      "file": "/opt/agent/queue/auto_sv_20261117T143921Z_ESPN_football_data_org_222.md",
+      "name": "auto_sv_20261117T143921Z_ESPN_football_data_org_222.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T14:39:21.702698"
+    },
+    {
+      "file": "/opt/agent/queue/auto_sv_20261117T145924Z_222.md",
+      "name": "auto_sv_20261117T145924Z_222.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T14:59:24.188406"
+    },
+    {
+      "file": "/opt/agent/queue/auto_sv_20261117T150557Z_ESPN_API_football_data_org.md",
+      "name": "auto_sv_20261117T150557Z_ESPN_API_football_data_org.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T15:05:57.744129"
+    },
+    {
+      "file": "/opt/agent/queue/auto_sv_20261117T152931Z_Execute_SETTLE_222_ODDS_EVIDENCE_pipeline_end_to_end_and_pro.md",
+      "name": "auto_sv_20261117T152931Z_Execute_SETTLE_222_ODDS_EVIDENCE_pipeline_end_to_end_and_pro.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T15:29:31.450575"
+    },
+    {
+      "file": "/opt/agent/queue/auto_sv_20261117T155950Z_SETTLE_222_ODDS_EVIDENCE_verified.md",
+      "name": "auto_sv_20261117T155950Z_SETTLE_222_ODDS_EVIDENCE_verified.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T15:59:50.196995"
+    },
+    {
+      "file": "/opt/agent/queue/auto_sv_seed_second_results_provider.md",
+      "name": "auto_sv_seed_second_results_provider.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T15:04:35.433236"
+    }
+  ],
+  "running": {
+    "task": null,
+    "log_lines": []
+  },
+  "money": {
+    "balance": null,
+    "session_spend": 0.0,
+    "monthly_cap": 20.0,
+    "remaining": 20.0
+  },
+  "goal": "Build the best sports betting analytics machine: settle all pending bets (target: 222\u2192<90 unresolved), verify odds evidence (target: \u226550% of 363 simulated reclassified), separate verified vs simulated PnL in UI and TG, achieve positive verified ROI on \u2265100 verified bets. Strategy v2: all sports, value via models (Poisson/Dixon-Coles/Elo/xG) + line comparison + CLV, odds 1.7-2.5, EV\u22653%, Kelly 0.25, every pick requires odds evidence URL. Grey methods allowed with GREY tag. Report per closed bet: result, CLV, lesson. Budget 20 USD/mo. Owner reads TG only, Russian, \u22645 lines, no code.",
+  "reports": [
+    {
+      "label": "AUDIT.md",
+      "path": "/opt/ORACLE_EVA/AUDIT.md",
+      "mtime": "2026-11-17T12:07:44.716632"
+    }
+  ],
+  "bets": {
+    "total_rows": 0,
+    "settled": 0,
+    "unresolved": 0,
+    "awaiting": 0,
+    "verified_pnl": 0.0,
+    "simulated_pnl": 0.0
+  }
+}
