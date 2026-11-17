@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T17:42:17.617952",
+  "generated_at": "2026-11-17T19:14:30.612998",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -101,55 +101,73 @@
       "file": "/opt/agent/queue/17_tg_digest.md.md",
       "name": "17_tg_digest.md.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.872235"
+      "timestamp": "2026-11-17T17:42:40.463784"
+    },
+    {
+      "file": "/opt/agent/queue/18_1794940296.md",
+      "name": "18_1794940296.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T18:31:36.168938"
     },
     {
       "file": "/opt/agent/queue/18_stats_split_impl.md.md",
       "name": "18_stats_split_impl.md.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.877235"
+      "timestamp": "2026-11-17T17:42:40.467784"
+    },
+    {
+      "file": "/opt/agent/queue/19_1794942236.md",
+      "name": "19_1794942236.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T19:03:56.436648"
     },
     {
       "file": "/opt/agent/queue/19_miniapp_host.md.md",
       "name": "19_miniapp_host.md.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.882235"
+      "timestamp": "2026-11-17T17:42:40.472784"
+    },
+    {
+      "file": "/opt/agent/queue/20_1794942246.md",
+      "name": "20_1794942246.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T19:04:06.622028"
     },
     {
       "file": "/opt/agent/queue/20_selfheal.md",
       "name": "20_selfheal.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.885235"
+      "timestamp": "2026-11-17T17:42:40.475784"
     },
     {
       "file": "/opt/agent/queue/21_tg_heartbeat.md",
       "name": "21_tg_heartbeat.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.888235"
+      "timestamp": "2026-11-17T17:42:40.479784"
     },
     {
       "file": "/opt/agent/queue/33_cockpit_final.md",
       "name": "33_cockpit_final.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.891235"
+      "timestamp": "2026-11-17T17:42:40.484785"
     },
     {
       "file": "/opt/agent/queue/34_tg_menu_button.md",
       "name": "34_tg_menu_button.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.897235"
+      "timestamp": "2026-11-17T17:42:40.487785"
     },
     {
       "file": "/opt/agent/queue/35_tg_exec.md",
       "name": "35_tg_exec.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.900236"
+      "timestamp": "2026-11-17T17:42:40.492785"
     },
     {
       "file": "/opt/agent/queue/auto_auto_20261117_150356.md.md",
       "name": "auto_auto_20261117_150356.md.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.904236"
+      "timestamp": "2026-11-17T17:42:40.495785"
     },
     {
       "file": "/opt/agent/queue/auto_auto_20261117_153326.md.done",
@@ -161,49 +179,49 @@
       "file": "/opt/agent/queue/auto_sv_20261117T142857Z_Supervisor_fallback_review_progress_and_advance_goal.md",
       "name": "auto_sv_20261117T142857Z_Supervisor_fallback_review_progress_and_advance_goal.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.908236"
+      "timestamp": "2026-11-17T17:42:40.499785"
     },
     {
       "file": "/opt/agent/queue/auto_sv_20261117T143113Z_Supervisor_fallback_review_progress_and_advance_goal.md",
       "name": "auto_sv_20261117T143113Z_Supervisor_fallback_review_progress_and_advance_goal.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.912236"
+      "timestamp": "2026-11-17T17:42:40.502785"
     },
     {
       "file": "/opt/agent/queue/auto_sv_20261117T143921Z_ESPN_football_data_org_222.md",
       "name": "auto_sv_20261117T143921Z_ESPN_football_data_org_222.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.915236"
+      "timestamp": "2026-11-17T17:42:40.506785"
     },
     {
       "file": "/opt/agent/queue/auto_sv_20261117T145924Z_222.md",
       "name": "auto_sv_20261117T145924Z_222.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.921236"
+      "timestamp": "2026-11-17T17:42:40.511786"
     },
     {
       "file": "/opt/agent/queue/auto_sv_20261117T150557Z_ESPN_API_football_data_org.md",
       "name": "auto_sv_20261117T150557Z_ESPN_API_football_data_org.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.924236"
+      "timestamp": "2026-11-17T17:42:40.514786"
     },
     {
       "file": "/opt/agent/queue/auto_sv_20261117T152931Z_Execute_SETTLE_222_ODDS_EVIDENCE_pipeline_end_to_end_and_pro.md",
       "name": "auto_sv_20261117T152931Z_Execute_SETTLE_222_ODDS_EVIDENCE_pipeline_end_to_end_and_pro.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.928236"
+      "timestamp": "2026-11-17T17:42:40.517786"
     },
     {
       "file": "/opt/agent/queue/auto_sv_20261117T155950Z_SETTLE_222_ODDS_EVIDENCE_verified.md",
       "name": "auto_sv_20261117T155950Z_SETTLE_222_ODDS_EVIDENCE_verified.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.931237"
+      "timestamp": "2026-11-17T17:42:40.521786"
     },
     {
       "file": "/opt/agent/queue/auto_sv_20261117T162953Z_Execute_settle_222_odds_evidence_reclassification_pipeline_e.md",
       "name": "auto_sv_20261117T162953Z_Execute_settle_222_odds_evidence_reclassification_pipeline_e.md",
       "status": "pending",
-      "timestamp": "2026-11-17T17:36:30.936237"
+      "timestamp": "2026-11-17T17:42:40.526786"
     }
   ],
   "running": {
@@ -216,7 +234,7 @@
     "monthly_cap": 20.0,
     "remaining": 20.0
   },
-  "goal": "Build the best sports betting analytics machine: settle all pending bets (target: 222\u2192<90 unresolved), verify odds evidence (target: \u226550% of 363 simulated reclassified), separate verified vs simulated PnL in UI and TG, achieve positive verified ROI on \u2265100 verified bets. Strategy v2: all sports, value via models (Poisson/Dixon-Coles/Elo/xG) + line comparison + CLV, odds 1.7-2.5, EV\u22653%, Kelly 0.25, every pick requires odds evidence URL. Grey methods allowed with GREY tag. Report per closed bet: result, CLV, lesson. Budget 20 USD/mo. Owner reads TG only, Russian, \u22645 lines, no code.\n\u042d\u041a\u041e\u041d\u041e\u041c\u0418\u041a\u0410 v2: \u0441 2026-11-17 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0430 nano-gpt PRO 12 USD/\u043c\u0435\u0441 \u0441 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u043d\u044b\u043c\u0438 open-source \u043c\u043e\u0434\u0435\u043b\u044f\u043c\u0438. \u041f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e \u0432\u0441\u0435 \u0437\u0430\u0434\u0430\u0447\u0438 \u0438\u0434\u0443\u0442 \u043d\u0430 z-ai/glm-5.3:thinking (\u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u043e \u0432 \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0435). \u041f\u043b\u0430\u0442\u043d\u044b\u0435 \u043c\u043e\u0434\u0435\u043b\u0438 (GPT-6.1 Sol, Gemini Carbon) \u0442\u043e\u043b\u044c\u043a\u043e \u0434\u043b\u044f \u043a\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0437\u0430\u0434\u0430\u0447 \u043f\u043e \u0440\u0435\u0448\u0435\u043d\u0438\u044e \u0430\u0440\u0445\u0438\u0442\u0435\u043a\u0442\u043e\u0440\u0430. \u0421\u0443\u0442\u043e\u0447\u043d\u044b\u0439 \u043b\u0438\u043c\u0438\u0442 \u043f\u043b\u0430\u0442\u043d\u044b\u0445 \u0432\u044b\u0437\u043e\u0432\u043e\u0432: 1 USD.\n\u042d\u041a\u041e\u041d\u041e\u041c\u0418\u041a\u0410 v2: \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0430 nano-gpt PRO \u0430\u043a\u0442\u0438\u0432\u043d\u0430, open-source \u043c\u043e\u0434\u0435\u043b\u0438 \u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b. \u041f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e \u0437\u0430\u0434\u0430\u0447\u0438 \u0438\u0434\u0443\u0442 \u043d\u0430 z-ai/glm-5.3:thinking. \u041f\u043b\u0430\u0442\u043d\u044b\u0435 \u043c\u043e\u0434\u0435\u043b\u0438 (GPT-6.1 Sol, Gemini Carbon) \u0434\u043b\u044f \u0441\u043b\u043e\u0436\u043d\u044b\u0445 \u0437\u0430\u0434\u0430\u0447 \u043f\u043e \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e\u0441\u0442\u0438, \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u0439 \u043d\u0435\u0442.\n\u0417\u0410\u0429\u0418\u0422\u0410 \u0424\u0410\u0419\u041b\u041e\u0412: /opt/agent/worker.py, supervisor.py, tg_bot.py - \u043a\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0444\u0430\u0439\u043b\u044b. \u041b\u044e\u0431\u0430\u044f \u0437\u0430\u0434\u0430\u0447\u0430, \u0440\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u0443\u044e\u0449\u0430\u044f \u0438\u0445, \u041e\u0411\u042f\u0417\u0410\u041d\u0410: 1) \u0441\u0434\u0435\u043b\u0430\u0442\u044c \u0431\u044d\u043a\u0430\u043f-\u043a\u043e\u043f\u0438\u044e .bak \u043f\u0435\u0440\u0435\u0434 \u043f\u0440\u0430\u0432\u043a\u043e\u0439, 2) \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c python3 -m py_compile \u0438 wc -l (\u043d\u0435 0) \u043f\u043e\u0441\u043b\u0435 \u043f\u0440\u0430\u0432\u043a\u0438, 3) \u0435\u0441\u043b\u0438 \u0444\u0430\u0439\u043b \u0441\u0442\u0430\u043b \u043f\u0443\u0441\u0442\u044b\u043c \u0438\u043b\u0438 \u0431\u0438\u0442\u044b\u043c - \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u0438\u0437 .bak. \u0412\u043e\u0440\u043a\u0435\u0440 \u043d\u0435 \u0438\u043c\u0435\u0435\u0442 \u043f\u0440\u0430\u0432\u0430 \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0442\u044c\u0441\u044f, \u043f\u043e\u043a\u0430 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u043d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u0430.\n\n\u041f\u0420\u0418\u041e\u0420\u0418\u0422\u0415\u0422 \u041c\u041e\u0414\u0415\u041b\u0415\u0419 (\u0441\u0442\u0440\u043e\u0433\u043e): 1) \u0412\u0421\u0415 \u0437\u0430\u0434\u0430\u0447\u0438 \u043f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e \u0438\u0434\u0443\u0442 \u0422\u041e\u041b\u042c\u041a\u041e \u043d\u0430 \u043f\u043e\u0434\u043f\u0438\u0441\u043e\u0447\u043d\u044b\u0435 \u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u0435 \u043c\u043e\u0434\u0435\u043b\u0438: z-ai/glm-5.3 \u0438\u043b\u0438 z-ai/glm-5.3:thinking. 2) \u041f\u043b\u0430\u0442\u043d\u044b\u0435 \u043c\u043e\u0434\u0435\u043b\u0438 (gpt-6.1-sol, gemini-4-carbon \u0438 \u0434\u0440.) \u0417\u0410\u041f\u0420\u0415\u0429\u0415\u041d\u042b, \u0435\u0441\u043b\u0438 \u0437\u0430\u0434\u0430\u0447\u0430 \u041d\u0415 \u0443\u043f\u0430\u043b\u0430 \u043c\u0438\u043d\u0438\u043c\u0443\u043c 2 \u0440\u0430\u0437\u0430 \u043d\u0430 \u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u043e\u0439. 3) Supervisor \u043f\u0440\u0438 \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u0438 \u0437\u0430\u0434\u0430\u0447 \u041d\u0418\u041a\u041e\u0413\u0414\u0410 \u043d\u0435 \u043f\u0438\u0448\u0435\u0442 MODEL= \u0441 \u043f\u043b\u0430\u0442\u043d\u043e\u0439 \u043c\u043e\u0434\u0435\u043b\u044c\u044e \u0432 \u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a. 4) \u0417\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a MODEL= \u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c \u0442\u043e\u043b\u044c\u043a\u043e \u0441\u043e \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f\u043c\u0438 z-ai/glm-5.3, z-ai/glm-5.3:thinking, deepseek/deepseek-v4.1-flash-1017.",
+  "goal": "Build the best sports betting analytics machine. Progress targets: (1) settle 222 unresolved \u2192 <90 [in progress], (2) reclassify \u226550% of 363 simulated via odds evidence URL [in progress], (3) UI+TG show verified vs simulated PnL separately [in progress], (4) positive verified ROI on \u2265100 verified bets [pending]. Strategy v2: all sports, value via Poisson/Dixon-Coles/Elo/xG + line comparison + CLV, odds 1.7-2.5, EV\u22653%, Kelly 0.25, every pick requires odds evidence URL. Grey methods allowed with GREY tag. Report per closed bet: result, CLV, lesson. Budget 20 USD/mo. Owner reads TG only, Russian, \u22645 lines, no code.",
   "reports": [
     {
       "label": "AUDIT.md",

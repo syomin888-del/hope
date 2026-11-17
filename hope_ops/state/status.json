@@ -1,9 +1,9 @@
 {
-  "at": "2026-11-17T17:40:28+00:00",
+  "at": "2026-11-17T19:11:24+00:00",
   "capture": {
-    "at": "2026-11-17T17:39:42+00:00",
+    "at": "2026-11-17T19:10:26+00:00",
     "claim_original_at_quote_at": false,
-    "cumulative": 45,
+    "cumulative": 46,
     "db_original_writes": 0,
     "late_skipped": 0,
     "matched_at_post_registration_capture": 0,
@@ -11,17 +11,17 @@
     "quote_absent": 0,
     "saved_this_run": 0
   },
-  "disk_free_bytes": 90598256640,
+  "disk_free_bytes": 90570780672,
   "eva": {
-    "db_bytes": 6106181632,
+    "db_bytes": 6128635904,
     "mount_source": "/opt/ORACLE_EVA/replica_v170/state",
     "name": "/oracle_eva_v170_legacy-historic-oracle-1"
   },
   "issues": [
     "NEURAL_ACTIVE_PROCESS_UNVERIFIED"
   ],
-  "last_paper_registration": "2026-11-17T00:33:59+00:00",
-  "last_settlement_run": "2026-11-17T17:36:18+00:00",
+  "last_paper_registration": "2026-11-17T18:34:44+00:00",
+  "last_settlement_run": "2026-11-17T18:36:23+00:00",
   "mode": "PAPER_ONLY",
   "monitor": "HOST_SIDE_ONLY",
   "non_r10_settlements_present": true,
@@ -29,28 +29,28 @@
   "paper_status": {
     "EVA_LEGACY_ARCHIVED": 743,
     "LOSS": 249,
-    "PENDING": 427,
+    "PENDING": 428,
     "WIN": 153
   },
   "production_oracle_mutations": 0,
   "real_orders": 0,
   "settlement": {
-    "at": "2026-11-17T15:00:23+00:00",
+    "at": "2026-11-17T18:00:51+00:00",
     "db_original_code_changed": false,
     "disk": {
-      "free_bytes": 90674614272,
+      "free_bytes": 90597326848,
       "required_bytes": 16106127360
     },
-    "duration_seconds": 20.0,
+    "duration_seconds": 51.37,
     "ended": "NO_CHANGES",
     "errors": [],
     "eva": {
-      "db_bytes": 6046531584,
+      "db_bytes": 6106181632,
       "mount_source": "/opt/ORACLE_EVA/replica_v170/state",
       "name": "/oracle_eva_v170_legacy-historic-oracle-1"
     },
     "exit_code": 0,
-    "log": "/opt/ORACLE_EVA/hope_ops/logs/settle_20261117T150003Z.log",
+    "log": "/opt/ORACLE_EVA/hope_ops/logs/settle_20261117T180000Z.log",
     "real_orders": 0,
     "result": "PASS",
     "summary": {
@@ -58,7 +58,7 @@
       "mode": "apply",
       "newly_settled": 0,
       "real_orders": 0,
-      "report": "/data/eva-reports/eva_r10_census_20261117T150023Z_e33ce7e4.json",
+      "report": "/data/eva-reports/eva_r10_census_20261117T180051Z_dba9e8c5.json",
       "unresolved_in_initial_census": 222
     }
   },
@@ -91,7 +91,7 @@
     "settle": "active"
   },
   "ui": {
-    "checked_at": "2026-11-17T17:40:28+00:00",
+    "checked_at": "2026-11-17T19:11:24+00:00",
     "health_http": 200,
     "neural_active_verified": false,
     "neural_api_http": 200,
