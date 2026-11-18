@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T06:31:57.612027",
+  "generated_at": "2026-11-18T06:35:00.609850",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -110,8 +110,8 @@
       "timestamp": "2026-11-17T11:21:19.774579"
     },
     {
-      "file": "/opt/agent/queue/17_tg_digest.md",
-      "name": "17_tg_digest.md",
+      "file": "/opt/agent/queue/17_tg_digest.md.done",
+      "name": "17_tg_digest.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T17:42:40.463784"
     },
