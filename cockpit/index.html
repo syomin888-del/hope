@@ -34,8 +34,8 @@ td{padding:6px 4px;border-bottom:1px solid rgba(42,42,48,.5)}
 <div class="card"><h2>Reports</h2><div id="reports" class="dim">—</div></div>
 <div class="upd" id="upd"></div>
 <script>
-const API="http://188.137.232.34:8790";
-async function load(){try{const r=await fetch(API+"/api/cockpit.json?t="+Date.now());const d=await r.json();
+let DATA=null;
+async function load(){try{if(!DATA){DATA=await (await fetch(cockpit.json)).json();}const d=DATA;
 document.getElementById("gen").textContent="generated "+d.generated_at;
 const m=d.money||{};document.getElementById("bal").textContent=(m.balance!=null?"$"+Number(m.balance).toFixed(2):"—");
 document.getElementById("spend").textContent="$"+Number(m.session_spend||0).toFixed(2);
@@ -50,5 +50,5 @@ const sp=document.getElementById("b_spnl");sp.textContent="$"+Number(b.simulated
 document.getElementById("goal").textContent=d.goal||"—";
 const rp=document.getElementById("reports");rp.innerHTML="";(d.reports||[]).forEach(r=>{const div=document.createElement("div");div.style.margin="6px 0";div.textContent=r.label+" — "+r.mtime;rp.appendChild(div);});
 document.getElementById("upd").textContent="last refresh "+new Date().toLocaleTimeString();}catch(e){document.getElementById("upd").textContent="fetch error: "+e;}}
-load();setInterval(load,60000);
+load();
 </script></body></html>
