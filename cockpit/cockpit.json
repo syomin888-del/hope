@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T09:47:48.615540",
+  "generated_at": "2026-11-18T11:55:27.607229",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -38,10 +38,22 @@
       "timestamp": "2026-11-17T10:29:02.359997"
     },
     {
+      "file": "/opt/agent/queue/01a_backlog_burial.md",
+      "name": "01a_backlog_burial.md",
+      "status": "pending",
+      "timestamp": "2026-11-18T10:46:36.870464"
+    },
+    {
       "file": "/opt/agent/queue/01a_smart_retry.md.done",
       "name": "01a_smart_retry.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T16:32:52.223477"
+    },
+    {
+      "file": "/opt/agent/queue/01b_capture_probe.md",
+      "name": "01b_capture_probe.md",
+      "status": "pending",
+      "timestamp": "2026-11-18T10:46:44.205742"
     },
     {
       "file": "/opt/agent/queue/02_settle_analysis.md.done",
@@ -84,6 +96,12 @@
       "name": "04_harden_backup.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T10:43:47.663859"
+    },
+    {
+      "file": "/opt/agent/queue/04a_fonbet_integrate.md",
+      "name": "04a_fonbet_integrate.md",
+      "status": "pending",
+      "timestamp": "2026-11-18T11:27:00.352335"
     },
     {
       "file": "/opt/agent/queue/05_tg_interface.md.done",
@@ -140,8 +158,8 @@
       "timestamp": "2026-11-17T19:04:06.622028"
     },
     {
-      "file": "/opt/agent/queue/20_selfheal.md",
-      "name": "20_selfheal.md",
+      "file": "/opt/agent/queue/20_selfheal.md.done",
+      "name": "20_selfheal.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T17:42:40.475784"
     },
