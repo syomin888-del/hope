@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-18T07:05:43+00:00",
+  "at": "2026-11-18T09:00:53+00:00",
   "bridge_settled": {
     "backups_created": 0,
     "newly_closed": 0,
@@ -19,16 +19,6 @@
   "scheduler": "EVERY_3_HOURS",
   "source_errors": [
     {
-      "day": "2026-10-30",
-      "error": "HTTPError",
-      "source": "thesportsdb"
-    },
-    {
-      "day": "2026-10-31",
-      "error": "HTTPError",
-      "source": "thesportsdb"
-    },
-    {
       "day": "2026-11-01",
       "error": "HTTPError",
       "source": "thesportsdb"
@@ -47,9 +37,25 @@
       "day": "2026-11-05",
       "error": "HTTPError",
       "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-06",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-07",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-05",
+      "error": "URLError",
+      "league": "de.1",
+      "source": "espn"
     }
   ],
-  "source_requests": 52,
+  "source_requests": 51,
   "status": {
     "paper": {
       "FUTURE_PENDING": 256,

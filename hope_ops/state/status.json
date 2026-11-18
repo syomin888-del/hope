@@ -1,7 +1,7 @@
 {
-  "at": "2026-11-18T08:42:42+00:00",
+  "at": "2026-11-18T09:43:38+00:00",
   "capture": {
-    "at": "2026-11-18T08:42:42+00:00",
+    "at": "2026-11-18T09:42:43+00:00",
     "claim_original_at_quote_at": false,
     "cumulative": 96,
     "db_original_writes": 0,
@@ -11,9 +11,9 @@
     "quote_absent": 0,
     "saved_this_run": 0
   },
-  "disk_free_bytes": 90339672064,
+  "disk_free_bytes": 90306138112,
   "eva": {
-    "db_bytes": 6310318080,
+    "db_bytes": 6333358080,
     "mount_source": "/opt/ORACLE_EVA/replica_v170/state",
     "name": "/oracle_eva_v170_legacy-historic-oracle-1"
   },
@@ -21,7 +21,7 @@
     "NEURAL_ACTIVE_PROCESS_UNVERIFIED"
   ],
   "last_paper_registration": "2026-11-18T01:34:11+00:00",
-  "last_settlement_run": "2026-11-18T08:35:50+00:00",
+  "last_settlement_run": "2026-11-18T09:36:27+00:00",
   "mode": "PAPER_ONLY",
   "monitor": "HOST_SIDE_ONLY",
   "non_r10_settlements_present": true,
@@ -35,22 +35,22 @@
   "production_oracle_mutations": 0,
   "real_orders": 0,
   "settlement": {
-    "at": "2026-11-18T07:05:31+00:00",
+    "at": "2026-11-18T09:00:29+00:00",
     "db_original_code_changed": false,
     "disk": {
-      "free_bytes": 90372554752,
+      "free_bytes": 90339258368,
       "required_bytes": 16106127360
     },
-    "duration_seconds": 18.62,
+    "duration_seconds": 22.4,
     "ended": "NO_CHANGES",
     "errors": [],
     "eva": {
-      "db_bytes": 6281109504,
+      "db_bytes": 6310318080,
       "mount_source": "/opt/ORACLE_EVA/replica_v170/state",
       "name": "/oracle_eva_v170_legacy-historic-oracle-1"
     },
     "exit_code": 0,
-    "log": "/opt/ORACLE_EVA/hope_ops/logs/settle_20261118T070513Z.log",
+    "log": "/opt/ORACLE_EVA/hope_ops/logs/settle_20261118T090006Z.log",
     "real_orders": 0,
     "result": "PASS",
     "summary": {
@@ -58,7 +58,7 @@
       "mode": "apply",
       "newly_settled": 0,
       "real_orders": 0,
-      "report": "/data/eva-reports/eva_r10_census_20261118T070531Z_6ad44407.json",
+      "report": "/data/eva-reports/eva_r10_census_20261118T090029Z_85c47fea.json",
       "unresolved_in_initial_census": 222
     }
   },
@@ -91,7 +91,7 @@
     "settle": "active"
   },
   "ui": {
-    "checked_at": "2026-11-18T08:42:42+00:00",
+    "checked_at": "2026-11-18T09:43:38+00:00",
     "health_http": 200,
     "neural_active_verified": false,
     "neural_api_http": 200,
