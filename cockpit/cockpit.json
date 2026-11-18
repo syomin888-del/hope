@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T06:19:48.565481",
+  "generated_at": "2026-11-18T06:31:57.612027",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -44,8 +44,8 @@
       "timestamp": "2026-11-17T16:29:42.224195"
     },
     {
-      "file": "/opt/agent/queue/02z_tg_control.md",
-      "name": "02z_tg_control.md",
+      "file": "/opt/agent/queue/02z_tg_control.md.done",
+      "name": "02z_tg_control.md.done",
       "status": "pending",
       "timestamp": "2026-11-18T03:44:19.154016"
     },
