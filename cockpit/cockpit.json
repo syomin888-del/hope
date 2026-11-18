@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T03:50:57.609597",
+  "generated_at": "2026-11-18T06:19:48.565481",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -14,8 +14,8 @@
       "timestamp": "2026-11-17T12:12:15.693542"
     },
     {
-      "file": "/opt/agent/queue/00y_data_fix_final.md",
-      "name": "00y_data_fix_final.md",
+      "file": "/opt/agent/queue/00y_data_fix_final.md.done",
+      "name": "00y_data_fix_final.md.done",
       "status": "pending",
       "timestamp": "2026-11-18T03:44:06.875548"
     },
@@ -216,7 +216,7 @@
     "monthly_cap": 20.0,
     "remaining": 20.0
   },
-  "goal": "Build the best sports betting analytics machine. Targets: (1) unresolved <90 via deterministic settle + UNRESOLVABLE_NO_PROVIDER tagging \u2014 DONE when settle_reclassify_writer.py runs and proves numeric delta; (2) reclassify \u226550% of 363 simulated via odds evidence URL \u2014 DONE when writer proves \u2265182 reclassified; (3) TG digest in Russian \u22645 lines showing verified vs simulated PnL separately \u2014 DONE when digest sends and is logged; (4) positive verified ROI on \u2265100 verified bets \u2014 pending until 1-3 done. RULE: no LLM settle tasks until deterministic writer has run with numeric before/after. Strategy v2: all sports, value via Poisson/Dixon-Coles/Elo/xG + line comparison + CLV, odds 1.7-2.5, EV\u22653%, Kelly 0.25, every pick requires odds evidence URL. Grey methods allowed with GREY tag. Report per closed bet: result, CLV, lesson. Budget 20 USD/mo. Owner reads TG only, Russian, \u22645 lines, no code.\n\n\u041a\u041e\u041d\u0422\u0420\u0410\u041a\u0422 \u0420\u0415\u0417\u0423\u041b\u042c\u0422\u0410\u0422\u0410 (\u0441\u0442\u0440\u043e\u0433\u043e \u0434\u043b\u044f \u0432\u0441\u0435\u0445 \u043d\u043e\u0432\u044b\u0445 \u0437\u0430\u0434\u0430\u0447): \u0437\u0430\u0434\u0430\u0447\u0430 \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u0430 \u0422\u041e\u041b\u042c\u041a\u041e \u0435\u0441\u043b\u0438 \u0435\u0441\u0442\u044c \u043f\u0440\u043e\u0432\u0435\u0440\u044f\u0435\u043c\u044b\u0439 \u0430\u0440\u0442\u0435\u0444\u0430\u043a\u0442: \u0444\u0430\u0439\u043b \u0441\u043e\u0437\u0434\u0430\u043d \u0418\u041b\u0418 \u0441\u0435\u0440\u0432\u0438\u0441 active \u0418\u041b\u0418 \u0447\u0438\u0441\u043b\u043e \u0438\u0437\u043c\u0435\u043d\u0438\u043b\u043e\u0441\u044c. \u0412 \u043a\u043e\u043d\u0446\u0435 \u043a\u0430\u0436\u0434\u043e\u0439 \u0437\u0430\u0434\u0430\u0447\u0438 \u043c\u043e\u0434\u0435\u043b\u044c \u041e\u0411\u042f\u0417\u0410\u041d\u0410 \u0432\u044b\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043a\u043e\u043c\u0430\u043d\u0434\u0443 \u0441\u0430\u043c\u043e\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438 (curl, systemctl is-active, ls -la \u0440\u0430\u0437\u043c\u0435\u0440 \u0444\u0430\u0439\u043b\u0430) \u0438 \u043f\u0440\u0438\u043b\u043e\u0436\u0438\u0442\u044c \u0435\u0451 \u0432\u044b\u0432\u043e\u0434 \u043a DONE. \u0412\u043e\u0440\u043a\u0435\u0440: \u0435\u0441\u043b\u0438 DONE \u043f\u0440\u0438\u0448\u0451\u043b \u0431\u0435\u0437 \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u0430 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438 \u0432 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0445 3 \u043a\u043e\u043c\u0430\u043d\u0434\u0430\u0445 - \u043f\u043e\u043c\u0435\u0442\u0438\u0442\u044c \u0437\u0430\u0434\u0430\u0447\u0443 .retry, \u0430 \u043d\u0435 .done.",
+  "goal": "Build the best sports betting analytics machine. Targets: (1) unresolved <90 via deterministic settle + UNRESOLVABLE_NO_PROVIDER tagging \u2014 DONE when settle_reclassify_writer.py runs and proves numeric delta; (2) reclassify \u226550% of 363 simulated via odds evidence URL \u2014 DONE when writer proves \u2265182 reclassified; (3) TG digest in Russian \u22645 lines showing verified vs simulated PnL separately \u2014 DONE when digest sends and is logged; (4) positive verified ROI on \u2265100 verified bets \u2014 pending until 1-3 done. RULE: no LLM settle tasks until deterministic writer has run with numeric before/after. RULE: supervisor must not re-queue the same task more than twice \u2014 after 2 retries, escalate to owner via TG. Strategy v2: all sports, value via Poisson/Dixon-Coles/Elo/xG + line comparison + CLV, odds 1.7-2.5, EV\u22653%, Kelly 0.25, every pick requires odds evidence URL. Grey methods allowed with GREY tag. Report per closed bet: result, CLV, lesson. Budget 20 USD/mo. Owner reads TG only, Russian, \u22645 lines, no code.",
   "reports": [
     {
       "label": "AUDIT.md",
