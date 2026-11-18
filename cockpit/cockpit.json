@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T14:01:10.620230",
+  "generated_at": "2026-11-18T14:05:13.285741",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -62,8 +62,8 @@
       "timestamp": "2026-11-17T10:43:32.678366"
     },
     {
-      "file": "/opt/agent/queue/02a_dataport.md.md",
-      "name": "02a_dataport.md.md",
+      "file": "/opt/agent/queue/02a_dataport.md.md.done",
+      "name": "02a_dataport.md.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T16:29:42.224195"
     },
@@ -252,7 +252,7 @@
     "monthly_cap": 20.0,
     "remaining": 20.0
   },
-  "goal": "Targets (1) unresolved<90 via deterministic settle+UNRESOLVABLE_NO_PROVIDER, (2) reclassify \u2265182/363 simulated via odds-evidence URL, (3) TG digest RU \u22645 lines with verified vs simulated PnL split \u2014 DONE when settle_reclassify_writer.py has been RUN once with numeric before/after proof logged to /opt/agent/reports/settle_reclassify_proof.json and the digest is sent+logged. Target (4) positive verified ROI on \u2265100 verified bets \u2014 pending until 1-3 proven. RULES: writer is deterministic (no LLM); no LLM settle tasks until writer has run with numeric before/after; supervisor max 2 retries per task then escalate to owner via TG; owner reads TG only, Russian, \u22645 lines, no code.",
+  "goal": "Targets 1-3 DONE when settle_reclassify_proof.json exists with numeric before/after (unresolved<90, reclassified\u2265182) AND tg_digest_sent.log exists with message_id. Then target 4: grow verified sample to \u2265100 bets with positive ROI at odds 1.7-2.5, EV 3-5%, Kelly 0.25, CLV tracked.",
   "reports": [
     {
       "label": "AUDIT.md",
