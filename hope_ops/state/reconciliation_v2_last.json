@@ -1,7 +1,7 @@
 {
-  "at": "2026-11-17T18:00:59+00:00",
+  "at": "2026-11-18T03:00:30+00:00",
   "categories": {
-    "AWAITING_EVENT": 205,
+    "AWAITING_EVENT": 256,
     "NEW_OR_OTHER_STATUS": 743,
     "OFFICIAL_SETTLED": 402,
     "RETRY_UNRESOLVED": 222
@@ -10,7 +10,7 @@
   "extra_source_requests": 6,
   "independent_extra_matches": {},
   "ledger": {
-    "paper_rows_total": 1572,
+    "paper_rows_total": 1623,
     "portfolio_unlinked_total": 0
   },
   "mode": "PAPER_ONLY",
@@ -34,14 +34,14 @@
       "by_evidence_grade": {},
       "states": {
         "KICKOFF_NOT_CONFIRMED": 12,
-        "NOT_EVALUATED": 215,
+        "NOT_EVALUATED": 266,
         "NO_VALIDATED_ESPN_FINAL": 200
       }
     }
   },
   "no_forged_win_loss": true,
   "official_pnl_only_native_r10": true,
-  "pending_in_r10": 427,
+  "pending_in_r10": 478,
   "portfolio_by_paper_status": {
     "EVA_LEGACY_ARCHIVED": 50,
     "LOSS": 3,
@@ -51,7 +51,7 @@
   "portfolio_unique_ids": 77,
   "portfolio_unlinked": 0,
   "r10_newly_settled": 0,
-  "r10_report": "/opt/ORACLE_EVA/replica_v170/state/eva-reports/eva_r10_census_20261117T180051Z_dba9e8c5.json",
+  "r10_report": "/opt/ORACLE_EVA/replica_v170/state/eva-reports/eva_r10_census_20261118T030029Z_be12eb17.json",
   "real_orders": 0,
   "scheduler": "EVERY_3_HOURS",
   "unresolved_remain_in_auto_retry": true

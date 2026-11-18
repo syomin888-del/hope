@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T19:14:30.612998",
+  "generated_at": "2026-11-18T03:24:35.609495",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -24,6 +24,24 @@
       "name": "01a_smart_retry.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T16:32:52.223477"
+    },
+    {
+      "file": "/opt/agent/queue/01x_auto_sv_20261117T152931Z_Execute_SETTLE_222_ODDS_EVIDENCE_pipeline_end_to_end_and_pro.md",
+      "name": "01x_auto_sv_20261117T152931Z_Execute_SETTLE_222_ODDS_EVIDENCE_pipeline_end_to_end_and_pro.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T17:42:40.517786"
+    },
+    {
+      "file": "/opt/agent/queue/01x_auto_sv_20261117T155950Z_SETTLE_222_ODDS_EVIDENCE_verified.md",
+      "name": "01x_auto_sv_20261117T155950Z_SETTLE_222_ODDS_EVIDENCE_verified.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T17:42:40.521786"
+    },
+    {
+      "file": "/opt/agent/queue/01x_auto_sv_20261117T162953Z_Execute_settle_222_odds_evidence_reclassification_pipeline_e.md",
+      "name": "01x_auto_sv_20261117T162953Z_Execute_settle_222_odds_evidence_reclassification_pipeline_e.md",
+      "status": "pending",
+      "timestamp": "2026-11-17T17:42:40.526786"
     },
     {
       "file": "/opt/agent/queue/02_settle_analysis.md.done",
@@ -98,32 +116,20 @@
       "timestamp": "2026-11-17T11:21:19.774579"
     },
     {
-      "file": "/opt/agent/queue/17_tg_digest.md.md",
-      "name": "17_tg_digest.md.md",
+      "file": "/opt/agent/queue/17_tg_digest.md",
+      "name": "17_tg_digest.md",
       "status": "pending",
       "timestamp": "2026-11-17T17:42:40.463784"
     },
     {
-      "file": "/opt/agent/queue/18_1794940296.md",
-      "name": "18_1794940296.md",
-      "status": "pending",
-      "timestamp": "2026-11-17T18:31:36.168938"
-    },
-    {
-      "file": "/opt/agent/queue/18_stats_split_impl.md.md",
-      "name": "18_stats_split_impl.md.md",
+      "file": "/opt/agent/queue/18_stats_split_impl.md",
+      "name": "18_stats_split_impl.md",
       "status": "pending",
       "timestamp": "2026-11-17T17:42:40.467784"
     },
     {
-      "file": "/opt/agent/queue/19_1794942236.md",
-      "name": "19_1794942236.md",
-      "status": "pending",
-      "timestamp": "2026-11-17T19:03:56.436648"
-    },
-    {
-      "file": "/opt/agent/queue/19_miniapp_host.md.md",
-      "name": "19_miniapp_host.md.md",
+      "file": "/opt/agent/queue/19_miniapp_host.md",
+      "name": "19_miniapp_host.md",
       "status": "pending",
       "timestamp": "2026-11-17T17:42:40.472784"
     },
@@ -164,8 +170,8 @@
       "timestamp": "2026-11-17T17:42:40.492785"
     },
     {
-      "file": "/opt/agent/queue/auto_auto_20261117_150356.md.md",
-      "name": "auto_auto_20261117_150356.md.md",
+      "file": "/opt/agent/queue/auto_auto_20261117_150356.md",
+      "name": "auto_auto_20261117_150356.md",
       "status": "pending",
       "timestamp": "2026-11-17T17:42:40.495785"
     },
@@ -204,24 +210,6 @@
       "name": "auto_sv_20261117T150557Z_ESPN_API_football_data_org.md",
       "status": "pending",
       "timestamp": "2026-11-17T17:42:40.514786"
-    },
-    {
-      "file": "/opt/agent/queue/auto_sv_20261117T152931Z_Execute_SETTLE_222_ODDS_EVIDENCE_pipeline_end_to_end_and_pro.md",
-      "name": "auto_sv_20261117T152931Z_Execute_SETTLE_222_ODDS_EVIDENCE_pipeline_end_to_end_and_pro.md",
-      "status": "pending",
-      "timestamp": "2026-11-17T17:42:40.517786"
-    },
-    {
-      "file": "/opt/agent/queue/auto_sv_20261117T155950Z_SETTLE_222_ODDS_EVIDENCE_verified.md",
-      "name": "auto_sv_20261117T155950Z_SETTLE_222_ODDS_EVIDENCE_verified.md",
-      "status": "pending",
-      "timestamp": "2026-11-17T17:42:40.521786"
-    },
-    {
-      "file": "/opt/agent/queue/auto_sv_20261117T162953Z_Execute_settle_222_odds_evidence_reclassification_pipeline_e.md",
-      "name": "auto_sv_20261117T162953Z_Execute_settle_222_odds_evidence_reclassification_pipeline_e.md",
-      "status": "pending",
-      "timestamp": "2026-11-17T17:42:40.526786"
     }
   ],
   "running": {
@@ -234,7 +222,7 @@
     "monthly_cap": 20.0,
     "remaining": 20.0
   },
-  "goal": "Build the best sports betting analytics machine. Progress targets: (1) settle 222 unresolved \u2192 <90 [in progress], (2) reclassify \u226550% of 363 simulated via odds evidence URL [in progress], (3) UI+TG show verified vs simulated PnL separately [in progress], (4) positive verified ROI on \u2265100 verified bets [pending]. Strategy v2: all sports, value via Poisson/Dixon-Coles/Elo/xG + line comparison + CLV, odds 1.7-2.5, EV\u22653%, Kelly 0.25, every pick requires odds evidence URL. Grey methods allowed with GREY tag. Report per closed bet: result, CLV, lesson. Budget 20 USD/mo. Owner reads TG only, Russian, \u22645 lines, no code.",
+  "goal": "Build the best sports betting analytics machine. Targets: (1) unresolved <90 via deterministic settle + UNRESOLVABLE_NO_PROVIDER tagging \u2014 DONE when settle_reclassify_writer.py runs and proves numeric delta; (2) reclassify \u226550% of 363 simulated via odds evidence URL \u2014 DONE when writer proves \u2265182 reclassified; (3) TG digest in Russian \u22645 lines showing verified vs simulated PnL separately \u2014 DONE when digest sends and is logged; (4) positive verified ROI on \u2265100 verified bets \u2014 pending until 1-3 done. RULE: no LLM settle tasks until deterministic writer has run with numeric before/after. Strategy v2: all sports, value via Poisson/Dixon-Coles/Elo/xG + line comparison + CLV, odds 1.7-2.5, EV\u22653%, Kelly 0.25, every pick requires odds evidence URL. Grey methods allowed with GREY tag. Report per closed bet: result, CLV, lesson. Budget 20 USD/mo. Owner reads TG only, Russian, \u22645 lines, no code.",
   "reports": [
     {
       "label": "AUDIT.md",

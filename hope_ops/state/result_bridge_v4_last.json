@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-17T18:01:23+00:00",
+  "at": "2026-11-18T03:00:40+00:00",
   "bridge_settled": {
     "backups_created": 0,
     "newly_closed": 0,
@@ -9,7 +9,7 @@
   "production_modified": false,
   "real_orders": 0,
   "rejections": {
-    "NO_SUPPORTED_IDENTIFIED_FOOTBALL_EVENT": 215,
+    "NO_SUPPORTED_IDENTIFIED_FOOTBALL_EVENT": 266,
     "TSDB_NOT_FOUND": 212
   },
   "request_limits": {
@@ -17,11 +17,42 @@
     "tsdb_days_suppressed": 0
   },
   "scheduler": "EVERY_3_HOURS",
-  "source_errors": [],
-  "source_requests": 58,
+  "source_errors": [
+    {
+      "day": "2026-11-06",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-07",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-08",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-09",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-10-30",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-10-31",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    }
+  ],
+  "source_requests": 52,
   "status": {
     "paper": {
-      "FUTURE_PENDING": 205,
+      "FUTURE_PENDING": 256,
       "OTHER_EVA_LEGACY_ARCHIVED": 743,
       "PAST_DUE_PENDING": 222,
       "PRE_V3_SETTLEMENT": 39,
