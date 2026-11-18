@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T11:55:27.607229",
+  "generated_at": "2026-11-18T12:48:10.610971",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -38,8 +38,8 @@
       "timestamp": "2026-11-17T10:29:02.359997"
     },
     {
-      "file": "/opt/agent/queue/01a_backlog_burial.md",
-      "name": "01a_backlog_burial.md",
+      "file": "/opt/agent/queue/01a_backlog_burial.md.retry",
+      "name": "01a_backlog_burial.md.retry",
       "status": "pending",
       "timestamp": "2026-11-18T10:46:36.870464"
     },

@@ -1,20 +1,20 @@
 {
-  "at": "2026-11-18T09:00:29+00:00",
+  "at": "2026-11-18T12:00:47+00:00",
   "db_original_code_changed": false,
   "disk": {
-    "free_bytes": 90339258368,
+    "free_bytes": 77484449792,
     "required_bytes": 16106127360
   },
-  "duration_seconds": 22.4,
+  "duration_seconds": 19.48,
   "ended": "NO_CHANGES",
   "errors": [],
   "eva": {
-    "db_bytes": 6310318080,
+    "db_bytes": 6369808384,
     "mount_source": "/opt/ORACLE_EVA/replica_v170/state",
     "name": "/oracle_eva_v170_legacy-historic-oracle-1"
   },
   "exit_code": 0,
-  "log": "/opt/ORACLE_EVA/hope_ops/logs/settle_20261118T090006Z.log",
+  "log": "/opt/ORACLE_EVA/hope_ops/logs/settle_20261118T120028Z.log",
   "real_orders": 0,
   "result": "PASS",
   "summary": {
@@ -22,7 +22,7 @@
     "mode": "apply",
     "newly_settled": 0,
     "real_orders": 0,
-    "report": "/data/eva-reports/eva_r10_census_20261118T090029Z_85c47fea.json",
+    "report": "/data/eva-reports/eva_r10_census_20261118T120047Z_866236a7.json",
     "unresolved_in_initial_census": 222
   }
 }
