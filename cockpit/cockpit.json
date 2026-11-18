@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T12:48:10.610971",
+  "generated_at": "2026-11-18T13:56:08.399866",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -50,8 +50,8 @@
       "timestamp": "2026-11-17T16:32:52.223477"
     },
     {
-      "file": "/opt/agent/queue/01b_capture_probe.md",
-      "name": "01b_capture_probe.md",
+      "file": "/opt/agent/queue/01b_capture_probe.md.done",
+      "name": "01b_capture_probe.md.done",
       "status": "pending",
       "timestamp": "2026-11-18T10:46:44.205742"
     },
@@ -138,6 +138,18 @@
       "name": "11_cockpit.md.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T11:21:19.774579"
+    },
+    {
+      "file": "/opt/agent/queue/13_1795009050.md",
+      "name": "13_1795009050.md",
+      "status": "pending",
+      "timestamp": "2026-11-18T13:37:30.353318"
+    },
+    {
+      "file": "/opt/agent/queue/14_1795009984.md",
+      "name": "14_1795009984.md",
+      "status": "pending",
+      "timestamp": "2026-11-18T13:53:04.552598"
     },
     {
       "file": "/opt/agent/queue/18_stats_split_impl.md.done",
@@ -240,7 +252,7 @@
     "monthly_cap": 20.0,
     "remaining": 20.0
   },
-  "goal": "Build the best sports betting analytics machine. Targets: (1) unresolved <90 via deterministic settle + UNRESOLVABLE_NO_PROVIDER tagging \u2014 DONE when settle_reclassify_writer.py runs and proves numeric delta; (2) reclassify \u226550% of 363 simulated via odds evidence URL \u2014 DONE when writer proves \u2265182 reclassified; (3) TG digest in Russian \u22645 lines showing verified vs simulated PnL separately \u2014 DONE when digest sends and is logged; (4) positive verified ROI on \u2265100 verified bets \u2014 pending until 1-3 done. RULE: no LLM settle tasks until deterministic writer has run with numeric before/after. RULE: supervisor must not re-queue the same task more than twice \u2014 after 2 retries, escalate to owner via TG. RULE: settle_reclassify_writer.py must be deterministic (no LLM calls). Strategy v2: all sports, value via Poisson/Dixon-Coles/Elo/xG + line comparison + CLV, odds 1.7-2.5, EV\u22653%, Kelly 0.25, every pick requires odds evidence URL. Grey methods allowed with GREY tag. Report per closed bet: result, CLV, lesson. Budget 20 USD/mo. Owner reads TG only, Russian, \u22645 lines, no code.",
+  "goal": "Targets (1) unresolved<90 via deterministic settle+UNRESOLVABLE_NO_PROVIDER, (2) reclassify \u2265182/363 simulated via odds-evidence URL, (3) TG digest RU \u22645 lines with verified vs simulated PnL split \u2014 DONE when settle_reclassify_writer.py has been RUN once with numeric before/after proof logged to /opt/agent/reports/settle_reclassify_proof.json and the digest is sent+logged. Target (4) positive verified ROI on \u2265100 verified bets \u2014 pending until 1-3 proven. RULES: writer is deterministic (no LLM); no LLM settle tasks until writer has run with numeric before/after; supervisor max 2 retries per task then escalate to owner via TG; owner reads TG only, Russian, \u22645 lines, no code.",
   "reports": [
     {
       "label": "AUDIT.md",

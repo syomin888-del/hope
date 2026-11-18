@@ -94,8 +94,14 @@ while True:
                 break
         log.write(f"STEP {step} ASSISTANT:\n{out}\n")
         if isdone(out):
-            ok = True
-            break
+            proof=('systemctl is-active','curl','ls -la','wc -l','grep -c','sqlite3','test -f')
+            verified=any(any(k in c for k in proof) for c in last_cmds[-3:])
+            if verified or not last_cmds:
+                ok=True
+                break
+            log.write('DONE_REJECTED_NO_ARTIFACT'+chr(10))
+            hist.append({'role':'user','content':'DONE without proof. Run systemctl is-active or curl or ls -la then reply DONE.'})
+            continue
         cmd = clean(out)
         if not cmd:
             continue
