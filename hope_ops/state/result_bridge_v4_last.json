@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-18T06:00:44+00:00",
+  "at": "2026-11-18T07:05:43+00:00",
   "bridge_settled": {
     "backups_created": 0,
     "newly_closed": 0,
@@ -19,16 +19,6 @@
   "scheduler": "EVERY_3_HOURS",
   "source_errors": [
     {
-      "day": "2026-11-08",
-      "error": "HTTPError",
-      "source": "thesportsdb"
-    },
-    {
-      "day": "2026-11-09",
-      "error": "HTTPError",
-      "source": "thesportsdb"
-    },
-    {
       "day": "2026-10-30",
       "error": "HTTPError",
       "source": "thesportsdb"
@@ -45,6 +35,16 @@
     },
     {
       "day": "2026-11-02",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-03",
+      "error": "HTTPError",
+      "source": "thesportsdb"
+    },
+    {
+      "day": "2026-11-05",
       "error": "HTTPError",
       "source": "thesportsdb"
     }
