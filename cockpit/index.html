@@ -35,7 +35,7 @@ td{padding:6px 4px;border-bottom:1px solid rgba(42,42,48,.5)}
 <div class="upd" id="upd"></div>
 <script>
 let DATA=null;
-async function load(){try{if(!DATA){DATA=await (await fetch(cockpit.json)).json();}const d=DATA;
+async function load(){try{if(!DATA){DATA=await (await fetch("cockpit.json")).json();}const d=DATA;
 document.getElementById("gen").textContent="generated "+d.generated_at;
 const m=d.money||{};document.getElementById("bal").textContent=(m.balance!=null?"$"+Number(m.balance).toFixed(2):"—");
 document.getElementById("spend").textContent="$"+Number(m.session_spend||0).toFixed(2);
