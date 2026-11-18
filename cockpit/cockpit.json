@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T07:06:26.606640",
+  "generated_at": "2026-11-18T08:43:51.620406",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -128,8 +128,8 @@
       "timestamp": "2026-11-17T17:42:40.467784"
     },
     {
-      "file": "/opt/agent/queue/19_miniapp_host.md",
-      "name": "19_miniapp_host.md",
+      "file": "/opt/agent/queue/19_miniapp_host.md.done",
+      "name": "19_miniapp_host.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T17:42:40.472784"
     },

@@ -1,0 +1,225 @@
+#!/usr/bin/env python3
+import csv, json, os, re, sqlite3, unicodedata, urllib.request
+from datetime import datetime, timezone
+from difflib import SequenceMatcher
+
+DB = '/opt/ORACLE_EVA/replica_v170/state/oracle.sqlite3'
+LEDGER = '/opt/ORACLE_EVA/hope_ops/state/resolution_ledger.sqlite3'
+RJ = '/opt/agent/api/settle_reclassify_result.json'
+SEASON = '2627'
+CACHE = '/tmp/fd_cache'
+FD = {'de.1':'D1','de.2':'D2','en.1':'E0','en.2':'E1','es.1':'SP1','fr.1':'F1','it.1':'I1','nl.1':'N1','pt.1':'P1'}
+TR = {'а':'a','б':'b','в':'v','г':'g','д':'d','е':'e','ё':'e','ж':'zh','з':'z','и':'i','й':'y','к':'k','л':'l','м':'m','н':'n','о':'o','п':'p','р':'r','с':'s','т':'t','у':'u','ф':'f','х':'kh','ц':'ts','ч':'ch','ш':'sh','щ':'sch','ъ':'','ы':'y','ь':'','э':'e','ю':'yu','я':'ya'}
+STOP = {'fc','sv','tsg','ac','aj','rc','gd','cf','sbv','sc','afc','vfl','vfb','club','de','calcio','ss','us','as','ssd','spa','ud','cd','co','1','2','3','04','05','07','09','65','92','96','1899','1909'}
+
+def translit(s):
+    out = []
+    for ch in s:
+        lo = ch.lower()
+        if lo in TR:
+            t = TR[lo]
+            out.append(t.capitalize() if ch.isupper() else t)
+        else:
+            out.append(ch)
+    return "".join(out)
+
+def norm_name(s):
+    if any('\u0400' <= c <= '\u04FF' for c in s):
+        s = translit(s)
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = s.lower()
+    s = re.sub(r"[^a-z0-9 ]", " ", s)
+    toks = [t for t in s.split() if t not in STOP]
+    return " ".join(toks) if toks else s.strip()
+
+def sim(a, b):
+    return SequenceMatcher(None, a, b).ratio()
+
+def fetch_csv(code):
+    os.makedirs(CACHE, exist_ok=True)
+    path = os.path.join(CACHE, code + ".csv")
+    if os.path.exists(path) and os.path.getsize(path) > 1000:
+        return path
+    url = "https://www.football-data.co.uk/mmz4281/%s/%s.csv" % (SEASON, code)
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            data = r.read()
+        if len(data) < 1000:
+            return None
+        open(path, "wb").write(data)
+        return path
+    except Exception as e:
+        print("FETCH_FAIL %s: %s" % (code, e))
+        return None
+
+def load_fd():
+    rows = []
+    for lg, code in FD.items():
+        p = fetch_csv(code)
+        if not p:
+            continue
+        with open(p, newline="", encoding="utf-8-sig", errors="replace") as f:
+            for r in csv.DictReader(f):
+                try:
+                    d = r.get("Date", "")
+                    if "/" not in d: continue
+                    dd, mm, yy = d.split("/")
+                    date = (yy if len(yy) == 4 else "20" + yy) + "-" + mm + "-" + dd
+                    hs, as_ = r.get("FTHG"), r.get("FTAG")
+                    if not hs or not as_: continue
+                    rows.append({"league": lg, "date": date,
+                                 "home": r.get("HomeTeam", ""), "away": r.get("AwayTeam", ""),
+                                 "hs": int(hs), "as": int(as_),
+                                 "url": "https://www.football-data.co.uk/mmz4281/%s/%s.csv" % (SEASON, code),
+                                 "raw": r})
+                except Exception:
+                    continue
+    return rows
+
+def match_event(fd_rows, league, date, home, away):
+    nh, na = norm_name(home), norm_name(away)
+    best, best_s = None, 0.0
+    for r in fd_rows:
+        if r["league"] != league or r["date"] != date:
+            continue
+        s = (sim(nh, norm_name(r["home"])) + sim(na, norm_name(r["away"]))) / 2.0
+        if s > best_s:
+            best, best_s = r, s
+    if best is not None and best_s >= 0.45:
+        return best, best_s
+    return None, best_s
+
+def settle_outcome(market, selection, hs, as_):
+    m = market.strip().upper()
+    sel = selection.strip()
+    if m == "1X2":
+        res = "1" if hs > as_ else ("2" if hs < as_ else "X")
+        if sel in ("1", "П1", "HOME"): return "WIN" if res == "1" else "LOSS"
+        if sel in ("2", "П2", "AWAY"): return "WIN" if res == "2" else "LOSS"
+        if sel in ("X", "Ничья", "DRAW"): return "WIN" if res == "X" else "LOSS"
+        return None
+    if m == "ОБЕ ЗАБЬЮТ":
+        btts = hs > 0 and as_ > 0
+        if sel in ("Да", "YES", "Y"): return "WIN" if btts else "LOSS"
+        if sel in ("Нет", "NO", "N"): return "WIN" if not btts else "LOSS"
+        return None
+    mt = re.match(r"ТОТАЛ\s+([\d.]+)", market.strip(), re.IGNORECASE)
+    if mt:
+        line = float(mt.group(1))
+        tot = hs + as_
+        if sel.startswith("Больше") or sel.upper().startswith("OVER"):
+            return "WIN" if tot > line else ("LOSS" if tot < line else "PUSH")
+        if sel.startswith("Меньше") or sel.upper().startswith("UNDER"):
+            return "WIN" if tot < line else ("LOSS" if tot > line else "PUSH")
+    return None
+
+def profit_of(outcome, stake, odds):
+    if outcome == "WIN": return round(stake * (odds - 1.0), 2)
+    if outcome == "LOSS": return round(-stake, 2)
+    return 0.0
+
+def main():
+    con = sqlite3.connect(DB, timeout=60)
+    con.execute("PRAGMA busy_timeout=60000")
+    cur = con.cursor()
+    before_unres = cur.execute("SELECT COUNT(*) FROM v55_paper WHERE status='PENDING' AND kickoff_utc < datetime('now')").fetchone()[0]
+    before_sim = cur.execute("SELECT COUNT(*) FROM v55_paper WHERE source LIKE 'HOPE_V3_AS_RECORDED%'").fetchone()[0]
+    before_ver = cur.execute("SELECT COUNT(*) FROM v55_paper WHERE status IN ('WIN','LOSS','PUSH') AND source NOT LIKE 'HOPE_V3_AS_RECORDED%'").fetchone()[0]
+    print("BEFORE: unresolved=%d simulated=%d verified=%d" % (before_unres, before_sim, before_ver))
+    fd_rows = load_fd()
+    print("FD_ROWS=%d" % len(fd_rows))
+    pend = cur.execute("SELECT forecast_id, original_event_id, market, selection, odds, stake, kickoff_utc, origin FROM v55_paper WHERE status='PENDING' AND kickoff_utc < datetime('now')").fetchall()
+    print("PENDING=%d" % len(pend))
+    led = sqlite3.connect(LEDGER, timeout=60)
+    lc = led.cursor()
+    lc.execute("CREATE TABLE IF NOT EXISTS settle_runs(run_at TEXT, forecast_id TEXT, action TEXT, provider TEXT, detail TEXT)")
+    settled = unres = nomatch = 0
+    for fid, oeid, market, selection, odds, stake, kickoff, origin in pend:
+        parts = oeid.split("|")
+        league = date = home = away = None
+        if origin == "v58_brain" and len(parts) >= 2:
+            root_id = parts[1]
+            cov = cur.execute("SELECT league, kickoff_utc, home, away FROM v58_coverage WHERE root_id=?", (root_id,)).fetchone()
+            if cov:
+                lg = cov[0]
+                league = lg if lg in FD else None
+                date = (cov[1] or "")[:10]
+                home, away = cov[2], cov[3]
+        elif len(parts) >= 4:
+            league = parts[0] if parts[0] in FD else None
+            date = parts[1]
+            home, away = parts[2], parts[3]
+        if not (league and date and home and away):
+            cur.execute("UPDATE v55_paper SET status='UNRESOLVABLE_NO_PROVIDER', reason='UNRESOLVABLE_NO_PROVIDER', profit=0 WHERE forecast_id=?", (fid,))
+            unres += 1
+            lc.execute("INSERT INTO settle_runs VALUES (?,?,?,?,?)", (NOW, fid, "UNRESOLVABLE", "none", "no league/date"))
+            continue
+        row, score = match_event(fd_rows, league, date, home, away)
+        if row is None:
+            cur.execute("UPDATE v55_paper SET status='UNRESOLVABLE_NO_PROVIDER', reason='UNRESOLVABLE_NO_PROVIDER', profit=0 WHERE forecast_id=?", (fid,))
+            unres += 1
+            lc.execute("INSERT INTO settle_runs VALUES (?,?,?,?,?)", (NOW, fid, "UNRESOLVABLE", "football-data", "no match score=%.2f" % score))
+            continue
+        outcome = settle_outcome(market, selection, row["hs"], row["as"])
+        if outcome is None:
+            cur.execute("UPDATE v55_paper SET status='UNRESOLVABLE_NO_PROVIDER', reason='UNRESOLVABLE_NO_PROVIDER', profit=0 WHERE forecast_id=?", (fid,))
+            unres += 1
+            lc.execute("INSERT INTO settle_runs VALUES (?,?,?,?,?)", (NOW, fid, "UNRESOLVABLE", "football-data", "market unsupported: " + market))
+            continue
+        pr = profit_of(outcome, stake, odds)
+        cur.execute("UPDATE v55_paper SET status=?, result_home=?, result_away=?, result_seen=?, settled_at=?, profit=?, source='DETERMINISTIC_SETTLE_FOOTBALL_DATA', reason='DETERMINISTIC_SETTLE_FOOTBALL_DATA' WHERE forecast_id=?", (outcome, row["hs"], row["as"], NOW, NOW, pr, fid))
+        settled += 1
+        lc.execute("INSERT INTO settle_runs VALUES (?,?,?,?,?)", (NOW, fid, "SETTLED", "football-data", row["url"]))
+    print("SETTLED=%d UNRESOLVABLE=%d" % (settled, unres))
+    con.commit()
+    led.commit(); led.close()
+    after_unres = cur.execute("SELECT COUNT(*) FROM v55_paper WHERE status='PENDING' AND kickoff_utc < datetime('now')").fetchone()[0]
+    print("AFTER_SETTLE: unresolved=%d" % after_unres)
+    try:
+        cur.execute("ALTER TABLE v55_paper ADD COLUMN odds_evidence_url TEXT")
+    except Exception:
+        pass
+    sim_rows = cur.execute("SELECT forecast_id, original_event_id, market, selection, odds FROM v55_paper WHERE source LIKE 'HOPE_V3_AS_RECORDED%'").fetchall()
+    print("SIM_ROWS=%d" % len(sim_rows))
+    reclass = 0
+    for fid, oeid, market, selection, odds in sim_rows:
+        parts = oeid.split("|")
+        if len(parts) < 4 or parts[0] not in FD:
+            continue
+        league, date, home, away = parts[0], parts[1], parts[2], parts[3]
+        row, score = match_event(fd_rows, league, date, home, away)
+        if row is None:
+            continue
+        r = row["raw"]
+        best_col, best_diff = None, 999.0
+        for col in ("B365H","B365D","B365A","PSH","PSD","PSA","AvgH","AvgD","AvgA","MaxH","MaxD","MaxA"):
+            v = r.get(col)
+            if not v: continue
+            try: fv = float(v)
+            except Exception: continue
+            d = abs(fv - odds)
+            if d < best_diff: best_diff, best_col = d, col
+        if best_col is not None and best_diff <= 0.02:
+            url = row["url"] + "#row:" + date + ":" + row["home"] + ":" + row["away"]
+            cur.execute("UPDATE v55_paper SET source=? WHERE forecast_id=?", ("HOPE_V3_ODDS_VERIFIED_FOOTBALL_DATA", fid))
+            cur.execute("UPDATE v55_paper SET odds_evidence_url=? WHERE forecast_id=?", (url, fid))
+            reclass += 1
+    print("RECLASSIFIED=%d" % reclass)
+    con.commit()
+    after_sim = cur.execute("SELECT COUNT(*) FROM v55_paper WHERE source LIKE 'HOPE_V3_AS_RECORDED%'").fetchone()[0]
+    after_ver = cur.execute("SELECT COUNT(*) FROM v55_paper WHERE status IN ('WIN','LOSS','PUSH') AND (source NOT LIKE 'HOPE_V3_AS_RECORDED%' AND source NOT LIKE 'HOPE_V3_ODDS_VERIFIED%')").fetchone()[0]
+    ver2 = cur.execute("SELECT COUNT(*) FROM v55_paper WHERE source LIKE 'HOPE_V3_ODDS_VERIFIED%'").fetchone()[0]
+    print("AFTER: unresolved=%d simulated=%d verified=%d reclassified=%d tagged_unresolvable=%d" % (after_unres, after_sim, after_ver + ver2, reclass, unres))
+    print("DELTA: unresolved -%d simulated -%d verified +%d" % (before_unres - after_unres, before_sim - after_sim, (after_ver + ver2) - before_ver))
+    res = {"at": NOW, "before_unresolved": before_unres, "after_unresolved": after_unres,
+           "settled": settled, "tagged_unresolvable": unres,
+           "before_simulated": before_sim, "after_simulated": after_sim, "reclassified": reclass,
+           "before_verified": before_ver, "after_verified": after_ver + ver2}
+    os.makedirs(os.path.dirname(RJ), exist_ok=True)
+    json.dump(res, open(RJ, "w"), ensure_ascii=False, indent=1)
+    con.close()
+
+if __name__ == "__main__":
+    main()
