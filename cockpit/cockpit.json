@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T07:05:26.110523",
+  "generated_at": "2026-11-18T07:06:26.606640",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -26,10 +26,10 @@
       "timestamp": "2026-11-18T06:35:25.304934"
     },
     {
-      "file": "/opt/agent/queue/00z_tsdb_key_fix.md",
-      "name": "00z_tsdb_key_fix.md",
+      "file": "/opt/agent/queue/00z_tsdb_key_fix.md.done",
+      "name": "00z_tsdb_key_fix.md.done",
       "status": "pending",
-      "timestamp": "2026-11-18T07:05:03.346245"
+      "timestamp": "2026-11-18T07:05:39.158630"
     },
     {
       "file": "/opt/agent/queue/01_audit.md.done",
