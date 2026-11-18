@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T06:35:00.609850",
+  "generated_at": "2026-11-18T06:38:02.604188",
   "queue": [
     {
       "file": "/opt/agent/queue/005_watchdog.md.done",
@@ -18,6 +18,12 @@
       "name": "00y_data_fix_final.md.done",
       "status": "pending",
       "timestamp": "2026-11-18T03:44:06.875548"
+    },
+    {
+      "file": "/opt/agent/queue/00z_data_probe.md.done",
+      "name": "00z_data_probe.md.done",
+      "status": "pending",
+      "timestamp": "2026-11-18T06:35:25.304934"
     },
     {
       "file": "/opt/agent/queue/01_audit.md.done",
@@ -108,12 +114,6 @@
       "name": "11_cockpit.md.md.done",
       "status": "pending",
       "timestamp": "2026-11-17T11:21:19.774579"
-    },
-    {
-      "file": "/opt/agent/queue/17_tg_digest.md.done",
-      "name": "17_tg_digest.md.done",
-      "status": "pending",
-      "timestamp": "2026-11-17T17:42:40.463784"
     },
     {
       "file": "/opt/agent/queue/18_stats_split_impl.md",
