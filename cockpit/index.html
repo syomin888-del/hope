@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HOPE_EVA Cockpit</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;background:#0a0a0c;color:#e5e5ea;margin:0;padding:16px}
+h1{font-size:20px;margin:0 0 4px}.sub{color:#8e8e93;font-size:12px;margin-bottom:16px}
+.card{background:#161618;border:1px solid #2a2a30;border-radius:12px;padding:14px;margin-bottom:12px}
+h2{font-size:14px;margin:0 0 10px;color:#ffd60a}
+.big{font-size:24px;font-weight:700}.dim{color:#8e8e93;font-size:12px}
+.row{display:flex;justify-content:space-between;align-items:center;margin:6px 0}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:#8e8e93;font-weight:500;padding:6px 4px;border-bottom:1px solid #2a2a30}
+td{padding:6px 4px;border-bottom:1px solid rgba(42,42,48,.5)}
+.pill{padding:2px 8px;border-radius:10px;font-size:11px;background:rgba(142,142,147,.2)}
+.running{background:rgba(0,122,255,.18);color:#0a84ff}.done{background:rgba(48,209,88,.15);color:#30d158}
+.log{font-family:ui-monospace,Menlo,monospace;font-size:12px;background:#0d0d10;border-radius:10px;padding:10px;color:#a5d6a7;white-space:pre-wrap;word-break:break-all}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:10px}
+.kpi>div{background:#1c1c1e;border-radius:10px;padding:10px}.kpi .v{font-size:20px;font-weight:700;margin-top:2px}
+.pos{color:#30d158}.neg{color:#ff453a}.goal{white-space:pre-wrap;font-size:13px;line-height:1.6;color:#d8d8dc}
+.upd{font-size:11px;color:#8e8e93;text-align:center;margin-top:16px}
+</style></head><body>
+<h1>HOPE_EVA Cockpit</h1><div class="sub" id="gen">loading…</div>
+<div class="card"><h2>Money</h2><div class="row"><span class="big" id="bal">—</span><span class="dim">nano-gpt balance</span></div><div class="row"><span>Session spend</span><span id="spend" class="dim">—</span></div><div class="row"><span>Remaining of $20 cap</span><span id="rem" class="dim">—</span></div></div>
+<div class="card"><h2>Running Task</h2><div id="rtask" style="font-weight:600;margin-bottom:8px">—</div><div class="log" id="rlog">no logs</div></div>
+<div class="card"><h2>Agent Queue</h2><table><thead><tr><th>Task</th><th>Status</th><th>Timestamp</th></tr></thead><tbody id="qbody"></tbody></table></div>
+<div class="card"><h2>Bets Summary</h2><div class="kpi">
+<div><span class="dim">Total rows</span><div class="v" id="b_total">—</div></div>
+<div><span class="dim">Settled</span><div class="v" id="b_settled">—</div></div>
+<div><span class="dim">Unresolved</span><div class="v" id="b_unres">—</div></div>
+<div><span class="dim">Awaiting</span><div class="v" id="b_await">—</div></div>
+<div><span class="dim">Verified PnL</span><div class="v" id="b_vpnl">—</div></div>
+<div><span class="dim">Simulated PnL</span><div class="v" id="b_spnl">—</div></div>
+</div></div>
+<div class="card"><h2>Goal</h2><div class="goal" id="goal">—</div></div>
+<div class="card"><h2>Reports</h2><div id="reports" class="dim">—</div></div>
+<div class="upd" id="upd"></div>
+<script>
+const API="http://188.137.232.34:8790";
+async function load(){try{const r=await fetch(API+"/api/cockpit.json?t="+Date.now());const d=await r.json();
+document.getElementById("gen").textContent="generated "+d.generated_at;
+const m=d.money||{};document.getElementById("bal").textContent=(m.balance!=null?"$"+Number(m.balance).toFixed(2):"—");
+document.getElementById("spend").textContent="$"+Number(m.session_spend||0).toFixed(2);
+document.getElementById("rem").textContent="$"+Number(m.remaining||0).toFixed(2);
+const rt=d.running||{};document.getElementById("rtask").textContent=rt.task||"idle";
+document.getElementById("rlog").textContent=(rt.log_lines&&rt.log_lines.length)?rt.log_lines.join("\n"):"no logs";
+const qb=document.getElementById("qbody");qb.innerHTML="";(d.queue||[]).forEach(t=>{const tr=document.createElement("tr");tr.innerHTML="<td>"+t.name+"</td><td><span class=\"pill "+t.status+"\">"+t.status+"</span></td><td class=\"dim\">"+t.timestamp+"</td>";qb.appendChild(tr);});
+const b=d.bets||{};const set=(id,v)=>{document.getElementById(id).textContent=v;};
+set("b_total",b.total_rows??"—");set("b_settled",b.settled??"—");set("b_unres",b.unresolved??"—");set("b_await",b.awaiting??"—");
+const vp=document.getElementById("b_vpnl");vp.textContent="$"+Number(b.verified_pnl||0).toFixed(2);vp.className="v "+(Number(b.verified_pnl||0)>=0?"pos":"neg");
+const sp=document.getElementById("b_spnl");sp.textContent="$"+Number(b.simulated_pnl||0).toFixed(2);sp.className="v "+(Number(b.simulated_pnl||0)>=0?"pos":"neg");
+document.getElementById("goal").textContent=d.goal||"—";
+const rp=document.getElementById("reports");rp.innerHTML="";(d.reports||[]).forEach(r=>{const div=document.createElement("div");div.style.margin="6px 0";div.textContent=r.label+" — "+r.mtime;rp.appendChild(div);});
+document.getElementById("upd").textContent="last refresh "+new Date().toLocaleTimeString();}catch(e){document.getElementById("upd").textContent="fetch error: "+e;}}
+load();setInterval(load,60000);
+</script></body></html>
